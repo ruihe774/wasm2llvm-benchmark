@@ -1,0 +1,33 @@
+{
+ "source_filename": "call_ref.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 168,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 184,
+   "filename": "x.5.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 201,
+   "filename": "x.6.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 211,
+   "filename": "x.7.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

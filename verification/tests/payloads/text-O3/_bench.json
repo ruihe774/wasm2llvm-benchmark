@@ -1,0 +1,30 @@
+{
+ "source_filename": "text-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "text-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "60000"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "9654466982069405410"
+    }
+   ]
+  }
+ ]
+}

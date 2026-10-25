@@ -1,0 +1,30 @@
+{
+ "source_filename": "vm-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "vm-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "400"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "5085813737776786382"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,439 @@
+{
+ "source_filename": "smith2000120.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000120.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "F",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1161160120"
+     },
+     {
+      "type": "f64",
+      "value": "4733668835063691100"
+     },
+     {
+      "type": "i32",
+      "value": "4294967295"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "F",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3632528824"
+     },
+     {
+      "type": "f64",
+      "value": "5203905939028712665"
+     },
+     {
+      "type": "i32",
+      "value": "65536"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1325400064"
+     },
+     {
+      "type": "f64",
+      "value": "18442240474082181120"
+     },
+     {
+      "type": "i32",
+      "value": "2147483648"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "0"
+     },
+     {
+      "type": "f64",
+      "value": "9218868437227405312"
+     },
+     {
+      "type": "i32",
+      "value": "23301"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1065353216"
+     },
+     {
+      "type": "f64",
+      "value": "1308035240"
+     },
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "get",
+    "field": "3"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 8,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "64"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 10,
+   "action": {
+    "type": "get",
+    "field": "T"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "invoke",
+    "field": "F",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1"
+     },
+     {
+      "type": "f64",
+      "value": "18442240474082181120"
+     },
+     {
+      "type": "i32",
+      "value": "3575328235"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "invoke",
+    "field": "F",
+    "args": [
+     {
+      "type": "f32",
+      "value": "2143289344"
+     },
+     {
+      "type": "f64",
+      "value": "13961605669888637844"
+     },
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 14,
+   "action": {
+    "type": "invoke",
+    "field": "F",
+    "args": [
+     {
+      "type": "f32",
+      "value": "2147483648"
+     },
+     {
+      "type": "f64",
+      "value": "1718125500"
+     },
+     {
+      "type": "i32",
+      "value": "40650"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 15,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "65166"
+     },
+     {
+      "type": "f64",
+      "value": "10"
+     },
+     {
+      "type": "i32",
+      "value": "4294967295"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 16,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1"
+     },
+     {
+      "type": "f64",
+      "value": "9218868437227405312"
+     },
+     {
+      "type": "i32",
+      "value": "32"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 17,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1325400064"
+     },
+     {
+      "type": "f64",
+      "value": "7891578019841320363"
+     },
+     {
+      "type": "i32",
+      "value": "43036"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 18,
+   "action": {
+    "type": "get",
+    "field": "3"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 19,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 20,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "64"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 21,
+   "action": {
+    "type": "get",
+    "field": "T"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 22,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  }
+ ]
+}

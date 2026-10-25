@@ -1,0 +1,538 @@
+{
+ "source_filename": "smith1000020.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith1000020.wasm"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": []
+   },
+   "text": "integer overflow"
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": []
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": []
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": []
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_trap",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "240",
+      "53",
+      "151",
+      "140",
+      "40",
+      "201",
+      "30",
+      "58",
+      "77",
+      "97",
+      "15",
+      "155",
+      "131",
+      "63",
+      "252",
+      "47"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 8,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "12471558866090279619"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "get",
+    "field": "6"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1495973339"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 10,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "205",
+      "28",
+      "150",
+      "253",
+      "35",
+      "236",
+      "64",
+      "90",
+      "64",
+      "20",
+      "104",
+      "45",
+      "179",
+      "28",
+      "52",
+      "124"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "get",
+    "field": "8"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1375553238"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "get",
+    "field": "c-\u0006["
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "get",
+    "field": "x"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 14,
+   "action": {
+    "type": "get",
+    "field": "\u0005H"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 15,
+   "action": {
+    "type": "get",
+    "field": "\u0631"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 16,
+   "action": {
+    "type": "get",
+    "field": "13"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 17,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": []
+   },
+   "text": "integer overflow"
+  },
+  {
+   "type": "assert_trap",
+   "line": 18,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": []
+   },
+   "text": "integer overflow"
+  },
+  {
+   "type": "assert_trap",
+   "line": 19,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": []
+   },
+   "text": "integer overflow"
+  },
+  {
+   "type": "assert_return",
+   "line": 20,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": []
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 21,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": []
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 22,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": []
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_trap",
+   "line": 23,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 24,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 25,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_return",
+   "line": 26,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "240",
+      "53",
+      "151",
+      "140",
+      "40",
+      "201",
+      "30",
+      "58",
+      "77",
+      "97",
+      "15",
+      "155",
+      "131",
+      "63",
+      "252",
+      "47"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 27,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "12471558866090279619"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 28,
+   "action": {
+    "type": "get",
+    "field": "6"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1495973339"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 29,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "205",
+      "28",
+      "150",
+      "253",
+      "35",
+      "236",
+      "64",
+      "90",
+      "64",
+      "20",
+      "104",
+      "45",
+      "179",
+      "28",
+      "52",
+      "124"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 30,
+   "action": {
+    "type": "get",
+    "field": "8"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1375553238"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 31,
+   "action": {
+    "type": "get",
+    "field": "c-\u0006["
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 32,
+   "action": {
+    "type": "get",
+    "field": "x"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 33,
+   "action": {
+    "type": "get",
+    "field": "\u0005H"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 34,
+   "action": {
+    "type": "get",
+    "field": "\u0631"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 35,
+   "action": {
+    "type": "get",
+    "field": "13"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  }
+ ]
+}

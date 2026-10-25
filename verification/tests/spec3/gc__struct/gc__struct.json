@@ -1,0 +1,33 @@
+{
+ "source_filename": "gc__struct.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 37,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 41,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 59,
+   "filename": "x.6.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 133,
+   "filename": "x.8.wasm",
+   "module_type": "binary",
+   "text": "field is immutable"
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "source_filename": "return_call_indirect.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 427,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "unknown table"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 435,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 443,
+   "filename": "x.14.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 452,
+   "filename": "x.15.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 460,
+   "filename": "x.16.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 483,
+   "filename": "x.19.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 491,
+   "filename": "x.20.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 500,
+   "filename": "x.21.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 510,
+   "filename": "x.22.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 520,
+   "filename": "x.23.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 530,
+   "filename": "x.24.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 540,
+   "filename": "x.25.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 553,
+   "filename": "x.26.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 564,
+   "filename": "x.27.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 571,
+   "filename": "x.28.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 582,
+   "filename": "x.29.wasm",
+   "module_type": "binary",
+   "text": "unknown function 0"
+  }
+ ]
+}

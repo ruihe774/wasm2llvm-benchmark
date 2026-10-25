@@ -1,0 +1,12 @@
+{
+ "source_filename": "br_on_non_null.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 92,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

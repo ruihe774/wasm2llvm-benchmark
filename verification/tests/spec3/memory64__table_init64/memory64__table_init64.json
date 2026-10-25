@@ -1,0 +1,480 @@
+{
+ "source_filename": "memory64__table_init64.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 6,
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 570,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "unknown elem segment 0"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 576,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "unknown table 0"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 582,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "unknown elem segment 4"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 590,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "unknown table 0"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1103,
+   "filename": "x.35.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1112,
+   "filename": "x.36.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1121,
+   "filename": "x.37.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1130,
+   "filename": "x.38.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1139,
+   "filename": "x.39.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1148,
+   "filename": "x.40.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1157,
+   "filename": "x.41.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1166,
+   "filename": "x.42.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1175,
+   "filename": "x.43.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1184,
+   "filename": "x.44.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1193,
+   "filename": "x.45.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1202,
+   "filename": "x.46.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1211,
+   "filename": "x.47.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1220,
+   "filename": "x.48.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1229,
+   "filename": "x.49.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1238,
+   "filename": "x.50.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1247,
+   "filename": "x.51.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1256,
+   "filename": "x.52.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1265,
+   "filename": "x.53.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1274,
+   "filename": "x.54.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1283,
+   "filename": "x.55.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1292,
+   "filename": "x.56.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1301,
+   "filename": "x.57.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1310,
+   "filename": "x.58.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1319,
+   "filename": "x.59.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1328,
+   "filename": "x.60.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1337,
+   "filename": "x.61.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1346,
+   "filename": "x.62.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1355,
+   "filename": "x.63.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1364,
+   "filename": "x.64.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1373,
+   "filename": "x.65.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1382,
+   "filename": "x.66.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1391,
+   "filename": "x.67.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1400,
+   "filename": "x.68.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1409,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1418,
+   "filename": "x.70.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1427,
+   "filename": "x.71.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1436,
+   "filename": "x.72.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1445,
+   "filename": "x.73.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1454,
+   "filename": "x.74.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1463,
+   "filename": "x.75.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1472,
+   "filename": "x.76.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1481,
+   "filename": "x.77.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1490,
+   "filename": "x.78.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1499,
+   "filename": "x.79.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1508,
+   "filename": "x.80.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1517,
+   "filename": "x.81.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1526,
+   "filename": "x.82.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1535,
+   "filename": "x.83.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1544,
+   "filename": "x.84.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1553,
+   "filename": "x.85.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1562,
+   "filename": "x.86.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1571,
+   "filename": "x.87.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1580,
+   "filename": "x.88.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1589,
+   "filename": "x.89.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1598,
+   "filename": "x.90.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1607,
+   "filename": "x.91.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1616,
+   "filename": "x.92.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1625,
+   "filename": "x.93.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1634,
+   "filename": "x.94.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1643,
+   "filename": "x.95.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1652,
+   "filename": "x.96.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 1661,
+   "filename": "x.97.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

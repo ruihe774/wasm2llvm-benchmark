@@ -1,0 +1,90 @@
+{
+ "source_filename": "smith2000133.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000133.wasm"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 2,
+   "module": null,
+   "memory": "",
+   "size": 0,
+   "fnv1a64": "cbf29ce484222325"
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "209",
+      "58",
+      "211",
+      "145",
+      "79",
+      "15",
+      "183",
+      "221",
+      "52",
+      "84",
+      "186",
+      "165",
+      "236",
+      "181",
+      "173",
+      "124"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 4,
+   "module": null,
+   "memory": "",
+   "size": 0,
+   "fnv1a64": "cbf29ce484222325"
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "209",
+      "58",
+      "211",
+      "145",
+      "79",
+      "15",
+      "183",
+      "221",
+      "52",
+      "84",
+      "186",
+      "165",
+      "236",
+      "181",
+      "173",
+      "124"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "source_filename": "smith2000122.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000122.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": "K"
+   },
+   "expected": [
+    {
+     "type": "f32",
+     "value": "2518138073"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "K"
+   },
+   "expected": [
+    {
+     "type": "f32",
+     "value": "2518138073"
+    }
+   ]
+  }
+ ]
+}

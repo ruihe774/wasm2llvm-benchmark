@@ -1,0 +1,209 @@
+{
+ "source_filename": "smith2000019.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000019.wasm"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "\u007f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "4286578688"
+     }
+    ]
+   },
+   "text": "invalid conversion to integer"
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1"
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_trap",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "142",
+      "123",
+      "163",
+      "211",
+      "130",
+      "103",
+      "176",
+      "44",
+      "5",
+      "102",
+      "34",
+      "195",
+      "85",
+      "161",
+      "134",
+      "87"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "4",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 7,
+   "module": null,
+   "memory": "5",
+   "size": 196608,
+   "fnv1a64": "1a0564b2e8de2325"
+  },
+  {
+   "type": "assert_trap",
+   "line": 8,
+   "action": {
+    "type": "invoke",
+    "field": "\u007f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3296602436"
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 9,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "9846"
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 10,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1166877735"
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 11,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "56309"
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 12,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 13,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 14,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 15,
+   "action": {
+    "type": "invoke",
+    "field": "4",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 16,
+   "module": null,
+   "memory": "5",
+   "size": 196608,
+   "fnv1a64": "1a0564b2e8de2325"
+  }
+ ]
+}

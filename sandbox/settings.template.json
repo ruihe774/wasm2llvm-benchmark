@@ -1,0 +1,69 @@
+{
+  "permissions": {
+    "defaultMode": "dontAsk",
+    "allow": [
+      "Bash",
+      "Read",
+      "Glob",
+      "Grep",
+      "Edit(//@RUN@/**)",
+      "Write(//@RUN@/**)",
+      "NotebookEdit(//@RUN@/**)"
+    ],
+    "deny": [
+      "WebFetch",
+      "WebSearch",
+      "Read(//@W2L@/verification/**)",
+      "Read(//@W2L@/deps/src/**)",
+      "Read(//@W2L@/sandbox/**)",
+      "Read(//@W2L@/README.md)",
+      "Read(//@W2L@/deps/toolchains/wabt-1.0.42/bin/wasm2c)",
+      "Read(//@W2L@/deps/toolchains/wabt-1.0.42/include/**)",
+      "Read(//@W2L@/deps/toolchains/wabt-1.0.42/lib/**)",
+      "Read(~/.claude/**)",
+      "Read(~/.claude.json)",
+      "Read(~/.ssh/**)",
+      "Edit(//@W2L@/**)",
+      "Write(//@W2L@/**)"
+    ],
+    "blockReadsOutsideWorkingDirectories": true,
+    "disableBypassPermissionsMode": "disable"
+  },
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "allowUnsandboxedCommands": false,
+    "autoAllowBashIfSandboxed": true,
+    "excludedCommands": [],
+    "filesystem": {
+      "allowWrite": ["@RUN@"],
+      "denyRead": [
+        "/mnt/workspace",
+        "~/",
+        "@W2L@/deps/toolchains/wabt-1.0.42/bin/wasm2c",
+        "@W2L@/deps/toolchains/wabt-1.0.42/include",
+        "@W2L@/deps/toolchains/wabt-1.0.42/lib"
+      ],
+      "allowRead": [
+        "@RUN@",
+        "@W2L@/deps/bin",
+        "@W2L@/deps/toolchains",
+        "~/.rustup",
+        "~/.cargo/bin"
+      ]
+    },
+    "network": {
+      "allowedDomains": [],
+      "allowUnixSockets": []
+    }
+  },
+  "env": {
+    "PATH": "@W2L@/deps/bin:/usr/local/bin:/usr/bin:/bin",
+    "TMPDIR": "@RUN@/.tmp",
+    "CARGO_HOME": "@RUN@/.cargo-home",
+    "CARGO_NET_OFFLINE": "true",
+    "RUSTUP_HOME": "@HOME@/.rustup",
+    "RUSTUP_TOOLCHAIN": "stable-x86_64-unknown-linux-gnu"
+  },
+  "disableAllHooks": true
+}

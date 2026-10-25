@@ -1,0 +1,38 @@
+{
+ "source_filename": "smith1000042.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith1000042.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "6945715654730479876"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "6945715654730479876"
+    }
+   ]
+  }
+ ]
+}

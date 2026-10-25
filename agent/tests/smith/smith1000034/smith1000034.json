@@ -1,0 +1,624 @@
+{
+ "source_filename": "smith1000034.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith1000034.wasm"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "\u001f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "18446744073709551615",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "\u001f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "9223372036854775808",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "\u001f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "128",
+       "0",
+       "1",
+       "255",
+       "0",
+       "128",
+       "128",
+       "1",
+       "211",
+       "128",
+       "255",
+       "1",
+       "255",
+       "4",
+       "0",
+       "128"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "18446744073709551615",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "249",
+       "250",
+       "128",
+       "0",
+       "128",
+       "0",
+       "255",
+       "255",
+       "255",
+       "255",
+       "255",
+       "0",
+       "255",
+       "19",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "5893",
+       "65535",
+       "1",
+       "1",
+       "32768",
+       "1",
+       "35518"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 8,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "255",
+       "1",
+       "128",
+       "1",
+       "128",
+       "128",
+       "128",
+       "0",
+       "1",
+       "255",
+       "0",
+       "1",
+       "255",
+       "108",
+       "128"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 9,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "1",
+       "18446744073709551615"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 10,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "18446744073709551615",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "get",
+    "field": "\u0010"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 14,
+   "action": {
+    "type": "get",
+    "field": "\u017c|t"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 15,
+   "action": {
+    "type": "get",
+    "field": "("
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 16,
+   "action": {
+    "type": "invoke",
+    "field": "\u001f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "4294967295",
+       "0",
+       "46351910",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 17,
+   "action": {
+    "type": "invoke",
+    "field": "\u001f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "73",
+       "1",
+       "128",
+       "184",
+       "128",
+       "255",
+       "174",
+       "128",
+       "128",
+       "1",
+       "128",
+       "1",
+       "0",
+       "177",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 18,
+   "action": {
+    "type": "invoke",
+    "field": "\u001f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "128",
+       "0",
+       "255",
+       "1",
+       "1",
+       "0",
+       "128",
+       "255",
+       "128",
+       "1",
+       "0",
+       "0",
+       "128",
+       "255",
+       "128",
+       "128"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 19,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "32768",
+       "65535",
+       "1",
+       "0",
+       "65535",
+       "1",
+       "39407",
+       "32768"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 20,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "0",
+       "0",
+       "65535",
+       "32768",
+       "65535",
+       "65535",
+       "35747"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 21,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "5876584191499595659",
+       "18446744073709551615"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 22,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "9223372036854775808",
+       "18446744073709551615"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 23,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "1",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 24,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "1",
+       "0",
+       "1",
+       "1",
+       "32768",
+       "65535",
+       "32768"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_return",
+   "line": 25,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 26,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 27,
+   "action": {
+    "type": "get",
+    "field": "\u0010"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 28,
+   "action": {
+    "type": "get",
+    "field": "\u017c|t"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 29,
+   "action": {
+    "type": "get",
+    "field": "("
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  }
+ ]
+}

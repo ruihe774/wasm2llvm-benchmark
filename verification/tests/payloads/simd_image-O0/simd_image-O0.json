@@ -1,0 +1,48 @@
+{
+ "source_filename": "simd_image-O0.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "simd_image-O0.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     },
+     {
+      "type": "i32",
+      "value": "42"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "8439138786312728912"
+    }
+   ]
+  },
+  {
+   "type": "assert_output",
+   "line": 3,
+   "module": null,
+   "hex": "73696d645f696d6167650a6936343a383433393133383738363331323732383931320a"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 4,
+   "module": null,
+   "memory": "memory",
+   "size": 1179648,
+   "fnv1a64": "d35b4416ef7d9895"
+  }
+ ]
+}

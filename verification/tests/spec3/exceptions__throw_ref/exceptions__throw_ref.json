@@ -1,0 +1,19 @@
+{
+ "source_filename": "exceptions__throw_ref.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 117,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 118,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

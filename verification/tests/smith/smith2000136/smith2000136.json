@@ -1,0 +1,38 @@
+{
+ "source_filename": "smith2000136.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000136.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "5282022145144886635"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "5282022145144886635"
+    }
+   ]
+  }
+ ]
+}

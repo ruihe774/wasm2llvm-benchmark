@@ -1,0 +1,1050 @@
+{
+ "source_filename": "smith2000190.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000190.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "7M<T",
+    "args": [
+     {
+      "type": "f32",
+      "value": "2143289344"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "8520230227035304799",
+       "7730073794204917454"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "7M<T",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3454613230"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "128",
+       "1",
+       "1",
+       "0",
+       "128",
+       "128",
+       "16",
+       "0",
+       "255",
+       "86",
+       "128",
+       "128",
+       "255",
+       "255",
+       "0",
+       "128"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "7M<T",
+    "args": [
+     {
+      "type": "f32",
+      "value": "274382160"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "32768",
+       "34818",
+       "32768",
+       "65535",
+       "65535",
+       "65535",
+       "0",
+       "65535"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "4286578688"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "2147483648",
+       "1564585988",
+       "1",
+       "1"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1150844278"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "1",
+       "0"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1065353216"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "0",
+       "1"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_trap",
+   "line": 8,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "39709"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "0",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 9,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1171901779"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "65535",
+       "0",
+       "65535",
+       "22695",
+       "1",
+       "51602",
+       "32768"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 10,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1065353216"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "0",
+       "57761",
+       "31158",
+       "0",
+       "0",
+       "43213",
+       "32768",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 11,
+   "action": {
+    "type": "invoke",
+    "field": "4",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3438275201"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "0",
+       "146",
+       "255",
+       "1",
+       "128",
+       "115",
+       "1",
+       "253",
+       "0",
+       "0",
+       "44",
+       "1",
+       "255",
+       "128",
+       "128",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 12,
+   "action": {
+    "type": "invoke",
+    "field": "4",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1172529987"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "0",
+       "145",
+       "128",
+       "1",
+       "255",
+       "59",
+       "0",
+       "246",
+       "255",
+       "128",
+       "33",
+       "128",
+       "255",
+       "255",
+       "1",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 13,
+   "action": {
+    "type": "invoke",
+    "field": "4",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1832667314"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "65535",
+       "65535",
+       "65535",
+       "65535",
+       "1",
+       "0",
+       "22412",
+       "32768"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 14,
+   "action": {
+    "type": "invoke",
+    "field": "5",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1325400064"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "2147483648",
+       "2147483648",
+       "4294967295",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 15,
+   "action": {
+    "type": "invoke",
+    "field": "5",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3212836864"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "0",
+       "128",
+       "144",
+       "43",
+       "193",
+       "1",
+       "0",
+       "128",
+       "1",
+       "128",
+       "0",
+       "128",
+       "128",
+       "128",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 16,
+   "module": null,
+   "memory": "7",
+   "size": 0,
+   "fnv1a64": "cbf29ce484222325"
+  },
+  {
+   "type": "assert_return",
+   "line": 17,
+   "action": {
+    "type": "get",
+    "field": "8"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "11743869309861120956"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 18,
+   "action": {
+    "type": "get",
+    "field": "9"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 19,
+   "action": {
+    "type": "get",
+    "field": "("
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 20,
+   "action": {
+    "type": "get",
+    "field": "11"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 21,
+   "action": {
+    "type": "get",
+    "field": "12"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2143289344"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 22,
+   "action": {
+    "type": "get",
+    "field": "13"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4294966272"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 23,
+   "action": {
+    "type": "invoke",
+    "field": "7M<T",
+    "args": [
+     {
+      "type": "f32",
+      "value": "25788"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "15916",
+       "32768",
+       "62613",
+       "1",
+       "65535",
+       "65535",
+       "1",
+       "53512"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 24,
+   "action": {
+    "type": "invoke",
+    "field": "7M<T",
+    "args": [
+     {
+      "type": "f32",
+      "value": "2147483648"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "32768",
+       "0",
+       "1",
+       "1",
+       "28799",
+       "1",
+       "0",
+       "0"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 25,
+   "action": {
+    "type": "invoke",
+    "field": "7M<T",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1162486453"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "2147483648",
+       "4294967295",
+       "0",
+       "2414835758"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 26,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1056964608"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "0",
+       "1",
+       "255",
+       "128",
+       "255",
+       "255",
+       "92",
+       "128",
+       "128",
+       "1",
+       "134",
+       "0",
+       "255",
+       "128",
+       "1"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 27,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "4286578688"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "9697733196815358519",
+       "0"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 28,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3307974718"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "4294967295",
+       "2147483648",
+       "1",
+       "0"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_trap",
+   "line": 29,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1171917993"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "68",
+       "1",
+       "128",
+       "0",
+       "1",
+       "255",
+       "63",
+       "1",
+       "128",
+       "0",
+       "54",
+       "255",
+       "128",
+       "255",
+       "255",
+       "128"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 30,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3472883712"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "9511504732883638304",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 31,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3299626435"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "65535",
+       "32768",
+       "0",
+       "1",
+       "32768",
+       "1",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 32,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "0"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "0",
+       "1",
+       "255",
+       "128",
+       "1",
+       "128",
+       "255",
+       "0",
+       "255",
+       "0",
+       "219",
+       "1",
+       "255",
+       "255",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 33,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "17384"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "9223372036854775808",
+       "9223372036854775808"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 34,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3212836864"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "131",
+       "0",
+       "255",
+       "255",
+       "255",
+       "1",
+       "170",
+       "0",
+       "1",
+       "128",
+       "255",
+       "0",
+       "0",
+       "1",
+       "0",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 35,
+   "action": {
+    "type": "invoke",
+    "field": "4",
+    "args": [
+     {
+      "type": "f32",
+      "value": "4286578688"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "18446744073709551615",
+       "9223372036854775808"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 36,
+   "action": {
+    "type": "invoke",
+    "field": "5",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3249558772"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "27",
+       "255",
+       "249",
+       "0",
+       "0",
+       "0",
+       "0",
+       "105",
+       "255",
+       "52",
+       "255",
+       "93",
+       "0",
+       "194",
+       "128",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 37,
+   "module": null,
+   "memory": "7",
+   "size": 0,
+   "fnv1a64": "cbf29ce484222325"
+  },
+  {
+   "type": "assert_return",
+   "line": 38,
+   "action": {
+    "type": "get",
+    "field": "8"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "11743869309861120956"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 39,
+   "action": {
+    "type": "get",
+    "field": "9"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 40,
+   "action": {
+    "type": "get",
+    "field": "("
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 41,
+   "action": {
+    "type": "get",
+    "field": "11"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 42,
+   "action": {
+    "type": "get",
+    "field": "12"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 43,
+   "action": {
+    "type": "get",
+    "field": "13"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  }
+ ]
+}

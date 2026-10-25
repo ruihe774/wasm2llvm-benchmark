@@ -1,0 +1,725 @@
+{
+ "source_filename": "smith2000320.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000320.wasm"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1172488718"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "25",
+       "0",
+       "222",
+       "128",
+       "255",
+       "1",
+       "1",
+       "128",
+       "255",
+       "70",
+       "90",
+       "133",
+       "128",
+       "1",
+       "128",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "integer overflow"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3472424833"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "9223372036854775808",
+       "7121193714523341268"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "143439963"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "32768",
+       "19046",
+       "1",
+       "32768",
+       "41549",
+       "32768",
+       "0",
+       "51119"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "0"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "0",
+       "0",
+       "1",
+       "1",
+       "32768",
+       "0",
+       "0",
+       "3467"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "4286578688"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "0",
+       "30",
+       "255",
+       "214",
+       "1",
+       "128",
+       "255",
+       "255",
+       "194",
+       "1",
+       "128",
+       "1",
+       "7",
+       "1",
+       "255"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3314556058"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "1",
+       "18446744073709551615"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 8,
+   "module": null,
+   "memory": "5",
+   "size": 851968,
+   "fnv1a64": "7fcf27d1d17faf8b"
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "get",
+    "field": "6"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 10,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "get",
+    "field": "8"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "get",
+    "field": "9"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "get",
+    "field": "\u05f1"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 14,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "2143289344"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "0",
+       "0",
+       "128",
+       "0",
+       "128",
+       "128",
+       "255",
+       "0",
+       "0",
+       "0",
+       "255",
+       "1",
+       "128",
+       "128",
+       "0",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 15,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3472883712"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "9223372036854775808",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 16,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1078530011"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "65535",
+       "16002",
+       "32768",
+       "1",
+       "65535",
+       "65535",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 17,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3315045874"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "128",
+       "1",
+       "255",
+       "255",
+       "0",
+       "255",
+       "255",
+       "0",
+       "0",
+       "255",
+       "1",
+       "128",
+       "0",
+       "255",
+       "255",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 18,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "f32",
+      "value": "2139095040"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "251",
+       "229",
+       "1",
+       "255",
+       "128",
+       "1",
+       "0",
+       "1",
+       "255",
+       "0",
+       "1",
+       "0",
+       "241",
+       "128",
+       "255",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 19,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "0",
+       "255",
+       "0",
+       "1",
+       "0",
+       "1",
+       "1",
+       "1",
+       "0",
+       "0",
+       "0",
+       "1",
+       "128",
+       "108",
+       "128"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 20,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3305315782"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "18446744073709551615",
+       "13694095639269045406"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 21,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "0"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "74",
+       "1",
+       "128",
+       "1",
+       "225",
+       "128",
+       "128",
+       "128",
+       "34",
+       "128",
+       "0",
+       "255",
+       "97",
+       "128",
+       "248",
+       "255"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 22,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1065353216"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "128",
+       "255",
+       "170",
+       "1",
+       "128",
+       "128",
+       "128",
+       "128",
+       "0",
+       "91",
+       "1",
+       "216",
+       "255",
+       "1",
+       "137",
+       "248"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 23,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "11"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "1",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 24,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1056964608"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "0",
+       "0",
+       "4294967295",
+       "4294967295"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 25,
+   "module": null,
+   "memory": "5",
+   "size": 851968,
+   "fnv1a64": "7fcf27d1d17faf8b"
+  },
+  {
+   "type": "assert_return",
+   "line": 26,
+   "action": {
+    "type": "get",
+    "field": "6"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 27,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 28,
+   "action": {
+    "type": "get",
+    "field": "8"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 29,
+   "action": {
+    "type": "get",
+    "field": "9"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 30,
+   "action": {
+    "type": "get",
+    "field": "\u05f1"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  }
+ ]
+}

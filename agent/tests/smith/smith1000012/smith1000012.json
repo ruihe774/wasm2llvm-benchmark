@@ -1,0 +1,118 @@
+{
+ "source_filename": "smith1000012.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith1000012.wasm"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 2,
+   "module": null,
+   "memory": "\u0015\u0016(",
+   "size": 0,
+   "fnv1a64": "cbf29ce484222325"
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "15",
+      "107",
+      "71",
+      "75",
+      "186",
+      "135",
+      "235",
+      "29",
+      "5",
+      "119",
+      "95",
+      "44",
+      "244",
+      "71",
+      "122",
+      "119"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1309424851"
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 5,
+   "module": null,
+   "memory": "\u0015\u0016(",
+   "size": 0,
+   "fnv1a64": "cbf29ce484222325"
+  },
+  {
+   "type": "assert_return",
+   "line": 6,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "15",
+      "107",
+      "71",
+      "75",
+      "186",
+      "135",
+      "235",
+      "29",
+      "5",
+      "119",
+      "95",
+      "44",
+      "244",
+      "71",
+      "122",
+      "119"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1309424851"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "source_filename": "nbody-O0.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "nbody-O0.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2000"
+     },
+     {
+      "type": "i32",
+      "value": "100"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "9237383216329115326"
+    }
+   ]
+  },
+  {
+   "type": "assert_output",
+   "line": 3,
+   "module": null,
+   "hex": "6e626f64790a6636343a3078626663356134343134353961636332330a6636343a3078626663356134323336663137663162380a6636343a3078336666343633333438303634333730360a"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 4,
+   "module": null,
+   "memory": "memory",
+   "size": 1114112,
+   "fnv1a64": "4268a0f76322c278"
+  }
+ ]
+}

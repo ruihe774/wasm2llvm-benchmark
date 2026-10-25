@@ -1,0 +1,94 @@
+{
+ "source_filename": "smith2000268.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000268.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": "H"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "8370910574452254918"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "10450955716195387338"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "5063707641583700760"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "get",
+    "field": "H"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "8370910574452254918"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 6,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "10450955716195387338"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "5063707641583700760"
+    }
+   ]
+  }
+ ]
+}

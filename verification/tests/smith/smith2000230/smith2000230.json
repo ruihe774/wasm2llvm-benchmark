@@ -1,0 +1,146 @@
+{
+ "source_filename": "smith2000230.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000230.wasm"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 2,
+   "module": null,
+   "memory": "1",
+   "size": 262144,
+   "fnv1a64": "9c735bed0a722325"
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "8046124751548404999"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "get",
+    "field": "3"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3709446677"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "255",
+      "120",
+      "217",
+      "245",
+      "214",
+      "134",
+      "210",
+      "235",
+      "157",
+      "54",
+      "58",
+      "202",
+      "130",
+      "50",
+      "217",
+      "128"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 6,
+   "module": null,
+   "memory": "1",
+   "size": 262144,
+   "fnv1a64": "9c735bed0a722325"
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "8046124751548404999"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 8,
+   "action": {
+    "type": "get",
+    "field": "3"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3709446677"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "255",
+      "120",
+      "217",
+      "245",
+      "214",
+      "134",
+      "210",
+      "235",
+      "157",
+      "54",
+      "58",
+      "202",
+      "130",
+      "50",
+      "217",
+      "128"
+     ]
+    }
+   ]
+  }
+ ]
+}

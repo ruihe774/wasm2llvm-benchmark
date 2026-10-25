@@ -1,0 +1,48 @@
+{
+ "source_filename": "raytrace-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "raytrace-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "64"
+     },
+     {
+      "type": "i32",
+      "value": "48"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "2732134505716508337"
+    }
+   ]
+  },
+  {
+   "type": "assert_output",
+   "line": 3,
+   "module": null,
+   "hex": "72617974726163650a6636343a3078343062343036346663333739633030300a6936343a323733323133343530353731363530383333370a"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 4,
+   "module": null,
+   "memory": "memory",
+   "size": 1114112,
+   "fnv1a64": "286ff3c1ed07836d"
+  }
+ ]
+}

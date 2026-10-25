@@ -1,0 +1,1081 @@
+{
+ "source_filename": "smith2000051.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000051.wasm"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "i64",
+      "value": "403762207"
+     },
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "f32",
+      "value": "3319273512"
+     },
+     {
+      "type": "f64",
+      "value": "13963845965635114968"
+     },
+     {
+      "type": "i64",
+      "value": "18446744073709551615"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "1",
+       "0",
+       "64881",
+       "65535",
+       "1",
+       "0",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "i64",
+      "value": "5346105044182956757"
+     },
+     {
+      "type": "f32",
+      "value": "544176764"
+     },
+     {
+      "type": "f64",
+      "value": "13964122789713406188"
+     },
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "6487667761313097844",
+       "9223372036854775808"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "i64",
+      "value": "16685050426910796816"
+     },
+     {
+      "type": "i64",
+      "value": "18446744073709551615"
+     },
+     {
+      "type": "f32",
+      "value": "7"
+     },
+     {
+      "type": "f64",
+      "value": "17930272819954318400"
+     },
+     {
+      "type": "i64",
+      "value": "7292719633600111309"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "85",
+       "255",
+       "255",
+       "126",
+       "128",
+       "0",
+       "1",
+       "163",
+       "1",
+       "0",
+       "1",
+       "0",
+       "1",
+       "161",
+       "255",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "i64",
+      "value": "17583574513571112655"
+     },
+     {
+      "type": "i64",
+      "value": "4552808657119862141"
+     },
+     {
+      "type": "f32",
+      "value": "0"
+     },
+     {
+      "type": "f64",
+      "value": "271966250260409977"
+     },
+     {
+      "type": "i64",
+      "value": "1561557072"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "0",
+       "128",
+       "1",
+       "1",
+       "128",
+       "1",
+       "1",
+       "128",
+       "255",
+       "0",
+       "80",
+       "1",
+       "0",
+       "78",
+       "255"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "i64",
+      "value": "4294967296"
+     },
+     {
+      "type": "i64",
+      "value": "1561243833169628918"
+     },
+     {
+      "type": "f32",
+      "value": "3472883712"
+     },
+     {
+      "type": "f64",
+      "value": "4890909195324358656"
+     },
+     {
+      "type": "i64",
+      "value": "64"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "1",
+       "1",
+       "3698525542",
+       "2147483648"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "i64",
+      "value": "18446744073709551615"
+     },
+     {
+      "type": "f32",
+      "value": "866905244"
+     },
+     {
+      "type": "f64",
+      "value": "4607182418800017408"
+     },
+     {
+      "type": "i64",
+      "value": "9223372036854775807"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "0",
+       "0",
+       "1",
+       "0",
+       "222",
+       "128",
+       "0",
+       "55",
+       "128",
+       "255",
+       "255",
+       "1",
+       "128",
+       "128",
+       "3"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 8,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "i64",
+      "value": "9223372036854775807"
+     },
+     {
+      "type": "i64",
+      "value": "14129718967025682820"
+     },
+     {
+      "type": "f32",
+      "value": "3212836864"
+     },
+     {
+      "type": "f64",
+      "value": "2539624845670413817"
+     },
+     {
+      "type": "i64",
+      "value": "1112679261"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "1",
+       "1",
+       "150",
+       "128",
+       "203",
+       "72",
+       "255",
+       "1",
+       "128",
+       "255",
+       "0",
+       "128",
+       "1",
+       "128",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 9,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "i64",
+      "value": "9223372036854775807"
+     },
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "f32",
+      "value": "1167117826"
+     },
+     {
+      "type": "f64",
+      "value": "9223372036854775808"
+     },
+     {
+      "type": "i64",
+      "value": "18446744073709551615"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "32768",
+       "32768",
+       "0",
+       "65535",
+       "10583",
+       "32768",
+       "32768",
+       "40251"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 10,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "i64",
+      "value": "63"
+     },
+     {
+      "type": "i64",
+      "value": "2526975725"
+     },
+     {
+      "type": "f32",
+      "value": "1056964608"
+     },
+     {
+      "type": "f64",
+      "value": "13937964218283472064"
+     },
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "4294967295",
+       "1",
+       "1",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 11,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "i64",
+      "value": "154211256"
+     },
+     {
+      "type": "i64",
+      "value": "18446744073709551615"
+     },
+     {
+      "type": "f32",
+      "value": "2139095040"
+     },
+     {
+      "type": "f64",
+      "value": "14114281232179134464"
+     },
+     {
+      "type": "i64",
+      "value": "5"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "18446744073709551615",
+       "4372003217305608757"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 14,
+   "action": {
+    "type": "get",
+    "field": "\bfK`"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 15,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 16,
+   "action": {
+    "type": "get",
+    "field": "}"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 17,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "i64",
+      "value": "11838359604169699004"
+     },
+     {
+      "type": "i64",
+      "value": "4294967295"
+     },
+     {
+      "type": "f32",
+      "value": "3810916649"
+     },
+     {
+      "type": "f64",
+      "value": "4740642686919798102"
+     },
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "205",
+       "255",
+       "1",
+       "255",
+       "64",
+       "128",
+       "0",
+       "128",
+       "255",
+       "1",
+       "128",
+       "43",
+       "255",
+       "1",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 18,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "i64",
+      "value": "4294967296"
+     },
+     {
+      "type": "f32",
+      "value": "64110"
+     },
+     {
+      "type": "f64",
+      "value": "7759734915766759681"
+     },
+     {
+      "type": "i64",
+      "value": "801558501921756441"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "199",
+       "255",
+       "1",
+       "128",
+       "0",
+       "0",
+       "128",
+       "128",
+       "255",
+       "255",
+       "119",
+       "0",
+       "1",
+       "128",
+       "220",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 19,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "i64",
+      "value": "63"
+     },
+     {
+      "type": "f32",
+      "value": "3472883712"
+     },
+     {
+      "type": "f64",
+      "value": "13957400091781956220"
+     },
+     {
+      "type": "i64",
+      "value": "11217817576092235529"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "56",
+       "0",
+       "90",
+       "0",
+       "255",
+       "1",
+       "255",
+       "201",
+       "1",
+       "255",
+       "0",
+       "166",
+       "1",
+       "1",
+       "128"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 20,
+   "action": {
+    "type": "invoke",
+    "field": "1",
+    "args": [
+     {
+      "type": "i64",
+      "value": "3"
+     },
+     {
+      "type": "i64",
+      "value": "9223372036854775808"
+     },
+     {
+      "type": "f32",
+      "value": "2139095040"
+     },
+     {
+      "type": "f64",
+      "value": "13963816635372875111"
+     },
+     {
+      "type": "i64",
+      "value": "16422434717597505986"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "0",
+       "1"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 21,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "f32",
+      "value": "1325400064"
+     },
+     {
+      "type": "f64",
+      "value": "9221120237041090560"
+     },
+     {
+      "type": "i64",
+      "value": "579163742206809135"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "16087376330284613280",
+       "0"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 22,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "i64",
+      "value": "2574743642"
+     },
+     {
+      "type": "i64",
+      "value": "9223372036854775807"
+     },
+     {
+      "type": "f32",
+      "value": "1056964608"
+     },
+     {
+      "type": "f64",
+      "value": "18442240474082181120"
+     },
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "0",
+       "65535",
+       "0",
+       "50907",
+       "10672",
+       "0",
+       "46738",
+       "32768"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 23,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": [
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "i64",
+      "value": "9223372036854775808"
+     },
+     {
+      "type": "f32",
+      "value": "3319932199"
+     },
+     {
+      "type": "f64",
+      "value": "4740513214480964316"
+     },
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "255",
+       "0",
+       "1",
+       "1",
+       "143",
+       "22",
+       "123",
+       "255",
+       "0",
+       "255",
+       "128",
+       "255",
+       "144",
+       "143",
+       "1",
+       "255"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 24,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "i64",
+      "value": "13826469963740287300"
+     },
+     {
+      "type": "i64",
+      "value": "9223372036854775807"
+     },
+     {
+      "type": "f32",
+      "value": "3310450585"
+     },
+     {
+      "type": "f64",
+      "value": "9218868437227405312"
+     },
+     {
+      "type": "i64",
+      "value": "4294967296"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "65535",
+       "0",
+       "32768",
+       "0",
+       "65535",
+       "33949",
+       "0",
+       "32768"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 25,
+   "action": {
+    "type": "invoke",
+    "field": "3",
+    "args": [
+     {
+      "type": "i64",
+      "value": "9223372036854775807"
+     },
+     {
+      "type": "i64",
+      "value": "1"
+     },
+     {
+      "type": "f32",
+      "value": "13"
+     },
+     {
+      "type": "f64",
+      "value": "4740490139568873046"
+     },
+     {
+      "type": "i64",
+      "value": "0"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "59",
+       "51",
+       "0",
+       "128",
+       "128",
+       "1",
+       "66",
+       "0",
+       "255",
+       "128",
+       "64",
+       "128",
+       "128",
+       "25",
+       "255",
+       "255"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_return",
+   "line": 26,
+   "action": {
+    "type": "get",
+    "field": "4"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 27,
+   "action": {
+    "type": "get",
+    "field": "5"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 28,
+   "action": {
+    "type": "get",
+    "field": "\bfK`"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 29,
+   "action": {
+    "type": "get",
+    "field": "7"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 30,
+   "action": {
+    "type": "get",
+    "field": "}"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,473 @@
+{
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "v128_load64_zero.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "195"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "169",
+      "206",
+      "243",
+      "24",
+      "61",
+      "98",
+      "135",
+      "172",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "223",
+      "4",
+      "41",
+      "78",
+      "115",
+      "152",
+      "189",
+      "226",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "152"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "114",
+      "151",
+      "188",
+      "225",
+      "6",
+      "43",
+      "80",
+      "117",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "35"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "137",
+      "174",
+      "211",
+      "248",
+      "29",
+      "66",
+      "103",
+      "140",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "57",
+      "94",
+      "131",
+      "168",
+      "205",
+      "242",
+      "23",
+      "60",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "347"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "161",
+      "198",
+      "235",
+      "16",
+      "53",
+      "90",
+      "127",
+      "164",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 8,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "133"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "179",
+      "216",
+      "253",
+      "34",
+      "71",
+      "108",
+      "145",
+      "182",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "316"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "38",
+      "75",
+      "112",
+      "149",
+      "186",
+      "223",
+      "4",
+      "41",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 10,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "380"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "102",
+      "139",
+      "176",
+      "213",
+      "250",
+      "31",
+      "68",
+      "105",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "251"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "193",
+      "230",
+      "11",
+      "48",
+      "85",
+      "122",
+      "159",
+      "196",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "99"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "201",
+      "238",
+      "19",
+      "56",
+      "93",
+      "130",
+      "167",
+      "204",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "i32",
+      "value": "85"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "195",
+      "232",
+      "13",
+      "50",
+      "87",
+      "124",
+      "161",
+      "198",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 20,
+   "module": null,
+   "memory": "mem",
+   "size": 65536,
+   "fnv1a64": "9792bf9b6b897725"
+  }
+ ]
+}

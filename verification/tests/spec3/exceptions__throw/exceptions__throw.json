@@ -1,0 +1,26 @@
+{
+ "source_filename": "exceptions__throw.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 51,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "unknown tag 0"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 52,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "type mismatch: instruction requires [i32] but stack has []"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 54,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "type mismatch: instruction requires [i32] but stack has [i64]"
+  }
+ ]
+}

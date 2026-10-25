@@ -1,0 +1,458 @@
+{
+ "source_filename": "smith2000415.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000415.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "\b'\u0291\u0010\u000e",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2147483648"
+     },
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "f32",
+      "value": "3311495169"
+     },
+     {
+      "type": "f64",
+      "value": "13710374893031022546"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "1",
+       "1",
+       "83981138",
+       "4294967295"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "\b'\u0291\u0010\u000e",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3803386042"
+     },
+     {
+      "type": "i32",
+      "value": "22565"
+     },
+     {
+      "type": "f32",
+      "value": "4087515501"
+     },
+     {
+      "type": "f64",
+      "value": "9223372036854775808"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "1",
+       "24072",
+       "32768",
+       "1",
+       "0",
+       "26921",
+       "0",
+       "65535"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     },
+     {
+      "type": "i32",
+      "value": "3592861701"
+     },
+     {
+      "type": "f32",
+      "value": "2139095040"
+     },
+     {
+      "type": "f64",
+      "value": "13963093481674671599"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "0",
+       "0",
+       "0",
+       "1904123128"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     },
+     {
+      "type": "i32",
+      "value": "5"
+     },
+     {
+      "type": "f32",
+      "value": "2139095040"
+     },
+     {
+      "type": "f64",
+      "value": "9218868437227405312"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "2147483648",
+       "0",
+       "2147483648",
+       "0"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_trap",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "get",
+    "field": "3"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 8,
+   "action": {
+    "type": "get",
+    "field": "\u0002"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "get",
+    "field": "Fe("
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 10,
+   "action": {
+    "type": "get",
+    "field": "\u0003"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "get",
+    "field": "34"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 12,
+   "action": {
+    "type": "invoke",
+    "field": "\b'\u0291\u0010\u000e",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1265817350"
+     },
+     {
+      "type": "i32",
+      "value": "48880799"
+     },
+     {
+      "type": "f32",
+      "value": "1"
+     },
+     {
+      "type": "f64",
+      "value": "2374116498"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "32768",
+       "32768",
+       "1",
+       "58531",
+       "0",
+       "65535",
+       "65535",
+       "65535"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 13,
+   "action": {
+    "type": "invoke",
+    "field": "",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     },
+     {
+      "type": "i32",
+      "value": "2"
+     },
+     {
+      "type": "f32",
+      "value": "40664"
+     },
+     {
+      "type": "f64",
+      "value": "13958577025187338826"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "128",
+       "192",
+       "255",
+       "0",
+       "1",
+       "1",
+       "128",
+       "0",
+       "44",
+       "255",
+       "128",
+       "1",
+       "0",
+       "0",
+       "72"
+      ]
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 14,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_trap",
+   "line": 15,
+   "action": {
+    "type": "invoke",
+    "field": "2",
+    "args": []
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_return",
+   "line": 16,
+   "action": {
+    "type": "get",
+    "field": "3"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 17,
+   "action": {
+    "type": "get",
+    "field": "\u0002"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 18,
+   "action": {
+    "type": "get",
+    "field": "Fe("
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 19,
+   "action": {
+    "type": "get",
+    "field": "\u0003"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 20,
+   "action": {
+    "type": "get",
+    "field": "34"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  }
+ ]
+}

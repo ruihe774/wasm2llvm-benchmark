@@ -1,0 +1,40 @@
+{
+ "source_filename": "table_get.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 41,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 50,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 60,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 69,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 79,
+   "filename": "x.5.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

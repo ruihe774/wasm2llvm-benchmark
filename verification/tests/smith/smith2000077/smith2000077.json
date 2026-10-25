@@ -1,0 +1,54 @@
+{
+ "source_filename": "smith2000077.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000077.wasm"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 2,
+   "module": null,
+   "memory": "1",
+   "size": 196608,
+   "fnv1a64": "1a0564b2e8de2325"
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "14204948754852180841"
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 4,
+   "module": null,
+   "memory": "1",
+   "size": 196608,
+   "fnv1a64": "1a0564b2e8de2325"
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "f64",
+     "value": "14204948754852180841"
+    }
+   ]
+  }
+ ]
+}

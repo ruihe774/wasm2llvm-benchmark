@@ -1,0 +1,417 @@
+{
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "f64x2_convert_low_i32x4_s.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "1",
+       "0",
+       "194",
+       "1",
+       "255",
+       "255",
+       "0",
+       "0",
+       "1",
+       "255",
+       "255",
+       "255",
+       "255",
+       "128",
+       "1"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "13965380967343325184",
+      "4715268672954826752"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "0",
+       "9223372036854775808"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "1",
+       "2861748809",
+       "4294967295",
+       "1"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "4607182418800017408",
+      "13967170198881435648"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "177",
+       "214",
+       "1",
+       "252",
+       "128",
+       "255",
+       "1",
+       "255",
+       "52",
+       "68",
+       "0",
+       "1",
+       "0",
+       "128",
+       "1",
+       "0"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "13947631873132855296",
+      "13938570546686984192"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "872651683",
+       "0",
+       "4294967295",
+       "2147483648"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "4740603541255618560",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "65535",
+       "23633",
+       "65535",
+       "65535",
+       "0",
+       "1",
+       "32768",
+       "65535"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "4744283272442281984",
+      "13830554455654793216"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 8,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "1",
+       "3407171988",
+       "803602905",
+       "2147483648"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "4607182418800017408",
+      "13964102612044218368"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i16",
+      "value": [
+       "32768",
+       "32768",
+       "1681",
+       "1",
+       "65535",
+       "40232",
+       "1716",
+       "1"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "13970165906664325120",
+      "4679355530278338560"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 10,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i64",
+      "value": [
+       "1",
+       "9223372036854775808"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "4607182418800017408",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "0",
+       "1",
+       "1",
+       "1"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "0",
+      "4607182418800017408"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i32",
+      "value": [
+       "4294967295",
+       "4294967295",
+       "1",
+       "2147483648"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "13830554455654793216",
+      "13830554455654793216"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "0",
+       "255",
+       "106",
+       "128",
+       "0",
+       "40",
+       "128",
+       "1",
+       "160",
+       "255",
+       "0",
+       "1",
+       "53",
+       "52",
+       "255",
+       "128"
+      ]
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f64",
+     "value": [
+      "13970136633240977408",
+      "4717523358449664000"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 20,
+   "module": null,
+   "memory": "mem",
+   "size": 65536,
+   "fnv1a64": "9792bf9b6b897725"
+  }
+ ]
+}

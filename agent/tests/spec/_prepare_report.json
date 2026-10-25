@@ -1,0 +1,1029 @@
+{
+ "address": {
+  "kept": 255,
+  "dropped": {
+   "assert_malformed (text)": 1
+  },
+  "ref_disagree": []
+ },
+ "align": {
+  "kept": 91,
+  "dropped": {
+   "assert_malformed (text)": 46
+  },
+  "ref_disagree": []
+ },
+ "binary-leb128": {
+  "kept": 58,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "binary": {
+  "kept": 116,
+  "dropped": {
+   "module: invalid under benchmark features": 2
+  },
+  "ref_disagree": []
+ },
+ "block": {
+  "kept": 207,
+  "dropped": {
+   "assert_malformed (text)": 15
+  },
+  "ref_disagree": []
+ },
+ "br": {
+  "kept": 96,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "br_if": {
+  "kept": 117,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "br_table": {
+  "kept": 24,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 149
+  },
+  "ref_disagree": []
+ },
+ "bulk": {
+  "kept": 83,
+  "dropped": {
+   "module: invalid under benchmark features": 5,
+   "depends on dropped module": 21
+  },
+  "ref_disagree": []
+ },
+ "call": {
+  "kept": 90,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "call_indirect": {
+  "kept": 146,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 12,
+   "assert_malformed (text)": 11
+  },
+  "ref_disagree": []
+ },
+ "comments": {
+  "kept": 0,
+  "dropped": {
+   "text module": 1,
+   "depends on dropped module": 3
+  }
+ },
+ "const": {
+  "kept": 300,
+  "dropped": {
+   "assert_malformed (text)": 76
+  },
+  "ref_disagree": []
+ },
+ "conversions": {
+  "kept": 618,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "custom": {
+  "kept": 8,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "data": {
+  "kept": 32,
+  "dropped": {
+   "module: unsupported import spectest.memory": 9,
+   "module: unsupported import spectest.global_i32": 6,
+   "uninstantiable: unsupported import spectest.global_i32 kind 3": 1,
+   "uninstantiable: unsupported import spectest.memory kind 2": 3
+  },
+  "ref_disagree": []
+ },
+ "elem": {
+  "kept": 43,
+  "dropped": {
+   "module: invalid under benchmark features": 7,
+   "module: unsupported import spectest.table": 9,
+   "module: unsupported import spectest.global_i32": 2,
+   "depends on dropped module": 12,
+   "uninstantiable: unsupported import spectest.table kind 1": 4,
+   "register": 3,
+   "module: unsupported import module1.shared-table": 2
+  },
+  "ref_disagree": [
+   [
+    598,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    599,
+    "assert_return",
+    "result 0: got 41000000000000000000000000000000, expected {'type': 'i32', 'value': '68'}"
+   ],
+   [
+    611,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    612,
+    "assert_return",
+    "result 0: got 41000000000000000000000000000000, expected {'type': 'i32', 'value': '69'}"
+   ],
+   [
+    613,
+    "assert_return",
+    "result 0: got 42000000000000000000000000000000, expected {'type': 'i32', 'value': '70'}"
+   ]
+  ]
+ },
+ "endianness": {
+  "kept": 68,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "exports": {
+  "kept": 40,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  },
+  "ref_disagree": []
+ },
+ "f32": {
+  "kept": 2511,
+  "dropped": {
+   "assert_malformed (text)": 2
+  },
+  "ref_disagree": []
+ },
+ "f32_bitwise": {
+  "kept": 363,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "f32_cmp": {
+  "kept": 2406,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "f64": {
+  "kept": 2511,
+  "dropped": {
+   "assert_malformed (text)": 2
+  },
+  "ref_disagree": []
+ },
+ "f64_bitwise": {
+  "kept": 363,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "f64_cmp": {
+  "kept": 2406,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "fac": {
+  "kept": 7,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "float_exprs": {
+  "kept": 829,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "float_literals": {
+  "kept": 99,
+  "dropped": {
+   "assert_malformed (text)": 78
+  },
+  "ref_disagree": []
+ },
+ "float_memory": {
+  "kept": 84,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "float_misc": {
+  "kept": 470,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "forward": {
+  "kept": 4,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "func": {
+  "kept": 145,
+  "dropped": {
+   "assert_malformed (text)": 23
+  },
+  "ref_disagree": []
+ },
+ "func_ptrs": {
+  "kept": 33,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "global": {
+  "kept": 44,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 58,
+   "module: unsupported import spectest.global_i32": 1,
+   "assert_malformed (text)": 3
+  },
+  "ref_disagree": []
+ },
+ "i32": {
+  "kept": 457,
+  "dropped": {
+   "assert_malformed (text)": 2
+  },
+  "ref_disagree": []
+ },
+ "i64": {
+  "kept": 413,
+  "dropped": {
+   "assert_malformed (text)": 2
+  },
+  "ref_disagree": []
+ },
+ "if": {
+  "kept": 216,
+  "dropped": {
+   "assert_malformed (text)": 24
+  },
+  "ref_disagree": []
+ },
+ "imports": {
+  "kept": 6,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "register": 2,
+   "module: unsupported import test.func-i64->i64": 2,
+   "depends on dropped module": 32,
+   "module: unsupported import test.func": 1,
+   "module: unsupported import test.func-i32": 1,
+   "module: unsupported import test.func-f32": 1,
+   "module: unsupported import test.func->i32": 1,
+   "module: unsupported import test.func->f32": 1,
+   "module: unsupported import test.func-i32->i32": 1,
+   "assert_unlinkable": 71,
+   "module: unsupported import spectest.global_i32": 1,
+   "module: unsupported import test.global-i32": 1,
+   "module: unsupported import test.global-f32": 1,
+   "module: unsupported import test.global-mut-i64": 1,
+   "module: unsupported import spectest.table": 10,
+   "module: unsupported import test.table-10-inf": 3,
+   "module: unsupported import test.table-10-20": 9,
+   "module: unsupported import spectest.memory": 9,
+   "module: unsupported import test.memory-2-inf": 3,
+   "assert_malformed (text)": 16
+  },
+  "ref_disagree": []
+ },
+ "inline-module": {
+  "kept": 0,
+  "dropped": {}
+ },
+ "int_exprs": {
+  "kept": 89,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "int_literals": {
+  "kept": 30,
+  "dropped": {
+   "assert_malformed (text)": 20
+  },
+  "ref_disagree": []
+ },
+ "labels": {
+  "kept": 28,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "left-to-right": {
+  "kept": 95,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "linking": {
+  "kept": 18,
+  "dropped": {
+   "register": 9,
+   "module: unsupported import Mf.call": 1,
+   "depends on dropped module": 55,
+   "assert_unlinkable": 12,
+   "module: unsupported import Mg.glob": 1,
+   "module: invalid under benchmark features": 4,
+   "module: unsupported import Mt.call": 1,
+   "module: unsupported import Mt.h": 1,
+   "module: unsupported import Mt.tab": 1,
+   "module: unsupported import G1.g": 1,
+   "uninstantiable: unsupported import Mt.tab kind 1": 3,
+   "module: unsupported import Mm.load": 1,
+   "module: unsupported import Mm.mem": 3,
+   "uninstantiable: unsupported import Mm.mem kind 2": 3,
+   "uninstantiable: unsupported import Ms.memory kind 2": 1
+  },
+  "ref_disagree": [
+   [
+    209,
+    "assert_return",
+    "result 0: got 04000000000000000000000000000000, expected {'type': 'i32', 'value': '-4'}"
+   ],
+   [
+    215,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    275,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    288,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    349,
+    "assert_return",
+    "result 0: got 02000000000000000000000000000000, expected {'type': 'i32', 'value': '167'}"
+   ],
+   [
+    406,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '97'}"
+   ],
+   [
+    407,
+    "assert_return",
+    "got 'trap 4'"
+   ],
+   [
+    419,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '97'}"
+   ],
+   [
+    452,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '104'}"
+   ],
+   [
+    453,
+    "assert_return",
+    "got 'trap 6'"
+   ]
+  ]
+ },
+ "load": {
+  "kept": 83,
+  "dropped": {
+   "assert_malformed (text)": 13
+  },
+  "ref_disagree": []
+ },
+ "local_get": {
+  "kept": 35,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "local_set": {
+  "kept": 52,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "local_tee": {
+  "kept": 96,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "loop": {
+  "kept": 104,
+  "dropped": {
+   "assert_malformed (text)": 15
+  },
+  "ref_disagree": []
+ },
+ "memory": {
+  "kept": 71,
+  "dropped": {
+   "assert_malformed (text)": 6
+  },
+  "ref_disagree": []
+ },
+ "memory_copy": {
+  "kept": 4417,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "memory_fill": {
+  "kept": 89,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "memory_grow": {
+  "kept": 92,
+  "dropped": {
+   "register": 2,
+   "module: unsupported import grown-memory.memory": 1,
+   "depends on dropped module": 2,
+   "module: unsupported import grown-imported-memory.memory": 1
+  },
+  "ref_disagree": []
+ },
+ "memory_init": {
+  "kept": 216,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "memory_redundancy": {
+  "kept": 7,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "memory_size": {
+  "kept": 38,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "memory_trap": {
+  "kept": 180,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "names": {
+  "kept": 482,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "nop": {
+  "kept": 87,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "obsolete-keywords": {
+  "kept": 0,
+  "dropped": {
+   "assert_malformed (text)": 11
+  }
+ },
+ "ref_func": {
+  "kept": 3,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 10
+  },
+  "ref_disagree": []
+ },
+ "ref_is_null": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 13
+  },
+  "ref_disagree": []
+ },
+ "ref_null": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 2
+  }
+ },
+ "return": {
+  "kept": 83,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "select": {
+  "kept": 28,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 118
+  },
+  "ref_disagree": []
+ },
+ "simd_address": {
+  "kept": 42,
+  "dropped": {
+   "assert_malformed (text)": 4
+  },
+  "ref_disagree": []
+ },
+ "simd_align": {
+  "kept": 20,
+  "dropped": {
+   "assert_malformed (text)": 34
+  },
+  "ref_disagree": []
+ },
+ "simd_bit_shift": {
+  "kept": 235,
+  "dropped": {
+   "assert_malformed (text)": 15
+  },
+  "ref_disagree": []
+ },
+ "simd_bitwise": {
+  "kept": 167,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_boolean": {
+  "kept": 271,
+  "dropped": {
+   "assert_malformed (text)": 4
+  },
+  "ref_disagree": []
+ },
+ "simd_const": {
+  "kept": 265,
+  "dropped": {
+   "assert_malformed (text)": 180
+  },
+  "ref_disagree": []
+ },
+ "simd_conversions": {
+  "kept": 250,
+  "dropped": {
+   "assert_malformed (text)": 30
+  },
+  "ref_disagree": []
+ },
+ "simd_f32x4": {
+  "kept": 780,
+  "dropped": {
+   "assert_malformed (text)": 8
+  },
+  "ref_disagree": []
+ },
+ "simd_f32x4_arith": {
+  "kept": 1819,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_f32x4_cmp": {
+  "kept": 2599,
+  "dropped": {
+   "assert_malformed (text)": 6
+  },
+  "ref_disagree": []
+ },
+ "simd_f32x4_pmin_pmax": {
+  "kept": 3878,
+  "dropped": {
+   "assert_malformed (text)": 8
+  },
+  "ref_disagree": []
+ },
+ "simd_f32x4_rounding": {
+  "kept": 184,
+  "dropped": {
+   "assert_malformed (text)": 16
+  },
+  "ref_disagree": []
+ },
+ "simd_f64x2": {
+  "kept": 801,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_f64x2_arith": {
+  "kept": 1822,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_f64x2_cmp": {
+  "kept": 2677,
+  "dropped": {
+   "assert_malformed (text)": 6
+  },
+  "ref_disagree": []
+ },
+ "simd_f64x2_pmin_pmax": {
+  "kept": 3878,
+  "dropped": {
+   "assert_malformed (text)": 8
+  },
+  "ref_disagree": []
+ },
+ "simd_f64x2_rounding": {
+  "kept": 184,
+  "dropped": {
+   "assert_malformed (text)": 16
+  },
+  "ref_disagree": []
+ },
+ "simd_i16x8_arith": {
+  "kept": 192,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i16x8_arith2": {
+  "kept": 168,
+  "dropped": {
+   "assert_malformed (text)": 2
+  },
+  "ref_disagree": []
+ },
+ "simd_i16x8_cmp": {
+  "kept": 463,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i16x8_extadd_pairwise_i8x16": {
+  "kept": 20,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i16x8_extmul_i8x16": {
+  "kept": 116,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i16x8_q15mulr_sat_s": {
+  "kept": 29,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i16x8_sat_arith": {
+  "kept": 216,
+  "dropped": {
+   "assert_malformed (text)": 4
+  },
+  "ref_disagree": []
+ },
+ "simd_i32x4_arith": {
+  "kept": 192,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i32x4_arith2": {
+  "kept": 135,
+  "dropped": {
+   "assert_malformed (text)": 12
+  },
+  "ref_disagree": []
+ },
+ "simd_i32x4_cmp": {
+  "kept": 463,
+  "dropped": {
+   "assert_malformed (text)": 10
+  },
+  "ref_disagree": []
+ },
+ "simd_i32x4_dot_i16x8": {
+  "kept": 31,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i32x4_extadd_pairwise_i16x8": {
+  "kept": 20,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i32x4_extmul_i16x8": {
+  "kept": 116,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i32x4_trunc_sat_f32x4": {
+  "kept": 106,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i32x4_trunc_sat_f64x2": {
+  "kept": 106,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i64x2_arith": {
+  "kept": 198,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i64x2_arith2": {
+  "kept": 23,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i64x2_cmp": {
+  "kept": 112,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i64x2_extmul_i32x4": {
+  "kept": 116,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i8x16_arith": {
+  "kept": 129,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i8x16_arith2": {
+  "kept": 203,
+  "dropped": {
+   "assert_malformed (text)": 6
+  },
+  "ref_disagree": []
+ },
+ "simd_i8x16_cmp": {
+  "kept": 443,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_i8x16_sat_arith": {
+  "kept": 200,
+  "dropped": {
+   "assert_malformed (text)": 12
+  },
+  "ref_disagree": []
+ },
+ "simd_int_to_int_extend": {
+  "kept": 252,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_lane": {
+  "kept": 357,
+  "dropped": {
+   "assert_malformed (text)": 106
+  },
+  "ref_disagree": []
+ },
+ "simd_linking": {
+  "kept": 0,
+  "dropped": {
+   "register": 1,
+   "module: unsupported import Mv128.mg-v128": 1
+  }
+ },
+ "simd_load": {
+  "kept": 22,
+  "dropped": {
+   "assert_malformed (text)": 3
+  },
+  "ref_disagree": []
+ },
+ "simd_load16_lane": {
+  "kept": 35,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_load32_lane": {
+  "kept": 23,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_load64_lane": {
+  "kept": 15,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_load8_lane": {
+  "kept": 51,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_load_extend": {
+  "kept": 96,
+  "dropped": {
+   "assert_malformed (text)": 6
+  },
+  "ref_disagree": []
+ },
+ "simd_load_splat": {
+  "kept": 120,
+  "dropped": {
+   "assert_malformed (text)": 4
+  },
+  "ref_disagree": []
+ },
+ "simd_load_zero": {
+  "kept": 31,
+  "dropped": {
+   "assert_malformed (text)": 6
+  },
+  "ref_disagree": []
+ },
+ "simd_select": {
+  "kept": 6,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_splat": {
+  "kept": 180,
+  "dropped": {
+   "assert_malformed (text)": 1
+  },
+  "ref_disagree": []
+ },
+ "simd_store": {
+  "kept": 23,
+  "dropped": {
+   "assert_malformed (text)": 3
+  },
+  "ref_disagree": []
+ },
+ "simd_store16_lane": {
+  "kept": 35,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_store32_lane": {
+  "kept": 23,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_store64_lane": {
+  "kept": 15,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "simd_store8_lane": {
+  "kept": 51,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "skip-stack-guard-page": {
+  "kept": 10,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "stack": {
+  "kept": 5,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "start": {
+  "kept": 14,
+  "dropped": {
+   "assert_malformed (text)": 1
+  },
+  "ref_disagree": []
+ },
+ "store": {
+  "kept": 60,
+  "dropped": {
+   "assert_malformed (text)": 7
+  },
+  "ref_disagree": []
+ },
+ "switch": {
+  "kept": 27,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "table-sub": {
+  "kept": 2,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "table": {
+  "kept": 4,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "assert_malformed (text)": 6
+  },
+  "ref_disagree": []
+ },
+ "table_copy": {
+  "kept": 555,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 40,
+   "depends on dropped module": 1120
+  },
+  "ref_disagree": []
+ },
+ "table_fill": {
+  "kept": 9,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 35
+  },
+  "ref_disagree": []
+ },
+ "table_get": {
+  "kept": 5,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 10
+  },
+  "ref_disagree": []
+ },
+ "table_grow": {
+  "kept": 7,
+  "dropped": {
+   "module: invalid under benchmark features": 8,
+   "depends on dropped module": 41,
+   "register": 2
+  },
+  "ref_disagree": []
+ },
+ "table_init": {
+  "kept": 67,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 34,
+   "depends on dropped module": 677
+  },
+  "ref_disagree": []
+ },
+ "table_set": {
+  "kept": 7,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 18
+  },
+  "ref_disagree": []
+ },
+ "table_size": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 36
+  },
+  "ref_disagree": []
+ },
+ "token": {
+  "kept": 0,
+  "dropped": {
+   "assert_malformed (text)": 23
+  }
+ },
+ "traps": {
+  "kept": 32,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "type": {
+  "kept": 0,
+  "dropped": {
+   "assert_malformed (text)": 2
+  }
+ },
+ "unreachable": {
+  "kept": 63,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "unreached-invalid": {
+  "kept": 118,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "unreached-valid": {
+  "kept": 1,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 4
+  },
+  "ref_disagree": []
+ },
+ "unwind": {
+  "kept": 49,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "utf8-custom-section-id": {
+  "kept": 176,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "utf8-import-field": {
+  "kept": 176,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "utf8-import-module": {
+  "kept": 176,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "utf8-invalid-encoding": {
+  "kept": 0,
+  "dropped": {
+   "assert_malformed (text)": 176
+  }
+ }
+}

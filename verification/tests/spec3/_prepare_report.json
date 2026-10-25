@@ -1,0 +1,1256 @@
+{
+ "address": {
+  "kept": 255,
+  "dropped": {
+   "assert_invalid (text)": 1
+  },
+  "ref_disagree": []
+ },
+ "align": {
+  "kept": 94,
+  "dropped": {
+   "assert_malformed (text)": 46
+  },
+  "ref_disagree": []
+ },
+ "annotations": {
+  "kept": 0,
+  "dropped": {
+   "assert_malformed (text)": 64,
+   "text module": 6,
+   "module: unsupported import spectest.global_i32": 2
+  }
+ },
+ "binary-leb128": {
+  "kept": 58,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "binary": {
+  "kept": 107,
+  "dropped": {
+   "module: invalid under benchmark features": 2
+  },
+  "ref_disagree": []
+ },
+ "br_if": {
+  "kept": 118,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "br_on_non_null": {
+  "kept": 1,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 8
+  },
+  "ref_disagree": []
+ },
+ "br_on_null": {
+  "kept": 1,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 6
+  },
+  "ref_disagree": []
+ },
+ "br_table": {
+  "kept": 24,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 161
+  },
+  "ref_disagree": []
+ },
+ "bulk-memory__table-sub": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  },
+  "ref_disagree": []
+ },
+ "bulk-memory__table_fill": {
+  "kept": 9,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 35
+  },
+  "ref_disagree": []
+ },
+ "bulk-memory__table_init": {
+  "kept": 67,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 34,
+   "depends on dropped module": 677
+  },
+  "ref_disagree": []
+ },
+ "call_ref": {
+  "kept": 4,
+  "dropped": {
+   "module: invalid under benchmark features": 4,
+   "depends on dropped module": 27
+  },
+  "ref_disagree": []
+ },
+ "data": {
+  "kept": 30,
+  "dropped": {
+   "module: unsupported import spectest.memory": 9,
+   "module: unsupported import spectest.global_i32": 6,
+   "module: invalid under benchmark features": 6,
+   "uninstantiable: unsupported import spectest.global_i32 kind 3": 1,
+   "uninstantiable: unsupported import spectest.memory kind 2": 3
+  },
+  "ref_disagree": []
+ },
+ "elem": {
+  "kept": 43,
+  "dropped": {
+   "module: invalid under benchmark features": 44,
+   "module: unsupported import spectest.table": 9,
+   "module: unsupported import spectest.global_i32": 2,
+   "depends on dropped module": 20,
+   "uninstantiable: unsupported import spectest.table kind 1": 4,
+   "register": 3,
+   "module: unsupported import module1.shared-table": 2
+  },
+  "ref_disagree": [
+   [
+    959,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    960,
+    "assert_return",
+    "result 0: got 41000000000000000000000000000000, expected {'type': 'i32', 'value': '68'}"
+   ],
+   [
+    972,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    973,
+    "assert_return",
+    "result 0: got 41000000000000000000000000000000, expected {'type': 'i32', 'value': '69'}"
+   ],
+   [
+    974,
+    "assert_return",
+    "result 0: got 42000000000000000000000000000000, expected {'type': 'i32', 'value': '70'}"
+   ]
+  ]
+ },
+ "exceptions__tag": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 4,
+   "register": 2,
+   "assert_unlinkable": 2
+  },
+  "ref_disagree": []
+ },
+ "exceptions__throw": {
+  "kept": 3,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 2,
+   "assert_exception": 7
+  },
+  "ref_disagree": []
+ },
+ "exceptions__throw_ref": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "assert_exception": 7,
+   "depends on dropped module": 5
+  },
+  "ref_disagree": []
+ },
+ "exceptions__try_table": {
+  "kept": 9,
+  "dropped": {
+   "module: invalid under benchmark features": 5,
+   "register": 1,
+   "depends on dropped module": 41,
+   "assert_exception": 4,
+   "assert_malformed (text)": 2
+  },
+  "ref_disagree": []
+ },
+ "exports": {
+  "kept": 41,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  },
+  "ref_disagree": []
+ },
+ "func": {
+  "kept": 148,
+  "dropped": {
+   "assert_malformed (text)": 23
+  },
+  "ref_disagree": []
+ },
+ "gc__array": {
+  "kept": 6,
+  "dropped": {
+   "module: invalid under benchmark features": 7,
+   "depends on dropped module": 41
+  },
+  "ref_disagree": []
+ },
+ "gc__array_copy": {
+  "kept": 4,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 30
+  },
+  "ref_disagree": []
+ },
+ "gc__array_fill": {
+  "kept": 3,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 13
+  },
+  "ref_disagree": []
+ },
+ "gc__array_init_data": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 42
+  },
+  "ref_disagree": []
+ },
+ "gc__array_init_elem": {
+  "kept": 3,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 19
+  },
+  "ref_disagree": []
+ },
+ "gc__array_new_data": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 5,
+   "depends on dropped module": 23
+  }
+ },
+ "gc__array_new_elem": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 4,
+   "depends on dropped module": 18
+  }
+ },
+ "gc__binary-gc": {
+  "kept": 1,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "gc__br_on_cast": {
+  "kept": 6,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 28
+  },
+  "ref_disagree": []
+ },
+ "gc__br_on_cast_fail": {
+  "kept": 6,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 28
+  },
+  "ref_disagree": []
+ },
+ "gc__extern": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 17
+  }
+ },
+ "gc__i31": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 6,
+   "depends on dropped module": 65,
+   "register": 1
+  }
+ },
+ "gc__ref_cast": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 43
+  }
+ },
+ "gc__ref_eq": {
+  "kept": 6,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 82
+  },
+  "ref_disagree": []
+ },
+ "gc__ref_test": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 69
+  }
+ },
+ "gc__struct": {
+  "kept": 4,
+  "dropped": {
+   "module: invalid under benchmark features": 6,
+   "assert_malformed (text)": 1,
+   "depends on dropped module": 19
+  },
+  "ref_disagree": []
+ },
+ "gc__type-subtyping": {
+  "kept": 24,
+  "dropped": {
+   "module: invalid under benchmark features": 45,
+   "depends on dropped module": 29,
+   "register": 11,
+   "assert_unlinkable": 8
+  },
+  "ref_disagree": []
+ },
+ "global": {
+  "kept": 44,
+  "dropped": {
+   "module: invalid under benchmark features": 4,
+   "depends on dropped module": 67,
+   "module: unsupported import spectest.global_i32": 1,
+   "register": 1,
+   "assert_malformed (text)": 3
+  },
+  "ref_disagree": []
+ },
+ "id": {
+  "kept": 0,
+  "dropped": {
+   "assert_malformed (text)": 6
+  }
+ },
+ "if": {
+  "kept": 216,
+  "dropped": {
+   "assert_malformed (text)": 24
+  },
+  "ref_disagree": []
+ },
+ "imports": {
+  "kept": 3,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "register": 6,
+   "depends on dropped module": 32,
+   "module: unsupported import test.func": 1,
+   "module: unsupported import test.func-i32": 1,
+   "module: unsupported import test.func-f32": 1,
+   "module: unsupported import test.func->i32": 1,
+   "module: unsupported import test.func->f32": 1,
+   "module: unsupported import test.func-i32->i32": 1,
+   "module: unsupported import test.func-i64->i64": 1,
+   "assert_unlinkable": 93,
+   "module: unsupported import spectest.global_i32": 1,
+   "module: unsupported import test.global-i32": 1,
+   "module: unsupported import test.global-f32": 1,
+   "module: unsupported import test.global-mut-i64": 1,
+   "module: unsupported import spectest.table": 12,
+   "module: unsupported import test-table-10-inf.table-10-inf": 3,
+   "module: unsupported import test-table-10-20.table-10-20": 9,
+   "module: unsupported import spectest.memory": 9,
+   "module: unsupported import test-memory-2-inf.memory-2-inf": 5,
+   "module: unsupported import test-memory-2-4.memory-2-4": 8,
+   "assert_malformed (text)": 16
+  },
+  "ref_disagree": []
+ },
+ "instance": {
+  "kept": 0,
+  "dropped": {
+   "module_definition": 2,
+   "module_instance": 3,
+   "register": 3,
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 12
+  }
+ },
+ "linking": {
+  "kept": 18,
+  "dropped": {
+   "register": 9,
+   "module: unsupported import Mf.call": 1,
+   "depends on dropped module": 55,
+   "assert_unlinkable": 43,
+   "module: unsupported import Mg.glob": 1,
+   "module: invalid under benchmark features": 4,
+   "module: unsupported import Mt.call": 1,
+   "module: unsupported import Mt.h": 1,
+   "module: unsupported import Mt.tab": 1,
+   "module: unsupported import G1.g": 1,
+   "uninstantiable: unsupported import Mt.tab kind 1": 3,
+   "module: unsupported import Mm.load": 1,
+   "module: unsupported import Mm.mem": 3,
+   "uninstantiable: unsupported import Mm.mem kind 2": 3,
+   "uninstantiable: unsupported import Ms.memory kind 2": 1
+  },
+  "ref_disagree": [
+   [
+    344,
+    "assert_return",
+    "result 0: got 04000000000000000000000000000000, expected {'type': 'i32', 'value': '-4'}"
+   ],
+   [
+    350,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    410,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    423,
+    "assert_return",
+    "got 'trap 6'"
+   ],
+   [
+    506,
+    "assert_return",
+    "result 0: got 02000000000000000000000000000000, expected {'type': 'i32', 'value': '167'}"
+   ],
+   [
+    563,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '97'}"
+   ],
+   [
+    564,
+    "assert_return",
+    "got 'trap 4'"
+   ],
+   [
+    576,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '97'}"
+   ],
+   [
+    609,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '104'}"
+   ],
+   [
+    610,
+    "assert_return",
+    "got 'trap 6'"
+   ]
+  ]
+ },
+ "local_get": {
+  "kept": 35,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "local_init": {
+  "kept": 4,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 4
+  },
+  "ref_disagree": []
+ },
+ "local_tee": {
+  "kept": 97,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "memory": {
+  "kept": 75,
+  "dropped": {
+   "module_definition": 1,
+   "assert_malformed (text)": 3
+  },
+  "ref_disagree": []
+ },
+ "memory64__address64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 4,
+   "depends on dropped module": 238
+  }
+ },
+ "memory64__align64": {
+  "kept": 37,
+  "dropped": {
+   "module: invalid under benchmark features": 26,
+   "assert_malformed (text)": 46,
+   "depends on dropped module": 48
+  },
+  "ref_disagree": []
+ },
+ "memory64__binary_leb128_64": {
+  "kept": 1,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  },
+  "ref_disagree": []
+ },
+ "memory64__bulk64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 5,
+   "depends on dropped module": 65
+  }
+ },
+ "memory64__call_indirect64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 1
+  }
+ },
+ "memory64__endianness64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 68
+  }
+ },
+ "memory64__float_memory64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 6,
+   "depends on dropped module": 84
+  }
+ },
+ "memory64__load64": {
+  "kept": 46,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 37,
+   "assert_malformed (text)": 13
+  },
+  "ref_disagree": []
+ },
+ "memory64__memory64-imports": {
+  "kept": 0,
+  "dropped": {
+   "register": 8,
+   "module: invalid under benchmark features": 36,
+   "assert_unlinkable": 30
+  }
+ },
+ "memory64__memory64": {
+  "kept": 14,
+  "dropped": {
+   "module: invalid under benchmark features": 9,
+   "module_definition": 1,
+   "depends on dropped module": 45
+  },
+  "ref_disagree": []
+ },
+ "memory64__memory_copy64": {
+  "kept": 3916,
+  "dropped": {
+   "module: invalid under benchmark features": 22,
+   "depends on dropped module": 501
+  },
+  "ref_disagree": []
+ },
+ "memory64__memory_fill64": {
+  "kept": 64,
+  "dropped": {
+   "module: invalid under benchmark features": 11,
+   "depends on dropped module": 25
+  },
+  "ref_disagree": []
+ },
+ "memory64__memory_grow64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 4,
+   "depends on dropped module": 45
+  }
+ },
+ "memory64__memory_init64": {
+  "kept": 67,
+  "dropped": {
+   "module: invalid under benchmark features": 24,
+   "depends on dropped module": 149
+  },
+  "ref_disagree": []
+ },
+ "memory64__memory_redundancy64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 7
+  }
+ },
+ "memory64__memory_trap64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 170
+  }
+ },
+ "memory64__table64": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 11,
+   "module_definition": 1
+  },
+  "ref_disagree": []
+ },
+ "memory64__table_copy64": {
+  "kept": 555,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 40,
+   "depends on dropped module": 1120
+  },
+  "ref_disagree": []
+ },
+ "memory64__table_copy_mixed": {
+  "kept": 3,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  },
+  "ref_disagree": []
+ },
+ "memory64__table_fill64": {
+  "kept": 9,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 70
+  },
+  "ref_disagree": []
+ },
+ "memory64__table_get64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 10
+  }
+ },
+ "memory64__table_grow64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 21
+  }
+ },
+ "memory64__table_init64": {
+  "kept": 67,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 37,
+   "depends on dropped module": 770
+  },
+  "ref_disagree": []
+ },
+ "memory64__table_set64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 18
+  }
+ },
+ "memory64__table_size64": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 36
+  }
+ },
+ "memory_grow": {
+  "kept": 94,
+  "dropped": {
+   "register": 2,
+   "module: unsupported import grown-memory.memory": 1,
+   "depends on dropped module": 2,
+   "module: unsupported import grown-imported-memory.memory": 1
+  },
+  "ref_disagree": []
+ },
+ "multi-memory__address0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 91
+  }
+ },
+ "multi-memory__address1": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 126
+  }
+ },
+ "multi-memory__align0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 4
+  }
+ },
+ "multi-memory__binary0": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 5
+  },
+  "ref_disagree": []
+ },
+ "multi-memory__data0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "module: unsupported import spectest.global_i32": 4
+  }
+ },
+ "multi-memory__data1": {
+  "kept": 0,
+  "dropped": {
+   "uninstantiable: invalid under benchmark features": 13,
+   "uninstantiable: unsupported import spectest.memory kind 2": 1
+  }
+ },
+ "multi-memory__data_drop0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 10
+  }
+ },
+ "multi-memory__exports0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 4
+  }
+ },
+ "multi-memory__float_exprs0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 13
+  }
+ },
+ "multi-memory__float_exprs1": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 2
+  }
+ },
+ "multi-memory__float_memory0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 28
+  }
+ },
+ "multi-memory__imports0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "register": 1,
+   "assert_unlinkable": 6
+  }
+ },
+ "multi-memory__imports1": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 4
+  }
+ },
+ "multi-memory__imports2": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 4,
+   "register": 1,
+   "depends on dropped module": 8,
+   "module: unsupported import spectest.memory": 1,
+   "assert_unlinkable": 6
+  }
+ },
+ "multi-memory__imports3": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "register": 1,
+   "assert_unlinkable": 8
+  }
+ },
+ "multi-memory__imports4": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 5,
+   "register": 3,
+   "depends on dropped module": 8
+  }
+ },
+ "multi-memory__linking0": {
+  "kept": 1,
+  "dropped": {
+   "register": 1,
+   "assert_unlinkable": 1,
+   "uninstantiable: invalid under benchmark features": 1
+  },
+  "ref_disagree": [
+   [
+    42,
+    "assert_return",
+    "got 'trap 6'"
+   ]
+  ]
+ },
+ "multi-memory__linking1": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "register": 1,
+   "depends on dropped module": 7,
+   "module: unsupported import Mm.mem1": 2,
+   "uninstantiable: unsupported import Mm.mem0 kind 2": 1,
+   "uninstantiable: unsupported import Mm.mem1 kind 2": 1
+  }
+ },
+ "multi-memory__linking2": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "register": 1,
+   "module: unsupported import Mm.mem1": 1,
+   "depends on dropped module": 8
+  }
+ },
+ "multi-memory__linking3": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "register": 2,
+   "assert_unlinkable": 1,
+   "depends on dropped module": 4,
+   "uninstantiable: unsupported import Mm.mem1 kind 2": 2,
+   "uninstantiable: unsupported import Ms.memory kind 2": 1
+  },
+  "ref_disagree": [
+   [
+    82,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '104'}"
+   ],
+   [
+    83,
+    "assert_return",
+    "got 'trap 6'"
+   ]
+  ]
+ },
+ "multi-memory__load0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 2
+  }
+ },
+ "multi-memory__load1": {
+  "kept": 0,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 10
+  },
+  "ref_disagree": [
+   [
+    25,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '1'}"
+   ],
+   [
+    26,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '2'}"
+   ],
+   [
+    27,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '3'}"
+   ],
+   [
+    28,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '4'}"
+   ],
+   [
+    29,
+    "assert_return",
+    "result 0: got 00000000000000000000000000000000, expected {'type': 'i32', 'value': '5'}"
+   ]
+  ]
+ },
+ "multi-memory__load2": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 37
+  }
+ },
+ "multi-memory__memory-multi": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 4
+  }
+ },
+ "multi-memory__memory_copy0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 28
+  }
+ },
+ "multi-memory__memory_copy1": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 13
+  }
+ },
+ "multi-memory__memory_fill0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 15
+  }
+ },
+ "multi-memory__memory_grow": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "register": 1,
+   "depends on dropped module": 47
+  }
+ },
+ "multi-memory__memory_init0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 12
+  }
+ },
+ "multi-memory__memory_size0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 7
+  }
+ },
+ "multi-memory__memory_size1": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 14
+  }
+ },
+ "multi-memory__memory_size2": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 20
+  }
+ },
+ "multi-memory__memory_size3": {
+  "kept": 2,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "multi-memory__memory_size_import": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "register": 1,
+   "depends on dropped module": 4
+  }
+ },
+ "multi-memory__memory_trap0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 13
+  }
+ },
+ "multi-memory__memory_trap1": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 167
+  }
+ },
+ "multi-memory__start0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 8
+  }
+ },
+ "multi-memory__store0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 4
+  }
+ },
+ "multi-memory__store1": {
+  "kept": 4,
+  "dropped": {
+   "register": 2,
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 4
+  },
+  "ref_disagree": []
+ },
+ "multi-memory__store2": {
+  "kept": 0,
+  "dropped": {
+   "register": 1,
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 22
+  }
+ },
+ "multi-memory__traps0": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 14
+  }
+ },
+ "ref": {
+  "kept": 12,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  },
+  "ref_disagree": []
+ },
+ "ref_as_non_null": {
+  "kept": 1,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 4
+  },
+  "ref_disagree": []
+ },
+ "ref_is_null": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 18
+  },
+  "ref_disagree": []
+ },
+ "ref_null": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 32
+  }
+ },
+ "relaxed-simd__i16x8_relaxed_q15mulr_s": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 2
+  }
+ },
+ "relaxed-simd__i32x4_relaxed_trunc": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  }
+ },
+ "relaxed-simd__i8x16_relaxed_swizzle": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 5
+  }
+ },
+ "relaxed-simd__relaxed_dot_product": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 10
+  }
+ },
+ "relaxed-simd__relaxed_laneselect": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 11
+  }
+ },
+ "relaxed-simd__relaxed_madd_nmadd": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 17
+  }
+ },
+ "relaxed-simd__relaxed_min_max": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 24
+  }
+ },
+ "return_call": {
+  "kept": 11,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 33
+  },
+  "ref_disagree": []
+ },
+ "return_call_indirect": {
+  "kept": 16,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 49,
+   "assert_malformed (text)": 11
+  },
+  "ref_disagree": []
+ },
+ "return_call_ref": {
+  "kept": 11,
+  "dropped": {
+   "module: invalid under benchmark features": 5,
+   "depends on dropped module": 35
+  },
+  "ref_disagree": []
+ },
+ "select": {
+  "kept": 30,
+  "dropped": {
+   "module: invalid under benchmark features": 3,
+   "depends on dropped module": 124
+  },
+  "ref_disagree": []
+ },
+ "simd__simd_address": {
+  "kept": 42,
+  "dropped": {
+   "assert_malformed (text)": 2,
+   "assert_invalid (text)": 2
+  },
+  "ref_disagree": []
+ },
+ "simd__simd_const": {
+  "kept": 265,
+  "dropped": {
+   "assert_malformed (text)": 181
+  },
+  "ref_disagree": []
+ },
+ "simd__simd_lane": {
+  "kept": 357,
+  "dropped": {
+   "assert_malformed (text)": 106
+  },
+  "ref_disagree": []
+ },
+ "simd__simd_memory-multi": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 1
+  }
+ },
+ "table": {
+  "kept": 16,
+  "dropped": {
+   "module_definition": 1,
+   "module: invalid under benchmark features": 9,
+   "assert_invalid (text)": 3,
+   "register": 1,
+   "depends on dropped module": 5,
+   "assert_malformed (text)": 3
+  },
+  "ref_disagree": []
+ },
+ "table_get": {
+  "kept": 5,
+  "dropped": {
+   "module: invalid under benchmark features": 1,
+   "depends on dropped module": 10
+  },
+  "ref_disagree": []
+ },
+ "table_grow": {
+  "kept": 7,
+  "dropped": {
+   "module: invalid under benchmark features": 8,
+   "depends on dropped module": 41,
+   "register": 2
+  },
+  "ref_disagree": []
+ },
+ "token": {
+  "kept": 0,
+  "dropped": {
+   "assert_malformed (text)": 26
+  }
+ },
+ "type-canon": {
+  "kept": 0,
+  "dropped": {
+   "module: invalid under benchmark features": 2
+  }
+ },
+ "type-equivalence": {
+  "kept": 2,
+  "dropped": {
+   "module: invalid under benchmark features": 20,
+   "depends on dropped module": 3,
+   "register": 6
+  },
+  "ref_disagree": []
+ },
+ "type-rec": {
+  "kept": 10,
+  "dropped": {
+   "module: invalid under benchmark features": 11,
+   "register": 1,
+   "assert_unlinkable": 2,
+   "depends on dropped module": 3
+  },
+  "ref_disagree": []
+ },
+ "unreached-invalid": {
+  "kept": 121,
+  "dropped": {},
+  "ref_disagree": []
+ },
+ "unreached-valid": {
+  "kept": 1,
+  "dropped": {
+   "module: invalid under benchmark features": 2,
+   "depends on dropped module": 9
+  },
+  "ref_disagree": []
+ }
+}

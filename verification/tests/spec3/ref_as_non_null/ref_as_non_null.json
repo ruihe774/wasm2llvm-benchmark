@@ -1,0 +1,12 @@
+{
+ "source_filename": "ref_as_non_null.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 32,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

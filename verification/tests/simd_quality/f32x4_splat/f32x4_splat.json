@@ -1,0 +1,329 @@
+{
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "f32x4_splat.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "2492122006"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "2492122006",
+      "2492122006",
+      "2492122006",
+      "2492122006"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1894297325"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "1894297325",
+      "1894297325",
+      "1894297325",
+      "1894297325"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "522756340"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "522756340",
+      "522756340",
+      "522756340",
+      "522756340"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1798992832"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "1798992832",
+      "1798992832",
+      "1798992832",
+      "1798992832"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3089620067"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "3089620067",
+      "3089620067",
+      "3089620067",
+      "3089620067"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "741525830"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "741525830",
+      "741525830",
+      "741525830",
+      "741525830"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 8,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3291082276"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "3291082276",
+      "3291082276",
+      "3291082276",
+      "3291082276"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 9,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1577004887"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "1577004887",
+      "1577004887",
+      "1577004887",
+      "1577004887"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 10,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "4039556902"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "4039556902",
+      "4039556902",
+      "4039556902",
+      "4039556902"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 11,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "673587453"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "673587453",
+      "673587453",
+      "673587453",
+      "673587453"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 12,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "3426422893"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "3426422893",
+      "3426422893",
+      "3426422893",
+      "3426422893"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 13,
+   "action": {
+    "type": "invoke",
+    "field": "f",
+    "args": [
+     {
+      "type": "f32",
+      "value": "1010047109"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "f32",
+     "value": [
+      "1010047109",
+      "1010047109",
+      "1010047109",
+      "1010047109"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 20,
+   "module": null,
+   "memory": "mem",
+   "size": 65536,
+   "fnv1a64": "9792bf9b6b897725"
+  }
+ ]
+}

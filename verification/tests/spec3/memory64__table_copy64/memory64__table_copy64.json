@@ -1,0 +1,9035 @@
+{
+ "source_filename": "memory64__table_copy64.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 6,
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 2221,
+   "filename": "x.41.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2247,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_return",
+   "line": 2249,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2250,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2251,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2252,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2253,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2254,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2255,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2256,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 2257,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2258,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2259,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2260,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2261,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2262,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2263,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2264,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2265,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2266,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2267,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2268,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2269,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2270,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2271,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2272,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2273,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2274,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2275,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2276,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2277,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2278,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2279,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2280,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "module",
+   "line": 2282,
+   "filename": "x.42.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2308,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_return",
+   "line": 2310,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2311,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2312,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2313,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2314,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2315,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2316,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2317,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2318,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 2319,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2320,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2321,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2322,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2323,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2324,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2325,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2326,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2327,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2328,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2329,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2330,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2331,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2332,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2333,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2334,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2335,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2336,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2337,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2338,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2339,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2340,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2341,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "module",
+   "line": 2343,
+   "filename": "x.43.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2369,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "24"
+     },
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2371,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2372,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2373,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2374,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2375,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2376,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2377,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2378,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2379,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2380,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2381,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2382,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2383,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2384,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2385,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2386,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2387,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2388,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2389,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2390,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2391,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2392,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2393,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2394,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2395,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2396,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2397,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2398,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2399,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2400,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2401,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2402,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 2404,
+   "filename": "x.44.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2430,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "23"
+     },
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2432,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2433,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2434,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2435,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2436,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2437,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2438,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2439,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2440,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2441,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2442,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2443,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2444,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2445,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2446,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2447,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2448,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2449,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2450,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2451,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2452,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2453,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2454,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2455,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2456,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2457,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2458,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2459,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2460,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2461,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2462,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2463,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 2465,
+   "filename": "x.45.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2491,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     },
+     {
+      "type": "i32",
+      "value": "11"
+     },
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2493,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2494,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2495,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2496,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2497,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2498,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2499,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2500,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2501,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2502,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2503,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2504,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2505,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2506,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2507,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2508,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2509,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2510,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2511,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 2512,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2513,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2514,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2515,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2516,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2517,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2518,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2519,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2520,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2521,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2522,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2523,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2524,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "module",
+   "line": 2526,
+   "filename": "x.46.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2552,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     },
+     {
+      "type": "i32",
+      "value": "24"
+     },
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2554,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2555,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2556,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2557,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2558,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2559,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2560,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2561,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2562,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2563,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2564,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2565,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2566,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2567,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2568,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2569,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2570,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2571,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2572,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2573,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2574,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2575,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2576,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2577,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2578,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2579,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2580,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2581,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2582,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2583,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2584,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2585,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 2587,
+   "filename": "x.47.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2613,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     },
+     {
+      "type": "i32",
+      "value": "21"
+     },
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2615,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2616,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2617,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2618,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2619,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2620,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2621,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2622,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2623,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2624,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2625,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2626,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2627,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2628,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2629,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2630,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2631,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2632,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2633,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2634,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2635,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2636,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2637,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2638,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2639,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2640,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2641,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2642,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2643,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 2644,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2645,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2646,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "module",
+   "line": 2648,
+   "filename": "x.48.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2674,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     },
+     {
+      "type": "i32",
+      "value": "24"
+     },
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2676,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2677,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2678,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2679,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2680,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2681,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2682,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2683,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2684,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2685,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2686,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2687,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2688,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2689,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2690,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2691,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2692,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2693,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2694,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2695,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2696,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2697,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2698,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2699,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2700,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2701,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2702,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2703,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2704,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2705,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2706,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2707,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 2709,
+   "filename": "x.49.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2735,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     },
+     {
+      "type": "i32",
+      "value": "21"
+     },
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2737,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2738,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2739,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2740,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2741,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2742,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2743,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2744,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2745,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2746,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2747,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2748,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2749,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2750,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2751,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2752,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2753,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2754,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2755,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2756,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2757,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2758,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2759,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2760,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2761,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2762,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2763,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2764,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2765,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2766,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2767,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "9"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2768,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 2770,
+   "filename": "x.50.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2796,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "112"
+     },
+     {
+      "type": "i32",
+      "value": "-32"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2798,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2799,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2800,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2801,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2802,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2803,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2804,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2805,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2806,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2807,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2808,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2809,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2810,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2811,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2812,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2813,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2814,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2815,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2816,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2817,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2818,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2819,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2820,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2821,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2822,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2823,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2824,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2825,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2826,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2827,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2828,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2829,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2830,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "32"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2831,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "33"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2832,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "34"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2833,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "35"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2834,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "36"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2835,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "37"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2836,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "38"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2837,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "39"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2838,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "40"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2839,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "41"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2840,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "42"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2841,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "43"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2842,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "44"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2843,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "45"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2844,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "46"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2845,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "47"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2846,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "48"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2847,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "49"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2848,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "50"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2849,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "51"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2850,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "52"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2851,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "53"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2852,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "54"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2853,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "55"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2854,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "56"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2855,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "57"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2856,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "58"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2857,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "59"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2858,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "60"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2859,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "61"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2860,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "62"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2861,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "63"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2862,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "64"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2863,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2864,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "66"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2865,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "67"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2866,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "68"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2867,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "69"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2868,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "70"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2869,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "71"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2870,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "72"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2871,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "73"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2872,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "74"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2873,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "75"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2874,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "76"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2875,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "77"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2876,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "78"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2877,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "79"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2878,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "80"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2879,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "81"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2880,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "82"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2881,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "83"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2882,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "84"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2883,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "85"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2884,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "86"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2885,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "87"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2886,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "88"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2887,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "89"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2888,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "90"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2889,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "91"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2890,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "92"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2891,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "93"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2892,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "94"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2893,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "95"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2894,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "96"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2895,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "97"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2896,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "98"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2897,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "99"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2898,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "100"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2899,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "101"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2900,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "102"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2901,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "103"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2902,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "104"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2903,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "105"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2904,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "106"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2905,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "107"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2906,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "108"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2907,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "109"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2908,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "110"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2909,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "111"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 2910,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "112"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2911,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "113"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2912,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "114"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2913,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "115"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2914,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "116"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2915,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "117"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2916,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "118"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2917,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "119"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2918,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "120"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2919,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "121"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "9"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2920,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "122"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2921,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "123"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "11"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2922,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "124"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2923,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "125"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "13"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2924,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "126"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "14"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2925,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "127"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "15"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 2927,
+   "filename": "x.51.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2953,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "112"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "-32"
+     }
+    ]
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_return",
+   "line": 2955,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2956,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2957,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2958,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "3"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2959,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2960,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2961,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "6"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2962,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2963,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "8"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "8"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2964,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "9"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "9"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2965,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2966,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "11"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2967,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "12"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2968,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "13"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "13"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2969,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "14"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "14"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 2970,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "15"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "15"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 2971,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "16"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2972,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "17"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2973,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2974,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "19"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2975,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2976,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2977,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "22"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2978,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "23"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2979,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "24"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2980,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2981,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "26"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2982,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2983,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2984,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "29"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2985,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "30"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2986,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "31"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2987,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "32"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2988,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "33"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2989,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "34"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2990,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "35"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2991,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "36"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2992,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "37"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2993,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "38"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2994,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "39"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2995,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "40"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2996,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "41"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2997,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "42"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2998,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "43"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 2999,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "44"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3000,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "45"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3001,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "46"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3002,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "47"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3003,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "48"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3004,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "49"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3005,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "50"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3006,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "51"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3007,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "52"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3008,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "53"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3009,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "54"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3010,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "55"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3011,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "56"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3012,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "57"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3013,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "58"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3014,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "59"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3015,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "60"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3016,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "61"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3017,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "62"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3018,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "63"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3019,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "64"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3020,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3021,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "66"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3022,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "67"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3023,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "68"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3024,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "69"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3025,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "70"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3026,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "71"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3027,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "72"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3028,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "73"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3029,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "74"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3030,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "75"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3031,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "76"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3032,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "77"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3033,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "78"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3034,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "79"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3035,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "80"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3036,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "81"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3037,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "82"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3038,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "83"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3039,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "84"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3040,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "85"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3041,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "86"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3042,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "87"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3043,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "88"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3044,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "89"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3045,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "90"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3046,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "91"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3047,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "92"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3048,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "93"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3049,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "94"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3050,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "95"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3051,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "96"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3052,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "97"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3053,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "98"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3054,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "99"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3055,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "100"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3056,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "101"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3057,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "102"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3058,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "103"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3059,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "104"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3060,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "105"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3061,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "106"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3062,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "107"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3063,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "108"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3064,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "109"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3065,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "110"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3066,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "111"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3067,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "112"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3068,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "113"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3069,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "114"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3070,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "115"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3071,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "116"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3072,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "117"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3073,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "118"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3074,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "119"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3075,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "120"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3076,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "121"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3077,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "122"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3078,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "123"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3079,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "124"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3080,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "125"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3081,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "126"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_trap",
+   "line": 3082,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": [
+     {
+      "type": "i32",
+      "value": "127"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  }
+ ]
+}

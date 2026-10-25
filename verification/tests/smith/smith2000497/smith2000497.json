@@ -1,0 +1,38 @@
+{
+ "source_filename": "smith2000497.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000497.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": "q"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2216646248"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "q"
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "2216646248"
+    }
+   ]
+  }
+ ]
+}

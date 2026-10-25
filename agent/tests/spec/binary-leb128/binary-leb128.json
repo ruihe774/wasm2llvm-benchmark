@@ -1,0 +1,609 @@
+{
+ "source_filename": "binary-leb128.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 2,
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 7,
+   "filename": "x.1.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 12,
+   "filename": "x.2.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 18,
+   "filename": "x.3.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 24,
+   "filename": "x.4.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 32,
+   "filename": "x.5.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 41,
+   "filename": "x.6.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 49,
+   "filename": "x.7.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 57,
+   "filename": "x.8.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 66,
+   "filename": "x.9.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 75,
+   "filename": "x.10.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 87,
+   "filename": "x.11.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 99,
+   "filename": "x.12.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 111,
+   "filename": "x.13.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 120,
+   "filename": "x.14.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 133,
+   "filename": "x.15.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 146,
+   "filename": "x.16.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 158,
+   "filename": "x.17.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 165,
+   "filename": "x.18.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 172,
+   "filename": "x.19.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 179,
+   "filename": "x.20.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 187,
+   "filename": "x.21.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 194,
+   "filename": "x.22.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 201,
+   "filename": "x.23.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 208,
+   "filename": "x.24.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 218,
+   "filename": "x.25.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 226,
+   "filename": "x.26.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 235,
+   "filename": "x.27.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 246,
+   "filename": "x.28.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 257,
+   "filename": "x.29.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 268,
+   "filename": "x.30.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 279,
+   "filename": "x.31.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 291,
+   "filename": "x.32.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 303,
+   "filename": "x.33.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 318,
+   "filename": "x.34.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 333,
+   "filename": "x.35.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 348,
+   "filename": "x.36.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 360,
+   "filename": "x.37.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 376,
+   "filename": "x.38.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 392,
+   "filename": "x.39.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 405,
+   "filename": "x.40.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 424,
+   "filename": "x.41.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 443,
+   "filename": "x.42.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 462,
+   "filename": "x.43.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 483,
+   "filename": "x.44.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 493,
+   "filename": "x.45.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 504,
+   "filename": "x.46.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 514,
+   "filename": "x.47.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 526,
+   "filename": "x.48.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 534,
+   "filename": "x.49.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 542,
+   "filename": "x.50.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 551,
+   "filename": "x.51.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 560,
+   "filename": "x.52.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 571,
+   "filename": "x.53.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 582,
+   "filename": "x.54.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 593,
+   "filename": "x.55.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 604,
+   "filename": "x.56.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 616,
+   "filename": "x.57.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 628,
+   "filename": "x.58.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 643,
+   "filename": "x.59.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 658,
+   "filename": "x.60.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 673,
+   "filename": "x.61.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 686,
+   "filename": "x.62.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 702,
+   "filename": "x.63.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 718,
+   "filename": "x.64.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 731,
+   "filename": "x.65.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 751,
+   "filename": "x.66.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 771,
+   "filename": "x.67.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 789,
+   "filename": "x.68.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 808,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 827,
+   "filename": "x.70.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 846,
+   "filename": "x.71.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 866,
+   "filename": "x.72.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 888,
+   "filename": "x.73.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 898,
+   "filename": "x.74.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 908,
+   "filename": "x.75.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 918,
+   "filename": "x.76.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 929,
+   "filename": "x.77.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 939,
+   "filename": "x.78.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 949,
+   "filename": "x.79.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 959,
+   "filename": "x.80.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "module",
+   "line": 969,
+   "filename": "x.81.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 990,
+   "filename": "x.82.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "module",
+   "line": 1007,
+   "filename": "x.83.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 1015,
+   "filename": "x.84.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 1024,
+   "filename": "x.85.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 1035,
+   "filename": "x.86.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 1043,
+   "filename": "x.87.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 1052,
+   "filename": "x.88.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 1061,
+   "filename": "x.89.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1073,
+   "filename": "x.90.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  }
+ ]
+}

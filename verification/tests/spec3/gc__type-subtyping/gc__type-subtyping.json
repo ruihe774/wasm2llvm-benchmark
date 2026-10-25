@@ -1,0 +1,173 @@
+{
+ "source_filename": "gc__type-subtyping.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 140,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 206,
+   "filename": "x.15.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 216,
+   "filename": "x.16.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 727,
+   "filename": "x.55.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 735,
+   "filename": "x.56.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 743,
+   "filename": "x.57.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 751,
+   "filename": "x.58.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 764,
+   "filename": "x.59.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 772,
+   "filename": "x.60.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 780,
+   "filename": "x.61.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 788,
+   "filename": "x.62.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 796,
+   "filename": "x.63.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 804,
+   "filename": "x.64.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 812,
+   "filename": "x.65.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 820,
+   "filename": "x.66.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 828,
+   "filename": "x.67.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 836,
+   "filename": "x.68.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 844,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 852,
+   "filename": "x.70.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 860,
+   "filename": "x.71.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 868,
+   "filename": "x.72.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 876,
+   "filename": "x.73.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 884,
+   "filename": "x.74.wasm",
+   "module_type": "binary",
+   "text": "sub type 1 does not match super type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 892,
+   "filename": "x.75.wasm",
+   "module_type": "binary",
+   "text": "sub type"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "source_filename": "raytrace-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "raytrace-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7680"
+     },
+     {
+      "type": "i32",
+      "value": "4320"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "5445522140884957373"
+    }
+   ]
+  }
+ ]
+}

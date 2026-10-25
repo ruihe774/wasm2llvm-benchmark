@@ -1,0 +1,47 @@
+{
+ "source_filename": "gc__array.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 28,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 49,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 53,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 293,
+   "filename": "x.9.wasm",
+   "module_type": "binary",
+   "text": "array is immutable"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 303,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 316,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  }
+ ]
+}

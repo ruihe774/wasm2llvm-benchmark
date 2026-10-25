@@ -1,0 +1,12 @@
+{
+ "source_filename": "memory64__binary_leb128_64.wast",
+ "commands": [
+  {
+   "type": "assert_malformed",
+   "line": 17,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  }
+ ]
+}

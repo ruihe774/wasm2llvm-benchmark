@@ -1,0 +1,12 @@
+{
+ "source_filename": "gc__binary-gc.wast",
+ "commands": [
+  {
+   "type": "assert_malformed",
+   "line": 2,
+   "filename": "x.0.wasm",
+   "module_type": "binary",
+   "text": "malformed mutability"
+  }
+ ]
+}

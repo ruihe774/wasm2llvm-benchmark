@@ -1,0 +1,331 @@
+{
+ "source_filename": "global.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 273,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "global is immutable"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 278,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "global is immutable"
+  },
+  {
+   "type": "module",
+   "line": 283,
+   "filename": "x.3.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 284,
+   "filename": "x.4.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 287,
+   "filename": "x.5.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 292,
+   "filename": "x.6.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 297,
+   "filename": "x.7.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 302,
+   "filename": "x.8.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 307,
+   "filename": "x.9.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 312,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 317,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 322,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 327,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 332,
+   "filename": "x.14.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 337,
+   "filename": "x.15.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 342,
+   "filename": "x.16.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 347,
+   "filename": "x.17.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 352,
+   "filename": "x.18.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 356,
+   "filename": "x.19.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 361,
+   "filename": "x.20.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 366,
+   "filename": "x.21.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 371,
+   "filename": "x.22.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 379,
+   "filename": "x.24.wasm",
+   "module_type": "binary",
+   "text": "malformed mutability"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 392,
+   "filename": "x.25.wasm",
+   "module_type": "binary",
+   "text": "malformed mutability"
+  },
+  {
+   "type": "module",
+   "line": 405,
+   "filename": "x.26.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 409,
+   "filename": "x.27.wasm",
+   "module_type": "binary",
+   "text": "malformed mutability"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 421,
+   "filename": "x.28.wasm",
+   "module_type": "binary",
+   "text": "malformed mutability"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 435,
+   "filename": "x.29.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 440,
+   "filename": "x.30.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 448,
+   "filename": "x.31.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 456,
+   "filename": "x.32.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 466,
+   "filename": "x.33.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 471,
+   "filename": "x.34.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 479,
+   "filename": "x.35.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 487,
+   "filename": "x.36.wasm",
+   "module_type": "binary",
+   "text": "unknown global"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 497,
+   "filename": "x.37.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 506,
+   "filename": "x.38.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 516,
+   "filename": "x.39.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 526,
+   "filename": "x.40.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 536,
+   "filename": "x.41.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 546,
+   "filename": "x.42.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 556,
+   "filename": "x.43.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 566,
+   "filename": "x.44.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 576,
+   "filename": "x.45.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 585,
+   "filename": "x.46.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 594,
+   "filename": "x.47.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 604,
+   "filename": "x.48.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

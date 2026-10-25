@@ -1,0 +1,99 @@
+{
+ "source_filename": "multi-memory__store1.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "name": "M1",
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 13,
+   "name": "M2",
+   "filename": "x.1.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "action",
+   "line": 25,
+   "action": {
+    "type": "invoke",
+    "module": "M1",
+    "field": "store",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i64",
+      "value": "1"
+     }
+    ]
+   }
+  },
+  {
+   "type": "action",
+   "line": 26,
+   "action": {
+    "type": "invoke",
+    "module": "M2",
+    "field": "store",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i64",
+      "value": "2"
+     }
+    ]
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 27,
+   "action": {
+    "type": "invoke",
+    "module": "M1",
+    "field": "load",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 28,
+   "action": {
+    "type": "invoke",
+    "module": "M2",
+    "field": "load",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "2"
+    }
+   ]
+  }
+ ]
+}

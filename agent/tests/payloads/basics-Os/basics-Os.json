@@ -1,0 +1,64 @@
+{
+ "source_filename": "basics-Os.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "basics-Os.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "20"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "7817826980976697777"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "27"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "16267636478187504048"
+    }
+   ]
+  },
+  {
+   "type": "assert_output",
+   "line": 4,
+   "module": null,
+   "hex": "6261736963730a6936343a363736350a6933323a32313839310a6936343a373831373832363938303937363931373536330a6933323a3231353031350a6933323a3530313130313239340a6261736963730a6936343a3139363431380a6933323a3635373531320a6936343a2d323137393130373539353532323133313639310a6933323a3231353031350a6933323a3530313130313239340a"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 5,
+   "module": null,
+   "memory": "memory",
+   "size": 1114112,
+   "fnv1a64": "f47b441c3b26704a"
+  }
+ ]
+}

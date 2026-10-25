@@ -1,0 +1,66 @@
+{
+ "source_filename": "smith2000352.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000352.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": "G"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "9129159355363887322"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "13414269511861547537"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "get",
+    "field": "G"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "9129159355363887322"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "13414269511861547537"
+    }
+   ]
+  }
+ ]
+}

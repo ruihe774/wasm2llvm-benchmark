@@ -1,0 +1,34 @@
+{
+ "source_filename": "compress-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "compress-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "400000"
+     },
+     {
+      "type": "i32",
+      "value": "60"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "10312176591851003190"
+    }
+   ]
+  }
+ ]
+}

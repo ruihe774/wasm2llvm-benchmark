@@ -1,0 +1,30 @@
+{
+ "source_filename": "numerics-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "numerics-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4000000"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "2880332441945241261"
+    }
+   ]
+  }
+ ]
+}

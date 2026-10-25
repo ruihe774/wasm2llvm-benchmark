@@ -1,0 +1,38 @@
+{
+ "source_filename": "smith2000284.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000284.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": "\n\u0011\b"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "2754965495376210870"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "\n\u0011\b"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "2754965495376210870"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "source_filename": "dispatch-O0.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "dispatch-O0.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "5000"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "2536369555191113644"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "invoke",
+    "field": "peek",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1024"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "peek",
+    "args": [
+     {
+      "type": "i32",
+      "value": "4294967292"
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "maybe_panic",
+    "args": [
+     {
+      "type": "i32",
+      "value": "10"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "type": "assert_trap",
+   "line": 6,
+   "action": {
+    "type": "invoke",
+    "field": "maybe_panic",
+    "args": [
+     {
+      "type": "i32",
+      "value": "11"
+     }
+    ]
+   },
+   "text": "unreachable"
+  },
+  {
+   "type": "assert_return",
+   "line": 7,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "77"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "860785277303414412"
+    }
+   ]
+  },
+  {
+   "type": "assert_output",
+   "line": 8,
+   "module": null,
+   "hex": "64697370617463680a6636343a3078343230623061396665353565626165350a6933323a2d3234313033373836380a6936343a2d333536353732353030343937303538303136310a6936343a2d313331373538353832353933313139383331370a64697370617463680a6636343a3078343037643262663939636431653234300a6933323a313233353337383731380a6936343a313830363939383635370a6936343a3836303738353237373731373336353236310a"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 9,
+   "module": null,
+   "memory": "memory",
+   "size": 1114112,
+   "fnv1a64": "9517d08c32a12e6d"
+  }
+ ]
+}

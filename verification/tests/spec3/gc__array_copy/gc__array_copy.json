@@ -1,0 +1,33 @@
+{
+ "source_filename": "gc__array_copy.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 6,
+   "filename": "x.0.wasm",
+   "module_type": "binary",
+   "text": "array is immutable"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 18,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "array types do not match"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 30,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "array types do not match"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 42,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "array types do not match"
+  }
+ ]
+}

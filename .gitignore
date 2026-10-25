@@ -1,0 +1,14 @@
+# Large or re-fetchable dependencies (see README.md / deps/downloads/SHA256SUMS)
+/deps/toolchains/
+/deps/downloads/*
+!/deps/downloads/SHA256SUMS
+/deps/build/
+/deps/src/
+/deps/bin/w2l-ref
+# Third-party clones used by the reference baseline
+/verification/reference/third_party/
+# Build outputs / scratch
+/verification/payloads/target/
+/sandbox/generated/
+__pycache__/
+.w2l-work/

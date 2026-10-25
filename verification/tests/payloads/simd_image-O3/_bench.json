@@ -1,0 +1,34 @@
+{
+ "source_filename": "simd_image-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "simd_image-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "80000"
+     },
+     {
+      "type": "i32",
+      "value": "42"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "17429459627747822276"
+    }
+   ]
+  }
+ ]
+}

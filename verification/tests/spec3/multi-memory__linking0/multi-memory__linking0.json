@@ -1,0 +1,28 @@
+{
+ "source_filename": "multi-memory__linking0.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "name": "Mt",
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 27,
+   "action": {
+    "type": "invoke",
+    "module": "Mt",
+    "field": "call",
+    "args": [
+     {
+      "type": "i32",
+      "value": "7"
+     }
+    ]
+   },
+   "text": "uninitialized element"
+  }
+ ]
+}

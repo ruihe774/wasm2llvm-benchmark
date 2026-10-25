@@ -1,0 +1,26 @@
+{
+ "source_filename": "gc__array_init_elem.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 6,
+   "filename": "x.0.wasm",
+   "module_type": "binary",
+   "text": "array is immutable"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 19,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 32,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

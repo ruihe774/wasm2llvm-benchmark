@@ -1,0 +1,264 @@
+{
+ "source_filename": "memory64__align64.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 306,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 310,
+   "filename": "x.70.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 314,
+   "filename": "x.71.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 318,
+   "filename": "x.72.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 322,
+   "filename": "x.73.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 326,
+   "filename": "x.74.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 330,
+   "filename": "x.75.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 334,
+   "filename": "x.76.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 338,
+   "filename": "x.77.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 342,
+   "filename": "x.78.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 346,
+   "filename": "x.79.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 350,
+   "filename": "x.80.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 354,
+   "filename": "x.81.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 358,
+   "filename": "x.82.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 363,
+   "filename": "x.83.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 367,
+   "filename": "x.84.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 371,
+   "filename": "x.85.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 375,
+   "filename": "x.86.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 379,
+   "filename": "x.87.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 383,
+   "filename": "x.88.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 387,
+   "filename": "x.89.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 391,
+   "filename": "x.90.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 395,
+   "filename": "x.91.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 399,
+   "filename": "x.92.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 403,
+   "filename": "x.93.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 407,
+   "filename": "x.94.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 411,
+   "filename": "x.95.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 415,
+   "filename": "x.96.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 420,
+   "filename": "x.97.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 424,
+   "filename": "x.98.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 428,
+   "filename": "x.99.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 432,
+   "filename": "x.100.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 436,
+   "filename": "x.101.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 440,
+   "filename": "x.102.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 444,
+   "filename": "x.103.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 448,
+   "filename": "x.104.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 452,
+   "filename": "x.105.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  }
+ ]
+}

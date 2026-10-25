@@ -1,0 +1,927 @@
+{
+ "source_filename": "binary.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 2,
+   "filename": "x.1.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 3,
+   "name": "M1",
+   "filename": "x.2.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 4,
+   "name": "M2",
+   "filename": "x.3.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 6,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 7,
+   "filename": "x.5.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 8,
+   "filename": "x.6.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 9,
+   "filename": "x.7.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 10,
+   "filename": "x.8.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 11,
+   "filename": "x.9.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 12,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 13,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 14,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 15,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 16,
+   "filename": "x.14.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 17,
+   "filename": "x.15.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 18,
+   "filename": "x.16.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 21,
+   "filename": "x.17.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 24,
+   "filename": "x.18.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 25,
+   "filename": "x.19.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 28,
+   "filename": "x.20.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 31,
+   "filename": "x.21.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 34,
+   "filename": "x.22.wasm",
+   "module_type": "binary",
+   "text": "magic header not detected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 37,
+   "filename": "x.23.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 38,
+   "filename": "x.24.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 39,
+   "filename": "x.25.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 40,
+   "filename": "x.26.wasm",
+   "module_type": "binary",
+   "text": "unknown binary version"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 41,
+   "filename": "x.27.wasm",
+   "module_type": "binary",
+   "text": "unknown binary version"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 42,
+   "filename": "x.28.wasm",
+   "module_type": "binary",
+   "text": "unknown binary version"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 43,
+   "filename": "x.29.wasm",
+   "module_type": "binary",
+   "text": "unknown binary version"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 44,
+   "filename": "x.30.wasm",
+   "module_type": "binary",
+   "text": "unknown binary version"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 45,
+   "filename": "x.31.wasm",
+   "module_type": "binary",
+   "text": "unknown binary version"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 48,
+   "filename": "x.32.wasm",
+   "module_type": "binary",
+   "text": "malformed section id"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 49,
+   "filename": "x.33.wasm",
+   "module_type": "binary",
+   "text": "malformed section id"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 50,
+   "filename": "x.34.wasm",
+   "module_type": "binary",
+   "text": "malformed section id"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 51,
+   "filename": "x.35.wasm",
+   "module_type": "binary",
+   "text": "malformed section id"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 52,
+   "filename": "x.36.wasm",
+   "module_type": "binary",
+   "text": "malformed section id"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 56,
+   "filename": "x.37.wasm",
+   "module_type": "binary",
+   "text": "END opcode expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 77,
+   "filename": "x.38.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 93,
+   "filename": "x.39.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 113,
+   "filename": "x.40.wasm",
+   "module_type": "binary",
+   "text": "illegal opcode"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 126,
+   "filename": "x.41.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 146,
+   "filename": "x.42.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 166,
+   "filename": "x.43.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 185,
+   "filename": "x.44.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 204,
+   "filename": "x.45.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 224,
+   "filename": "x.46.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 243,
+   "filename": "x.47.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 262,
+   "filename": "x.48.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 280,
+   "filename": "x.49.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 298,
+   "filename": "x.50.wasm",
+   "module_type": "binary",
+   "text": "zero byte expected"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 317,
+   "filename": "x.51.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 334,
+   "filename": "x.52.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 351,
+   "filename": "x.53.wasm",
+   "module_type": "binary",
+   "text": "too many locals"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 367,
+   "filename": "x.54.wasm",
+   "module_type": "binary",
+   "text": "too many locals"
+  },
+  {
+   "type": "module",
+   "line": 385,
+   "filename": "x.55.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 401,
+   "filename": "x.56.wasm",
+   "module_type": "binary",
+   "text": "function and code section have inconsistent lengths"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 411,
+   "filename": "x.57.wasm",
+   "module_type": "binary",
+   "text": "function and code section have inconsistent lengths"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 420,
+   "filename": "x.58.wasm",
+   "module_type": "binary",
+   "text": "function and code section have inconsistent lengths"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 431,
+   "filename": "x.59.wasm",
+   "module_type": "binary",
+   "text": "function and code section have inconsistent lengths"
+  },
+  {
+   "type": "module",
+   "line": 441,
+   "filename": "x.60.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 447,
+   "filename": "x.61.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 454,
+   "filename": "x.62.wasm",
+   "module_type": "binary",
+   "text": "data count and data section have inconsistent lengths"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 466,
+   "filename": "x.63.wasm",
+   "module_type": "binary",
+   "text": "data count and data section have inconsistent lengths"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 478,
+   "filename": "x.64.wasm",
+   "module_type": "binary",
+   "text": "data count and data section have inconsistent lengths"
+  },
+  {
+   "type": "module",
+   "line": 487,
+   "filename": "x.65.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 494,
+   "filename": "x.66.wasm",
+   "module_type": "binary",
+   "text": "data count section required"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 517,
+   "filename": "x.67.wasm",
+   "module_type": "binary",
+   "text": "data count section required"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 537,
+   "filename": "x.68.wasm",
+   "module_type": "binary",
+   "text": "illegal opcode"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 565,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "malformed reference type"
+  },
+  {
+   "type": "module",
+   "line": 643,
+   "filename": "x.72.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 650,
+   "filename": "x.73.wasm",
+   "module_type": "binary",
+   "text": "length out of bounds"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 661,
+   "filename": "x.74.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "module",
+   "line": 671,
+   "filename": "x.75.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 680,
+   "filename": "x.76.wasm",
+   "module_type": "binary",
+   "text": "malformed import kind"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 690,
+   "filename": "x.77.wasm",
+   "module_type": "binary",
+   "text": "malformed import kind"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 701,
+   "filename": "x.78.wasm",
+   "module_type": "binary",
+   "text": "malformed import kind"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 711,
+   "filename": "x.79.wasm",
+   "module_type": "binary",
+   "text": "malformed import kind"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 722,
+   "filename": "x.80.wasm",
+   "module_type": "binary",
+   "text": "malformed import kind"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 732,
+   "filename": "x.81.wasm",
+   "module_type": "binary",
+   "text": "malformed import kind"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 745,
+   "filename": "x.82.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 764,
+   "filename": "x.83.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "module",
+   "line": 788,
+   "filename": "x.84.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 795,
+   "filename": "x.85.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 805,
+   "filename": "x.86.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 814,
+   "filename": "x.87.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 824,
+   "filename": "x.88.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "module",
+   "line": 835,
+   "filename": "x.89.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 842,
+   "filename": "x.90.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 852,
+   "filename": "x.91.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 860,
+   "filename": "x.92.wasm",
+   "module_type": "binary",
+   "text": "integer too large"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 869,
+   "filename": "x.93.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 878,
+   "filename": "x.94.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "module",
+   "line": 888,
+   "filename": "x.95.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 895,
+   "filename": "x.96.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 906,
+   "filename": "x.97.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "module",
+   "line": 916,
+   "filename": "x.98.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 929,
+   "filename": "x.99.wasm",
+   "module_type": "binary",
+   "text": "length out of bounds"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 950,
+   "filename": "x.100.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "module",
+   "line": 970,
+   "filename": "x.101.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 984,
+   "filename": "x.102.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1000,
+   "filename": "x.103.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1017,
+   "filename": "x.104.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "module",
+   "line": 1034,
+   "filename": "x.105.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1043,
+   "filename": "x.106.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1056,
+   "filename": "x.107.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1069,
+   "filename": "x.108.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1083,
+   "filename": "x.109.wasm",
+   "module_type": "binary",
+   "text": "section size mismatch"
+  },
+  {
+   "type": "module",
+   "line": 1096,
+   "filename": "x.110.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1114,
+   "filename": "x.111.wasm",
+   "module_type": "binary",
+   "text": "unexpected end"
+  },
+  {
+   "type": "module",
+   "line": 1147,
+   "filename": "x.112.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1161,
+   "filename": "x.113.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1178,
+   "filename": "x.114.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1190,
+   "filename": "x.115.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1202,
+   "filename": "x.116.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1212,
+   "filename": "x.117.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1222,
+   "filename": "x.118.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1232,
+   "filename": "x.119.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1242,
+   "filename": "x.120.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1252,
+   "filename": "x.121.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1262,
+   "filename": "x.122.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1272,
+   "filename": "x.123.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1282,
+   "filename": "x.124.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1292,
+   "filename": "x.125.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1302,
+   "filename": "x.126.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1312,
+   "filename": "x.127.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1322,
+   "filename": "x.128.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1332,
+   "filename": "x.129.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1342,
+   "filename": "x.130.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1352,
+   "filename": "x.131.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1364,
+   "filename": "x.132.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1376,
+   "filename": "x.133.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1386,
+   "filename": "x.134.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1396,
+   "filename": "x.135.wasm",
+   "module_type": "binary",
+   "text": "unexpected content after last section"
+  }
+ ]
+}

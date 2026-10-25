@@ -1,0 +1,1237 @@
+{
+ "source_filename": "utf8-custom-section-id.wast",
+ "commands": [
+  {
+   "type": "assert_malformed",
+   "line": 7,
+   "filename": "x.0.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 17,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 27,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 37,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 47,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 57,
+   "filename": "x.5.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 69,
+   "filename": "x.6.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 79,
+   "filename": "x.7.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 89,
+   "filename": "x.8.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 101,
+   "filename": "x.9.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 111,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 121,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 131,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 141,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 151,
+   "filename": "x.14.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 161,
+   "filename": "x.15.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 171,
+   "filename": "x.16.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 181,
+   "filename": "x.17.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 191,
+   "filename": "x.18.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 201,
+   "filename": "x.19.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 211,
+   "filename": "x.20.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 223,
+   "filename": "x.21.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 233,
+   "filename": "x.22.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 243,
+   "filename": "x.23.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 253,
+   "filename": "x.24.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 263,
+   "filename": "x.25.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 275,
+   "filename": "x.26.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 285,
+   "filename": "x.27.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 295,
+   "filename": "x.28.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 305,
+   "filename": "x.29.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 315,
+   "filename": "x.30.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 325,
+   "filename": "x.31.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 335,
+   "filename": "x.32.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 345,
+   "filename": "x.33.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 355,
+   "filename": "x.34.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 365,
+   "filename": "x.35.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 375,
+   "filename": "x.36.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 385,
+   "filename": "x.37.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 395,
+   "filename": "x.38.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 405,
+   "filename": "x.39.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 415,
+   "filename": "x.40.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 425,
+   "filename": "x.41.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 435,
+   "filename": "x.42.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 445,
+   "filename": "x.43.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 455,
+   "filename": "x.44.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 465,
+   "filename": "x.45.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 475,
+   "filename": "x.46.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 485,
+   "filename": "x.47.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 495,
+   "filename": "x.48.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 505,
+   "filename": "x.49.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 515,
+   "filename": "x.50.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 525,
+   "filename": "x.51.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 535,
+   "filename": "x.52.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 545,
+   "filename": "x.53.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 555,
+   "filename": "x.54.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 565,
+   "filename": "x.55.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 575,
+   "filename": "x.56.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 585,
+   "filename": "x.57.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 597,
+   "filename": "x.58.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 607,
+   "filename": "x.59.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 617,
+   "filename": "x.60.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 627,
+   "filename": "x.61.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 637,
+   "filename": "x.62.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 647,
+   "filename": "x.63.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 657,
+   "filename": "x.64.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 667,
+   "filename": "x.65.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 677,
+   "filename": "x.66.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 687,
+   "filename": "x.67.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 697,
+   "filename": "x.68.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 707,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 717,
+   "filename": "x.70.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 727,
+   "filename": "x.71.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 737,
+   "filename": "x.72.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 747,
+   "filename": "x.73.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 757,
+   "filename": "x.74.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 767,
+   "filename": "x.75.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 777,
+   "filename": "x.76.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 787,
+   "filename": "x.77.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 797,
+   "filename": "x.78.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 807,
+   "filename": "x.79.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 817,
+   "filename": "x.80.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 827,
+   "filename": "x.81.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 839,
+   "filename": "x.82.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 849,
+   "filename": "x.83.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 859,
+   "filename": "x.84.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 869,
+   "filename": "x.85.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 879,
+   "filename": "x.86.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 889,
+   "filename": "x.87.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 899,
+   "filename": "x.88.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 911,
+   "filename": "x.89.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 921,
+   "filename": "x.90.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 931,
+   "filename": "x.91.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 941,
+   "filename": "x.92.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 951,
+   "filename": "x.93.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 961,
+   "filename": "x.94.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 971,
+   "filename": "x.95.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 981,
+   "filename": "x.96.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 991,
+   "filename": "x.97.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1001,
+   "filename": "x.98.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1011,
+   "filename": "x.99.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1021,
+   "filename": "x.100.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1031,
+   "filename": "x.101.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1041,
+   "filename": "x.102.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1051,
+   "filename": "x.103.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1061,
+   "filename": "x.104.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1071,
+   "filename": "x.105.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1081,
+   "filename": "x.106.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1091,
+   "filename": "x.107.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1101,
+   "filename": "x.108.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1111,
+   "filename": "x.109.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1121,
+   "filename": "x.110.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1131,
+   "filename": "x.111.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1141,
+   "filename": "x.112.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1151,
+   "filename": "x.113.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1163,
+   "filename": "x.114.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1173,
+   "filename": "x.115.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1183,
+   "filename": "x.116.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1193,
+   "filename": "x.117.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1203,
+   "filename": "x.118.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1213,
+   "filename": "x.119.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1223,
+   "filename": "x.120.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1233,
+   "filename": "x.121.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1243,
+   "filename": "x.122.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1253,
+   "filename": "x.123.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1263,
+   "filename": "x.124.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1273,
+   "filename": "x.125.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1283,
+   "filename": "x.126.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1293,
+   "filename": "x.127.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1303,
+   "filename": "x.128.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1313,
+   "filename": "x.129.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1325,
+   "filename": "x.130.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1335,
+   "filename": "x.131.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1345,
+   "filename": "x.132.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1355,
+   "filename": "x.133.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1365,
+   "filename": "x.134.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1375,
+   "filename": "x.135.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1385,
+   "filename": "x.136.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1395,
+   "filename": "x.137.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1405,
+   "filename": "x.138.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1415,
+   "filename": "x.139.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1425,
+   "filename": "x.140.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1435,
+   "filename": "x.141.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1445,
+   "filename": "x.142.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1455,
+   "filename": "x.143.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1465,
+   "filename": "x.144.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1475,
+   "filename": "x.145.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1487,
+   "filename": "x.146.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1497,
+   "filename": "x.147.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1507,
+   "filename": "x.148.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1517,
+   "filename": "x.149.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1527,
+   "filename": "x.150.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1537,
+   "filename": "x.151.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1547,
+   "filename": "x.152.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1557,
+   "filename": "x.153.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1567,
+   "filename": "x.154.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1579,
+   "filename": "x.155.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1589,
+   "filename": "x.156.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1601,
+   "filename": "x.157.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1611,
+   "filename": "x.158.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1621,
+   "filename": "x.159.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1631,
+   "filename": "x.160.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1641,
+   "filename": "x.161.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1651,
+   "filename": "x.162.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1661,
+   "filename": "x.163.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1671,
+   "filename": "x.164.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1681,
+   "filename": "x.165.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1691,
+   "filename": "x.166.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1701,
+   "filename": "x.167.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1713,
+   "filename": "x.168.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1723,
+   "filename": "x.169.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1735,
+   "filename": "x.170.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1745,
+   "filename": "x.171.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1755,
+   "filename": "x.172.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1765,
+   "filename": "x.173.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1775,
+   "filename": "x.174.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 1785,
+   "filename": "x.175.wasm",
+   "module_type": "binary",
+   "text": "malformed UTF-8 encoding"
+  }
+ ]
+}

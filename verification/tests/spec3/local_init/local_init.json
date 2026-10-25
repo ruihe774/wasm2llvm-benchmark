@@ -1,0 +1,33 @@
+{
+ "source_filename": "local_init.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 26,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "uninitialized local"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 30,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "uninitialized local"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 40,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "uninitialized local"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 53,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "uninitialized local"
+  }
+ ]
+}

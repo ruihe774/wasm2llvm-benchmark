@@ -1,0 +1,44 @@
+{
+ "source_filename": "numerics-O3.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "numerics-O3.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "2000"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "5939156416821397537"
+    }
+   ]
+  },
+  {
+   "type": "assert_output",
+   "line": 3,
+   "module": null,
+   "hex": "6e756d65726963730a6936343a313632303035363438393630343837373339320a6936343a353933393135363431363832313339373533370a"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 4,
+   "module": null,
+   "memory": "memory",
+   "size": 1114112,
+   "fnv1a64": "3c9e1e7161de270b"
+  }
+ ]
+}

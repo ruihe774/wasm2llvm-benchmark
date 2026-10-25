@@ -1,0 +1,89 @@
+{
+ "source_filename": "ref.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 28,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 32,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 37,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 42,
+   "filename": "x.4.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 47,
+   "filename": "x.5.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 52,
+   "filename": "x.6.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 56,
+   "filename": "x.7.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 60,
+   "filename": "x.8.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 65,
+   "filename": "x.9.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 69,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 73,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 78,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "unknown type"
+  }
+ ]
+}

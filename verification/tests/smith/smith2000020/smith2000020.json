@@ -1,0 +1,38 @@
+{
+ "source_filename": "smith2000020.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000020.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": "{"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "7674321851974704122"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "{"
+   },
+   "expected": [
+    {
+     "type": "i64",
+     "value": "7674321851974704122"
+    }
+   ]
+  }
+ ]
+}

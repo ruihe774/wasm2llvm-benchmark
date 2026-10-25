@@ -1,0 +1,26 @@
+{
+ "source_filename": "memory64__table_copy_mixed.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 20,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 30,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 40,
+   "filename": "x.3.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

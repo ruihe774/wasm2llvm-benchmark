@@ -1,0 +1,19 @@
+{
+ "source_filename": "multi-memory__binary0.wast",
+ "commands": [
+  {
+   "type": "assert_malformed",
+   "line": 48,
+   "filename": "x.5.wasm",
+   "module_type": "binary",
+   "text": "integer representation too long"
+  },
+  {
+   "type": "assert_malformed",
+   "line": 59,
+   "filename": "x.6.wasm",
+   "module_type": "binary",
+   "text": "unexpected end of section or function"
+  }
+ ]
+}

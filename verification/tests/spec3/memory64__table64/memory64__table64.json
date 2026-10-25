@@ -1,0 +1,19 @@
+{
+ "source_filename": "memory64__table64.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 16,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "size minimum must not be greater than maximum"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 20,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "size minimum must not be greater than maximum"
+  }
+ ]
+}

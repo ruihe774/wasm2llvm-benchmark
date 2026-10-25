@@ -1,0 +1,1 @@
+{"invocations": [{"field": "run", "args": [{"type": "i32", "value": "2000"}]}], "bench": [{"field": "run", "args": [{"type": "i32", "value": "4000000"}]}]}

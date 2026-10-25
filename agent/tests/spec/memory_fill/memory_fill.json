@@ -1,0 +1,1055 @@
+{
+ "source_filename": "memory_fill.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 6,
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "action",
+   "line": 22,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 24,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "65280"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 26,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65280"
+     },
+     {
+      "type": "i32",
+      "value": "65536"
+     },
+     {
+      "type": "i32",
+      "value": "85"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 28,
+   "filename": "x.1.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 44,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "module",
+   "line": 46,
+   "filename": "x.2.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 62,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "module",
+   "line": 64,
+   "filename": "x.3.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "action",
+   "line": 80,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 82,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "65536"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 84,
+   "filename": "x.4.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "action",
+   "line": 100,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   }
+  },
+  {
+   "type": "module",
+   "line": 102,
+   "filename": "x.5.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 118,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "module",
+   "line": 120,
+   "filename": "x.6.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "action",
+   "line": 136,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 138,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 140,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "i32",
+      "value": "65535"
+     },
+     {
+      "type": "i32",
+      "value": "170"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 142,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65535"
+     },
+     {
+      "type": "i32",
+      "value": "65536"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 145,
+   "filename": "x.7.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "action",
+   "line": 162,
+   "action": {
+    "type": "invoke",
+    "field": "test",
+    "args": []
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 164,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "18"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 166,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "18"
+     },
+     {
+      "type": "i32",
+      "value": "21"
+     },
+     {
+      "type": "i32",
+      "value": "85"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 168,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "21"
+     },
+     {
+      "type": "i32",
+      "value": "25"
+     },
+     {
+      "type": "i32",
+      "value": "170"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 170,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "25"
+     },
+     {
+      "type": "i32",
+      "value": "28"
+     },
+     {
+      "type": "i32",
+      "value": "85"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 172,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "28"
+     },
+     {
+      "type": "i32",
+      "value": "65536"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "assert_invalid",
+   "line": 175,
+   "filename": "x.8.wasm",
+   "module_type": "binary",
+   "text": "unknown memory 0"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 181,
+   "filename": "x.9.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 188,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 195,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 202,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 209,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 216,
+   "filename": "x.14.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 223,
+   "filename": "x.15.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 230,
+   "filename": "x.16.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 237,
+   "filename": "x.17.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 244,
+   "filename": "x.18.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 251,
+   "filename": "x.19.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 258,
+   "filename": "x.20.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 265,
+   "filename": "x.21.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 272,
+   "filename": "x.22.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 279,
+   "filename": "x.23.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 286,
+   "filename": "x.24.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 293,
+   "filename": "x.25.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 300,
+   "filename": "x.26.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 307,
+   "filename": "x.27.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 314,
+   "filename": "x.28.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 321,
+   "filename": "x.29.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 328,
+   "filename": "x.30.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 335,
+   "filename": "x.31.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 342,
+   "filename": "x.32.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 349,
+   "filename": "x.33.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 356,
+   "filename": "x.34.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 363,
+   "filename": "x.35.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 370,
+   "filename": "x.36.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 377,
+   "filename": "x.37.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 384,
+   "filename": "x.38.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 391,
+   "filename": "x.39.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 398,
+   "filename": "x.40.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 405,
+   "filename": "x.41.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 412,
+   "filename": "x.42.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 419,
+   "filename": "x.43.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 426,
+   "filename": "x.44.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 433,
+   "filename": "x.45.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 440,
+   "filename": "x.46.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 447,
+   "filename": "x.47.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 454,
+   "filename": "x.48.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 461,
+   "filename": "x.49.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 468,
+   "filename": "x.50.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 475,
+   "filename": "x.51.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 482,
+   "filename": "x.52.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 489,
+   "filename": "x.53.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 496,
+   "filename": "x.54.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 503,
+   "filename": "x.55.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 510,
+   "filename": "x.56.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 517,
+   "filename": "x.57.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 524,
+   "filename": "x.58.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 531,
+   "filename": "x.59.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 538,
+   "filename": "x.60.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 545,
+   "filename": "x.61.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 552,
+   "filename": "x.62.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 559,
+   "filename": "x.63.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 566,
+   "filename": "x.64.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 573,
+   "filename": "x.65.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 580,
+   "filename": "x.66.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 587,
+   "filename": "x.67.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 594,
+   "filename": "x.68.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 601,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 608,
+   "filename": "x.70.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 615,
+   "filename": "x.71.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "module",
+   "line": 621,
+   "filename": "x.72.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 638,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65280"
+     },
+     {
+      "type": "i32",
+      "value": "37"
+     },
+     {
+      "type": "i32",
+      "value": "512"
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_return",
+   "line": 641,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 643,
+   "filename": "x.73.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 660,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65279"
+     },
+     {
+      "type": "i32",
+      "value": "37"
+     },
+     {
+      "type": "i32",
+      "value": "514"
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_return",
+   "line": 663,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 665,
+   "filename": "x.74.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 682,
+   "action": {
+    "type": "invoke",
+    "field": "run",
+    "args": [
+     {
+      "type": "i32",
+      "value": "65279"
+     },
+     {
+      "type": "i32",
+      "value": "37"
+     },
+     {
+      "type": "i32",
+      "value": "-1"
+     }
+    ]
+   },
+   "text": "out of bounds memory access"
+  },
+  {
+   "type": "assert_return",
+   "line": 685,
+   "action": {
+    "type": "invoke",
+    "field": "checkRange",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "-1"
+    }
+   ]
+  }
+ ]
+}

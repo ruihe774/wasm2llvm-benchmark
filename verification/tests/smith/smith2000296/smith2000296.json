@@ -1,0 +1,102 @@
+{
+ "source_filename": "smith2000296.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith2000296.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": "1"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "112",
+      "234",
+      "253",
+      "150",
+      "215",
+      "217",
+      "141",
+      "175",
+      "28",
+      "199",
+      "129",
+      "196",
+      "216",
+      "11",
+      "51",
+      "138"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "f32",
+     "value": "4081416476"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "get",
+    "field": "1"
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "112",
+      "234",
+      "253",
+      "150",
+      "215",
+      "217",
+      "141",
+      "175",
+      "28",
+      "199",
+      "129",
+      "196",
+      "216",
+      "11",
+      "51",
+      "138"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "get",
+    "field": "2"
+   },
+   "expected": [
+    {
+     "type": "f32",
+     "value": "4081416476"
+    }
+   ]
+  }
+ ]
+}

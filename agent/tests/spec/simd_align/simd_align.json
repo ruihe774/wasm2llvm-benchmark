@@ -1,0 +1,592 @@
+{
+ "source_filename": "simd_align.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 3,
+   "filename": "x.0.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 4,
+   "filename": "x.1.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 5,
+   "filename": "x.2.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 6,
+   "filename": "x.3.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 7,
+   "filename": "x.4.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 9,
+   "filename": "x.5.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 10,
+   "filename": "x.6.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 11,
+   "filename": "x.7.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 12,
+   "filename": "x.8.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 13,
+   "filename": "x.9.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 15,
+   "filename": "x.10.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 16,
+   "filename": "x.11.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 17,
+   "filename": "x.12.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 18,
+   "filename": "x.13.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 19,
+   "filename": "x.14.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 20,
+   "filename": "x.15.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 21,
+   "filename": "x.16.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 22,
+   "filename": "x.17.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 23,
+   "filename": "x.18.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 24,
+   "filename": "x.19.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 25,
+   "filename": "x.20.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 26,
+   "filename": "x.21.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 27,
+   "filename": "x.22.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 28,
+   "filename": "x.23.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 29,
+   "filename": "x.24.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 30,
+   "filename": "x.25.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 31,
+   "filename": "x.26.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 32,
+   "filename": "x.27.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 33,
+   "filename": "x.28.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 34,
+   "filename": "x.29.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 35,
+   "filename": "x.30.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 36,
+   "filename": "x.31.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 37,
+   "filename": "x.32.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 38,
+   "filename": "x.33.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 40,
+   "filename": "x.34.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 41,
+   "filename": "x.35.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 42,
+   "filename": "x.36.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 43,
+   "filename": "x.37.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 44,
+   "filename": "x.38.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 45,
+   "filename": "x.39.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 46,
+   "filename": "x.40.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 47,
+   "filename": "x.41.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 48,
+   "filename": "x.42.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 49,
+   "filename": "x.43.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 54,
+   "filename": "x.44.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 58,
+   "filename": "x.45.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 62,
+   "filename": "x.46.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 66,
+   "filename": "x.47.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 70,
+   "filename": "x.48.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 74,
+   "filename": "x.49.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 78,
+   "filename": "x.50.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 82,
+   "filename": "x.51.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 86,
+   "filename": "x.52.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 90,
+   "filename": "x.53.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 94,
+   "filename": "x.54.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 98,
+   "filename": "x.55.wasm",
+   "module_type": "binary",
+   "text": "alignment must not be larger than natural"
+  },
+  {
+   "type": "module",
+   "line": 311,
+   "filename": "x.90.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_return",
+   "line": 321,
+   "action": {
+    "type": "invoke",
+    "field": "v128.load align=16",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i32",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 322,
+   "action": {
+    "type": "invoke",
+    "field": "v128.load align=16",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i32",
+     "value": [
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 323,
+   "action": {
+    "type": "invoke",
+    "field": "v128.store align=16",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "v128",
+      "lane_type": "i8",
+      "value": [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10",
+       "11",
+       "12",
+       "13",
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ]
+   },
+   "expected": []
+  },
+  {
+   "type": "assert_return",
+   "line": 324,
+   "action": {
+    "type": "invoke",
+    "field": "v128.load align=16",
+    "args": [
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 328,
+   "filename": "x.91.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_return",
+   "line": 352,
+   "action": {
+    "type": "invoke",
+    "field": "v128_unaligned_read_and_write",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 353,
+   "action": {
+    "type": "invoke",
+    "field": "v128_aligned_read_and_write",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i16",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 354,
+   "action": {
+    "type": "invoke",
+    "field": "v128_aligned_read_and_unaligned_write",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i32",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 355,
+   "action": {
+    "type": "invoke",
+    "field": "v128_unaligned_read_and_aligned_write",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i32",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ]
+    }
+   ]
+  }
+ ]
+}

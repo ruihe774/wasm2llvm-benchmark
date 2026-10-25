@@ -1,0 +1,19 @@
+{
+ "source_filename": "table_size.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 70,
+   "filename": "x.1.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 79,
+   "filename": "x.2.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

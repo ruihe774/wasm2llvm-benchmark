@@ -1,0 +1,103 @@
+{
+ "source_filename": "memory64__memory64.wast",
+ "commands": [
+  {
+   "type": "assert_invalid",
+   "line": 18,
+   "filename": "x.9.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 19,
+   "filename": "x.10.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 20,
+   "filename": "x.11.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 23,
+   "filename": "x.12.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 27,
+   "filename": "x.13.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 31,
+   "filename": "x.14.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 35,
+   "filename": "x.15.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 39,
+   "filename": "x.16.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 43,
+   "filename": "x.17.wasm",
+   "module_type": "binary",
+   "text": "unknown memory"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 49,
+   "filename": "x.18.wasm",
+   "module_type": "binary",
+   "text": "size minimum must not be greater than maximum"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 54,
+   "filename": "x.19.wasm",
+   "module_type": "binary",
+   "text": "memory size"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 58,
+   "filename": "x.20.wasm",
+   "module_type": "binary",
+   "text": "memory size"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 63,
+   "filename": "x.21.wasm",
+   "module_type": "binary",
+   "text": "memory size"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 67,
+   "filename": "x.22.wasm",
+   "module_type": "binary",
+   "text": "memory size"
+  }
+ ]
+}

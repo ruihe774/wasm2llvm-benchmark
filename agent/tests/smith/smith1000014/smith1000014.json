@@ -1,0 +1,74 @@
+{
+ "source_filename": "smith1000014.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith1000014.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "198",
+      "106",
+      "107",
+      "19",
+      "170",
+      "62",
+      "33",
+      "235",
+      "242",
+      "7",
+      "10",
+      "101",
+      "171",
+      "0",
+      "197",
+      "208"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 3,
+   "action": {
+    "type": "get",
+    "field": ""
+   },
+   "expected": [
+    {
+     "type": "v128",
+     "lane_type": "i8",
+     "value": [
+      "198",
+      "106",
+      "107",
+      "19",
+      "170",
+      "62",
+      "33",
+      "235",
+      "242",
+      "7",
+      "10",
+      "101",
+      "171",
+      "0",
+      "197",
+      "208"
+     ]
+    }
+   ]
+  }
+ ]
+}

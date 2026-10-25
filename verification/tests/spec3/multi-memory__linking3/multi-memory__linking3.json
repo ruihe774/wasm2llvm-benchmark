@@ -1,0 +1,12 @@
+{
+ "source_filename": "multi-memory__linking3.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 52,
+   "name": "Ms",
+   "filename": "x.4.wasm",
+   "module_type": "binary"
+  }
+ ]
+}

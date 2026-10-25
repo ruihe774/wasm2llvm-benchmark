@@ -1,0 +1,482 @@
+{
+ "source_filename": "elem.wast",
+ "commands": [
+  {
+   "type": "module",
+   "line": 98,
+   "filename": "x.3.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 109,
+   "filename": "x.5.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 142,
+   "filename": "x.9.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_return",
+   "line": 156,
+   "action": {
+    "type": "invoke",
+    "field": "call-7",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "65"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 157,
+   "action": {
+    "type": "invoke",
+    "field": "call-9",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "66"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 190,
+   "filename": "x.13.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 201,
+   "filename": "x.15.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 210,
+   "filename": "x.17.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 215,
+   "filename": "x.18.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 247,
+   "filename": "x.23.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 252,
+   "filename": "x.24.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 264,
+   "filename": "x.25.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 269,
+   "filename": "x.26.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 281,
+   "filename": "x.27.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 286,
+   "filename": "x.28.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 298,
+   "filename": "x.29.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "module",
+   "line": 303,
+   "filename": "x.30.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 517,
+   "filename": "x.55.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 525,
+   "filename": "x.56.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 594,
+   "filename": "x.63.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 603,
+   "filename": "x.64.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 612,
+   "filename": "x.65.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 621,
+   "filename": "x.66.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 628,
+   "filename": "x.67.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 645,
+   "filename": "x.69.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 662,
+   "filename": "x.71.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_uninstantiable",
+   "line": 679,
+   "filename": "x.73.wasm",
+   "module_type": "binary",
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "module",
+   "line": 698,
+   "filename": "x.75.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 706,
+   "action": {
+    "type": "invoke",
+    "field": "init",
+    "args": []
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "module",
+   "line": 708,
+   "filename": "x.76.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 716,
+   "action": {
+    "type": "invoke",
+    "field": "init",
+    "args": []
+   },
+   "text": "out of bounds table access"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 722,
+   "filename": "x.77.wasm",
+   "module_type": "binary",
+   "text": "unknown table"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 733,
+   "filename": "x.78.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 741,
+   "filename": "x.79.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 749,
+   "filename": "x.80.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 757,
+   "filename": "x.81.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 765,
+   "filename": "x.82.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 774,
+   "filename": "x.83.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 784,
+   "filename": "x.84.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 792,
+   "filename": "x.85.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 800,
+   "filename": "x.86.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 808,
+   "filename": "x.87.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 816,
+   "filename": "x.88.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 825,
+   "filename": "x.89.wasm",
+   "module_type": "binary",
+   "text": "unknown global 0"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 833,
+   "filename": "x.90.wasm",
+   "module_type": "binary",
+   "text": "unknown global 1"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 842,
+   "filename": "x.91.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 854,
+   "filename": "x.92.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 862,
+   "filename": "x.93.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 870,
+   "filename": "x.94.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 878,
+   "filename": "x.95.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 886,
+   "filename": "x.96.wasm",
+   "module_type": "binary",
+   "text": "constant expression required"
+  },
+  {
+   "type": "module",
+   "line": 897,
+   "filename": "x.97.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_return",
+   "line": 908,
+   "action": {
+    "type": "invoke",
+    "field": "call-overwritten",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "66"
+    }
+   ]
+  },
+  {
+   "type": "module",
+   "line": 926,
+   "name": "module1",
+   "filename": "x.99.wasm",
+   "module_type": "binary"
+  },
+  {
+   "type": "assert_trap",
+   "line": 946,
+   "action": {
+    "type": "invoke",
+    "module": "module1",
+    "field": "call-7",
+    "args": []
+   },
+   "text": "uninitialized element"
+  },
+  {
+   "type": "assert_return",
+   "line": 947,
+   "action": {
+    "type": "invoke",
+    "module": "module1",
+    "field": "call-8",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "65"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 948,
+   "action": {
+    "type": "invoke",
+    "module": "module1",
+    "field": "call-9",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "66"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 961,
+   "action": {
+    "type": "invoke",
+    "module": "module1",
+    "field": "call-9",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "66"
+    }
+   ]
+  },
+  {
+   "type": "assert_invalid",
+   "line": 979,
+   "filename": "x.102.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 984,
+   "filename": "x.103.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 989,
+   "filename": "x.104.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  },
+  {
+   "type": "assert_invalid",
+   "line": 998,
+   "filename": "x.105.wasm",
+   "module_type": "binary",
+   "text": "type mismatch"
+  }
+ ]
+}

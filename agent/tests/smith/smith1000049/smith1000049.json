@@ -1,0 +1,26 @@
+{
+ "source_filename": "smith1000049.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "smith1000049.wasm"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 2,
+   "module": null,
+   "memory": "1",
+   "size": 327680,
+   "fnv1a64": "687f6c7bf0d2a009"
+  },
+  {
+   "type": "assert_memhash",
+   "line": 3,
+   "module": null,
+   "memory": "1",
+   "size": 327680,
+   "fnv1a64": "687f6c7bf0d2a009"
+  }
+ ]
+}
