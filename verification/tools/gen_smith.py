@@ -120,7 +120,7 @@ def gen_one(seed, out_root, work):
     for _round in range(2):
         for name, fidx in fexports:
             ps = params[funcs[fidx]]
-            if any(p not in ("i32", "i64", "f32", "f64", "v128") for p in ps + types[funcs[fidx]]):
+            if any(p not in ("i32", "i64", "f32", "f64", "v128") for p in ps + types[funcs[fidx]][1]):
                 continue
             for _ in range(rng.choice([1, 2, 3])):
                 cmds.append({"type": "action", "line": line,

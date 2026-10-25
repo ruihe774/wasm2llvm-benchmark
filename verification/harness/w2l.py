@@ -463,6 +463,8 @@ def run_script(script_path, backend, verbose=False):
                 raise Crash("no module")
             try:
                 params, results = types.func_sig(wasm, action["field"])
+            except KeyError:
+                raise Crash(f"memwrite_fn: no such export {action['field']}")
             except Exception as e:
                 raise Crash(f"memwrite_fn: {e}")
             if params or len(results) != 1 or results[0] not in ("i32", "i64"):
@@ -676,6 +678,8 @@ def record_script(script_path, out_path, work):
                 if act["type"] == "memwrite_fn":
                     try:
                         params, results = types.func_sig(wasm, act["field"])
+                    except KeyError:
+                        raise SystemExit(f"{script_path}: memwrite_fn: no such export {act['field']}")
                     except Exception as e:
                         raise SystemExit(f"{script_path}: memwrite_fn: {e}")
                     if params or len(results) != 1 or results[0] not in ("i32", "i64"):
