@@ -31,6 +31,21 @@ secondary.
 Rust toolchain: the system rustup `stable` = 1.99.1 (LLVM 23.1.1), targets
 `wasm32v1-none`, `wasm32-unknown-unknown`, `x86_64-unknown-linux-gnu`.
 
+## Setup (fresh clone)
+
+```
+./setup.sh                      # or ./setup.sh --skip-ref-build
+```
+Fetches everything git ignores: the LLVM/wabt/wasm-tools/wasmtime archives
+(verified against `deps/downloads/SHA256SUMS`) and their extraction into
+`deps/toolchains/`, the spec repos and LLVM docs in `deps/src/`, the wabt/simde
+checkouts under `verification/reference/third_party/`, the rustup targets, and a
+build of `deps/bin/w2l-ref`. It is idempotent. It needs network access, git, curl,
+tar, zstd, xz, bubblewrap, socat and rustup/cargo, and downloads ~1.2 GB (LLVM is
+extracted with `zstd --long=31`). `deps/src/wasm-core-2.html` is fetched from
+w3.org on a best-effort basis. `sandbox/generated/` and benchmark results are not
+recreated.
+
 ## Running an agent
 
 ```
