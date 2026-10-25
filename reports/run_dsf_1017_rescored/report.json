@@ -1,6 +1,6 @@
 {
  "submission": "/mnt/workspace/w2l-runs/run_dsf_1017",
- "started": "2026-10-24 21:25:32",
+ "started": "2026-10-25 00:24:52",
  "build": {
   "ok": true,
   "log": ""
@@ -3458,16 +3458,16 @@
     "per_script_validation": {},
     "failures": {
      "hidden/smith2000205/smith2000205.json": [
-      "line 2 assert_return [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 3 assert_return [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 4 assert_return [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 5 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 6 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 7 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 8 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 9 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 10 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
-      "line 11 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-1_jv4z_g/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr "
+      "line 2 assert_return [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 3 assert_return [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 4 assert_return [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 5 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 6 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 7 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 8 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 9 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 10 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr ",
+      "line 11 assert_trap [native-O0]: module at line 1 unavailable: clang failed: /tmp/w2l-verify-xqy1pain/native/cache/b0f26de019f4fa854d8a3ec0.ll:614:32: error: use of undefined value '@w2l.elem0'\n  614 |   %t36 = getelementptr i8, ptr "
      ]
     },
     "modules_ok": [
@@ -3479,8 +3479,8 @@
   }
  },
  "simd_quality": {
-  "score": 0.9487179487179487,
-  "passed": 222,
+  "score": 1.0,
+  "passed": 234,
   "total": 234,
   "ops": [
    {
@@ -5033,7 +5033,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i8x16.extract_lane_u",
@@ -5041,7 +5042,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i8x16.replace_lane",
@@ -5065,7 +5067,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i16x8.extract_lane_u",
@@ -5073,7 +5076,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i16x8.replace_lane",
@@ -5097,7 +5101,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i32x4.replace_lane",
@@ -5121,7 +5126,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i64x2.replace_lane",
@@ -5145,7 +5151,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "f32x4.replace_lane",
@@ -5169,7 +5176,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "f64x2.replace_lane",
@@ -5337,7 +5345,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.store16_lane",
@@ -5345,7 +5354,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.store32_lane",
@@ -5353,7 +5363,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.store64_lane",
@@ -5361,71 +5372,72 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    }
   ]
  },
  "perf": {
-  "geomean_speedup_vs_wasmtime": 1.1247387543219831,
+  "geomean_speedup_vs_wasmtime": 1.1238175268537156,
   "benches_ok": 8,
   "benches": [
    {
     "bench": "compress-O3",
-    "native_s": 0.7985989619992324,
-    "wasmtime_s": 0.7312424709998595,
+    "native_s": 0.8006542260009155,
+    "wasmtime_s": 0.732256507002603,
     "error": null,
-    "speedup_vs_wasmtime": 0.915656675998237
+    "speedup_vs_wasmtime": 0.914572712193198
    },
    {
     "bench": "crypto-O3",
-    "native_s": 0.6850239519990282,
-    "wasmtime_s": 0.7022392840008251,
+    "native_s": 0.6748219589971995,
+    "wasmtime_s": 0.7015480660011235,
     "error": null,
-    "speedup_vs_wasmtime": 1.0251309927945722
+    "speedup_vs_wasmtime": 1.0396046789046989
    },
    {
     "bench": "nbody-O3",
-    "native_s": 0.7873538519997965,
-    "wasmtime_s": 0.755348407999918,
+    "native_s": 0.7871486520016333,
+    "wasmtime_s": 0.7559725610008172,
     "error": null,
-    "speedup_vs_wasmtime": 0.9593506224442949
+    "speedup_vs_wasmtime": 0.9603936423932904
    },
    {
     "bench": "numerics-O3",
-    "native_s": 1.4530399049999687,
-    "wasmtime_s": 1.6268732649987214,
+    "native_s": 1.4559126800013473,
+    "wasmtime_s": 1.6276726010000857,
     "error": null,
-    "speedup_vs_wasmtime": 1.119634264276284
+    "speedup_vs_wasmtime": 1.1179740539100047
    },
    {
     "bench": "raytrace-O3",
-    "native_s": 1.5031030779991852,
-    "wasmtime_s": 1.4364036030001444,
+    "native_s": 1.503872170997056,
+    "wasmtime_s": 1.4362560589979694,
     "error": null,
-    "speedup_vs_wasmtime": 0.9556254817282218
+    "speedup_vs_wasmtime": 0.955038657338637
    },
    {
     "bench": "simd_image-O3",
-    "native_s": 1.6472047560000647,
-    "wasmtime_s": 0.848952152999118,
+    "native_s": 1.6525696079988847,
+    "wasmtime_s": 0.8520554050010105,
     "error": null,
-    "speedup_vs_wasmtime": 0.5153895712762772
+    "speedup_vs_wasmtime": 0.5155942605242354
    },
    {
     "bench": "text-O3",
-    "native_s": 0.07344890999956988,
-    "wasmtime_s": 0.30163947800065216,
+    "native_s": 0.0750519159992109,
+    "wasmtime_s": 0.3004256640015228,
     "error": null,
-    "speedup_vs_wasmtime": 4.106793116499872
+    "speedup_vs_wasmtime": 4.002904656087414
    },
    {
     "bench": "vm-O3",
-    "native_s": 1.7607475889999478,
-    "wasmtime_s": 2.2111521779988834,
+    "native_s": 1.7560612880006374,
+    "wasmtime_s": 2.2204159590000927,
     "error": null,
-    "speedup_vs_wasmtime": 1.2558030417379427
+    "speedup_vs_wasmtime": 1.2644296495643077
    }
   ]
  },
- "finished": "2026-10-24 21:26:58"
+ "finished": "2026-10-25 00:26:17"
 }

@@ -1,6 +1,6 @@
 {
  "submission": "/mnt/workspace/w2l-runs/run_gpt6_luna",
- "started": "2026-10-25 00:02:39",
+ "started": "2026-10-25 00:26:17",
  "build": {
   "ok": true,
   "log": ""
@@ -1345,7 +1345,7 @@
      576,
      576
     ],
-    "seconds": 2
+    "seconds": 3
    },
    "payloads": {
     "weight": 0.3,
@@ -3466,8 +3466,8 @@
   }
  },
  "simd_quality": {
-  "score": 0.9273504273504274,
-  "passed": 217,
+  "score": 0.9957264957264957,
+  "passed": 233,
   "total": 234,
   "ops": [
    {
@@ -4940,7 +4940,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i8x16.all_true",
@@ -4988,6 +4989,7 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
+    "mem_ops": 5,
     "status": "scalarized"
    },
    {
@@ -5004,7 +5006,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "i8x16.splat",
@@ -5020,7 +5023,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i8x16.extract_lane_u",
@@ -5028,7 +5032,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i8x16.replace_lane",
@@ -5052,7 +5057,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i16x8.extract_lane_u",
@@ -5060,7 +5066,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i16x8.replace_lane",
@@ -5084,7 +5091,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i32x4.replace_lane",
@@ -5108,7 +5116,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "i64x2.replace_lane",
@@ -5132,7 +5141,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "f32x4.replace_lane",
@@ -5156,7 +5166,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 2,
+    "status": "pass"
    },
    {
     "op": "f64x2.replace_lane",
@@ -5268,7 +5279,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.load64_zero",
@@ -5276,7 +5288,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.load8_lane",
@@ -5324,7 +5337,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.store16_lane",
@@ -5332,7 +5346,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.store32_lane",
@@ -5340,7 +5355,8 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    },
    {
     "op": "v128.store64_lane",
@@ -5348,71 +5364,72 @@
     "correct": true,
     "lane_ops": 0,
     "vector_lines": 0,
-    "status": "scalarized"
+    "mem_ops": 3,
+    "status": "pass"
    }
   ]
  },
  "perf": {
-  "geomean_speedup_vs_wasmtime": 0.7970425759169256,
+  "geomean_speedup_vs_wasmtime": 0.802538450631516,
   "benches_ok": 8,
   "benches": [
    {
     "bench": "compress-O3",
-    "native_s": 1.004837131997192,
-    "wasmtime_s": 0.7310290080022241,
+    "native_s": 0.9989750890017604,
+    "wasmtime_s": 0.730835466998542,
     "error": null,
-    "speedup_vs_wasmtime": 0.7275099463623991
+    "speedup_vs_wasmtime": 0.7315852767948793
    },
    {
     "bench": "crypto-O3",
-    "native_s": 0.6880584259997704,
-    "wasmtime_s": 0.7018433079974784,
+    "native_s": 0.6737083419975534,
+    "wasmtime_s": 0.7016731510011596,
     "error": null,
-    "speedup_vs_wasmtime": 1.0200344643373536
+    "speedup_vs_wasmtime": 1.0415087765140183
    },
    {
     "bench": "nbody-O3",
-    "native_s": 2.223234377997869,
-    "wasmtime_s": 0.7552332469967951,
+    "native_s": 2.224897564999992,
+    "wasmtime_s": 0.7555304520028585,
     "error": null,
-    "speedup_vs_wasmtime": 0.339700237847581
+    "speedup_vs_wasmtime": 0.3395798817384481
    },
    {
     "bench": "numerics-O3",
-    "native_s": 1.8917140630001086,
-    "wasmtime_s": 1.6272015440008545,
+    "native_s": 1.891132408996782,
+    "wasmtime_s": 1.6286873700009892,
     "error": null,
-    "speedup_vs_wasmtime": 0.8601730968898343
+    "speedup_vs_wasmtime": 0.8612233401811267
    },
    {
     "bench": "raytrace-O3",
-    "native_s": 4.793776029000583,
-    "wasmtime_s": 1.439389379000204,
+    "native_s": 4.7976583119998395,
+    "wasmtime_s": 1.436768186998961,
     "error": null,
-    "speedup_vs_wasmtime": 0.3002621253668147
+    "speedup_vs_wasmtime": 0.2994728039313128
    },
    {
     "bench": "simd_image-O3",
-    "native_s": 1.571053726001992,
-    "wasmtime_s": 0.8512349530028587,
+    "native_s": 1.5710911480018694,
+    "wasmtime_s": 0.8476864389995171,
     "error": null,
-    "speedup_vs_wasmtime": 0.5418242157568196
+    "speedup_vs_wasmtime": 0.5395526797268343
    },
    {
     "bench": "text-O3",
-    "native_s": 0.084954956000729,
-    "wasmtime_s": 0.30690141300146934,
+    "native_s": 0.07967486300185556,
+    "wasmtime_s": 0.29973982000228716,
     "error": null,
-    "speedup_vs_wasmtime": 3.612519239005148
+    "speedup_vs_wasmtime": 3.762037469650955
    },
    {
     "bench": "vm-O3",
-    "native_s": 1.7308188650022203,
-    "wasmtime_s": 2.2120715279997967,
+    "native_s": 1.7378720579981746,
+    "wasmtime_s": 2.20772308999949,
     "error": null,
-    "speedup_vs_wasmtime": 1.278049120406923
+    "speedup_vs_wasmtime": 1.2703599668565528
    }
   ]
  },
- "finished": "2026-10-25 00:04:21"
+ "finished": "2026-10-25 00:28:00"
 }
