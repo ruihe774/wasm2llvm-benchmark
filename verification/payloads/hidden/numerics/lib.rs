@@ -74,7 +74,8 @@ fn conv(bits: u64) -> u64 {
     r = hf64(r, f.minimum(-0.0));
     r = hf64(r, f.maximum(0.0));
     r = hf32(r, g.minimum(f as f32));
-    r = hf64(r, f.copysign(g as f64));
+    // the sign of a NaN produced by promote is implementation-defined in wasm, so keep it out of copysign
+    r = hf64(r, f.copysign(if g.is_nan() { 1.0 } else { g as f64 }));
     r = h(r, (f.abs() == g.abs() as f64) as u64 | ((f < 0.0) as u64) << 1 | ((g >= -0.0) as u64) << 2);
     r
 }

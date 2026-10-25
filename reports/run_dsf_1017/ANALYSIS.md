@@ -39,3 +39,9 @@ the agent did not try to bypass them.
   (e.g. `select isnan, or(bits, quiet), fpext`) or use an opaque barrier.
 * Benchmark share of the blame: only that the hidden `numerics` payload observes a NaN's sign through
   `copysign`, which the README says payloads avoid. Agent share: the unnecessary sign/payload loss.
+
+## Benchmark fix applied
+`verification/payloads/hidden/numerics/lib.rs`: the `copysign(f, g as f64)` line now substitutes 1.0 when `g` is NaN,
+so the NaN sign no longer leaks. Rebuilt numerics-{O0,O3,Os} (wasm + expectations); both the reference
+baseline and the run_dsf_1017 submission pass them. Re-scored report: `reports/run_dsf_1017_rescored/`
+(correctness 0.9839 -> 0.9995; payloads 45/45; only the agent's smith2000205 bug remains; perf 1.125x).
