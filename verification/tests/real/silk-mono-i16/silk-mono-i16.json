@@ -1,0 +1,92 @@
+{
+ "source_filename": "silk-mono-i16.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "silk-mono-i16.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "minisilk_init",
+    "args": [
+     {
+      "type": "i32",
+      "value": "32000"
+     },
+     {
+      "type": "i32",
+      "value": "10"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "action",
+   "line": 3,
+   "action": {
+    "type": "memwrite_fn",
+    "field": "minisilk_input_i16_ptr",
+    "memory": "memory",
+    "hex": "00000f08e00f3917e11da4235828d92b0b2ede2e4c2e592c13299524ff1e7d1841118109780166f984f111ea46e355dd6dd8b2d441d22ed17fd133d33cd684daeadf44e663ed0ff50ffd2405130d9f148d1ba921c426b82a662dbb2eaa2e362d692a59262521f41af5135e0c690453fc58f4b6eca7e562df14dae8d5fdd269d138d16cd2fbd4d3d8d5dddbe3b9ea38f221fa3502390af0111d198c1f09256d29942c682eda2ee62d952bf72729234e1d95162f0f550744ff38f76fef24e88fe1e2db49d7e6d3d3d120d1d3d1e6d349d7e2db8fe124e86fef38f744ff55072f0f95164e1d2923f727952be62dda2e682e942c6d2909258c1f1d19f011390a350221fa38f2b9eadbe3d5ddd3d8fbd46cd238d169d1fdd2e8d514da62dfa7e5b6ec58f453fc69045e0cf513f41a25215926692a362daa2ebb2e662db82ac426a9218d1b9f14130d24050ffd0ff563ed44e6eadf84da3cd633d37fd12ed141d2b2d46dd855dd46e311ea84f166f97801810941117d18ff1e95241329592c4c2ede2e0b2ed92b5828a423e11d3917e00f0f080000f1f720f0c7e81fe25cdca8d727d4f5d122d1b4d1a7d3edd66bdb01e183e7bfee7ff688fe9a067c0eef15ba1cab2293274e2bbf2dd22e812ecd2cc4297c251620bc199d12f10af102dcfaedf261eb73e457de3cd948d59ad245d156d1cad297d5a7d9dbde0ce50beca2f397fbad03a80b4a13591a9e20ec25182a032d972ec82e942d052b2d272b22251c4715c80ddf05cbfdc7f510eee3e674e0f7da93d66cd398d126d11ad26bd409d8d7dcb2e26be9d1f0abf8bc00c8089110dc17711e1e24b7281a2c2d2ee02e2d2e1a2cb7281e24711edc179110c808bc00abf8d1f06be9b2e2d7dc09d86bd41ad226d198d1"
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "minisilk_encode_i16",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "109"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "minisilk_final_range",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "59325760"
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 6,
+   "module": null,
+   "memory": "memory",
+   "size": 131072,
+   "fnv1a64": "469e08e79be22e60"
+  },
+  {
+   "type": "assert_output",
+   "line": 7,
+   "module": null,
+   "hex": ""
+  }
+ ]
+}

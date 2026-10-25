@@ -11,8 +11,8 @@ For every crate in verification/payloads/{visible,hidden}/ and every profile
     entry of payload.json "invocations" then checks host output and the final
     memory hash, with expectations recorded from the reference runner.
   * if payload.json has "bench", also write _bench.json (used for perf scoring).
-Visible payloads go to agent/tests/payloads (sources copied to _src/),
-hidden ones to verification/tests/payloads.
+All payloads go to verification/tests/payloads (hidden); sources are in
+verification/payloads/{visible,hidden}.
 """
 
 import json
@@ -25,13 +25,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 PAY = ROOT / "verification" / "payloads"
-sys.dont_write_bytecode = True  # keep agent/harness pristine
-sys.path.insert(0, str(ROOT / "agent" / "harness"))
+sys.dont_write_bytecode = True  # keep the harness pristine
+sys.path.insert(0, str(ROOT / "verification" / "harness"))
 import w2l  # noqa: E402
 
 FEATURES = "+bulk-memory,+multivalue,+nontrapping-fptoint,+sign-ext,+simd128"
 PROFILES = [("dev", "O0", "debug"), ("release", "O3", "release"), ("os", "Os", "os")]
-DEST = {"visible": ROOT / "agent" / "tests" / "payloads", "hidden": ROOT / "verification" / "tests" / "payloads"}
+DEST = {"visible": ROOT / "verification" / "tests" / "payloads", "hidden": ROOT / "verification" / "tests" / "payloads"}
 
 
 def build(name, profile):
@@ -99,15 +99,6 @@ def main():
                     raw.unlink()
                     check_no_traps(out / "_bench.json", {})
                 print(f"{kind:8s} {tag:28s} {src.stat().st_size:8d} bytes")
-            if kind == "visible":
-                dst = DEST[kind] / "_src" / crate.name
-                if dst.exists():
-                    shutil.rmtree(dst)
-                shutil.copytree(crate, dst)
-    common = DEST["visible"] / "_src" / "common"
-    if common.exists():
-        shutil.rmtree(common)
-    shutil.copytree(PAY / "common", common)
     shutil.rmtree(work, ignore_errors=True)
 
 

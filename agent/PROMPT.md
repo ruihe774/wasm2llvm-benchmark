@@ -1,15 +1,17 @@
 You are working in an offline sandbox. Your current directory is your workspace.
 
-Your task: implement `wasm2llvm`, a WebAssembly (wasm32, core spec + bulk-memory,
-multi-value, nontrapping-fptoint, sign-ext, simd128) to LLVM 23 IR translator,
-written in Rust using only the standard library.
+Your task: implement `wasm2llvm`, a WebAssembly (wasm32) to LLVM 23 IR
+translator, written in Rust using only the standard library. The payloads in
+`payloads/` are modules that must run correctly after translation; together they
+define the required WebAssembly feature scope. Support every proposal they use,
+in full, and reject modules outside that scope.
 
-Read `TASK.md` for the full specification (scope, CLI, the ABI between the
-generated code and the test harness, and the available tools and documentation)
-and `ACCEPTANCE.md` for the acceptance criteria. Specifications are in `docs/`,
-tests and the test driver are in `tests/` and `harness/`.
+Read `TASK.md` for the task, `ABI.md` for the generated-code contract, and
+`ACCEPTANCE.md` for the acceptance criteria. The specifications and LLVM
+documentation are in `docs/`.
 
-Correctness is the primary goal: never mistranslate. Generated-code quality
-(for example real vector code for SIMD, low overhead) is secondary. Work
-autonomously until the translator is complete and the visible test suites pass;
-then write `NOTES.md` as described in ACCEPTANCE.md.
+There are no test suites. Use the tools in `deps/bin` (LLVM, wasm-tools including `smith`, wabt, and the
+`wasmtime`/`w2l-ref` reference engine; the runner protocol is in
+`examples/reference/PROTOCOL.md`) to inspect and run the payloads, generate your
+own modules, and write your own tests and test harness. Work autonomously until the translator is
+complete; then write `NOTES.md` as described in `ACCEPTANCE.md`.

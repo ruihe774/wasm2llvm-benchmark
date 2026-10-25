@@ -1,0 +1,92 @@
+{
+ "source_filename": "silk-mono-f32.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "silk-mono-f32.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "minisilk_init",
+    "args": [
+     {
+      "type": "i32",
+      "value": "32000"
+     },
+     {
+      "type": "i32",
+      "value": "10"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "action",
+   "line": 3,
+   "action": {
+    "type": "memwrite_fn",
+    "field": "minisilk_input_ptr",
+    "memory": "memory",
+    "hex": "0000000025d88c3d3fbf0a3e9bf04a3e608b823e2cbb9b3eac47b03e3594bf3e242cc93e55c6cc3e5147ca3e1fc2c13eb577b33e08d59f3eca6f873ef203563ea8c8163e941fa63d82da4d3c43da66bd9025fdbdffa93fbef60b7bbef97997be1aebacbee535bdbe25dec7be9992ccbe622fcbbe15bfc3be677ab6be82c6a3befc318cbe37e160befaab22be0b3dbfbd81c0cdbce8c9333dad8ce43df732343ec0c1703e8012933ed862a93ec8a7ba3ea75dc63e2e2bcc3e1ee4cb3e978ac53eff4eb93e9c8ea73ec3d0903eac856b3e32662e3e302ad83de32f1a3d218c00bd0dbacbbd688e28beb73a66bedf858ebecaafa5be82eab7be0cabc4be2e90cbbe5865ccbe3024c7bec6f4bbbe612cabbef34a95bea0ee75be5bf439bebae0f0bd91584dbdc15b9a3cf4b3b23d44bf1c3e83795b3e3dd5893ee1d2a13ec5feb43ec0c6c23ec1c1ca3eeeb2cc3e7a8bc83e116bbe3ee79eae3e6c9f993eb90c803e8953453e34ad043eaf26803d03e1cdbbb68099bd86c810bedc8050bec80185be16cd9dbe4fe5b1be40b1c0be1ac0c9becdccccbe1ac0c9be40b1c0be4fe5b1be16cd9dbec80185bedc8050be86c810beb68099bd03e1cdbbaf26803d34ad043e8953453eb90c803e6c9f993ee79eae3e116bbe3e7a8bc83eeeb2cc3ec1c1ca3ec0c6c23ec5feb43ee1d2a13e3dd5893e83795b3e44bf1c3ef4b3b23dc15b9a3c91584dbdbae0f0bd5bf439bea0ee75bef34a95be612cabbec6f4bbbe3024c7be5865ccbe2e90cbbe0cabc4be82eab7becaafa5bedf858ebeb73a66be688e28be0dbacbbd218c00bde32f1a3d302ad83d32662e3eac856b3ec3d0903e9c8ea73eff4eb93e978ac53e1ee4cb3e2e2bcc3ea75dc63ec8a7ba3ed862a93e8012933ec0c1703ef732343ead8ce43de8c9333d81c0cdbc0b3dbfbdfaab22be37e160befc318cbe82c6a3be677ab6be15bfc3be622fcbbe9992ccbe25dec7bee535bdbe1aebacbef97997bef60b7bbeffa93fbe9025fdbd43da66bd82da4d3c941fa63da8c8163ef203563eca6f873e08d59f3eb577b33e1fc2c13e5147ca3e55c6cc3e242cc93e3594bf3eac47b03e2cbb9b3e608b823e9bf04a3e3fbf0a3e25d88c3de3497ea625d88cbd3fbf0abe9bf04abe608b82be2cbb9bbeac47b0be3594bfbe242cc9be55c6ccbe5147cabe1fc2c1beb577b3be08d59fbeca6f87bef20356bea8c816be941fa6bd82da4dbc43da663d9025fd3dffa93f3ef60b7b3ef979973e1aebac3ee535bd3e25dec73e9992cc3e622fcb3e15bfc33e677ab63e82c6a33efc318c3e37e1603efaab223e0b3dbf3d81c0cd3ce8c933bdad8ce4bdf73234bec0c170be801293bed862a9bec8a7babea75dc6be2e2bccbe1ee4cbbe978ac5beff4eb9be9c8ea7bec3d090beac856bbe32662ebe302ad8bde32f1abd218c003d0dbacb3d688e283eb73a663edf858e3ecaafa53e82eab73e0cabc43e2e90cb3e5865cc3e3024c73ec6f4bb3e612cab3ef34a953ea0ee753e5bf4393ebae0f03d91584d3dc15b9abcf4b3b2bd44bf1cbe83795bbe3dd589bee1d2a1bec5feb4bec0c6c2bec1c1cabeeeb2ccbe7a8bc8be116bbebee79eaebe6c9f99beb90c80be895345be34ad04beaf2680bd03e1cd3bb680993d86c8103edc80503ec801853e16cd9d3e4fe5b13e40b1c03e1ac0c93ecdcccc3e1ac0c93e40b1c03e4fe5b13e16cd9d3ec801853edc80503e86c8103eb680993d03e1cd3baf2680bd34ad04be895345beb90c80be6c9f99bee79eaebe116bbebe7a8bc8beeeb2ccbec1c1cabe"
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "minisilk_encode",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "109"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "minisilk_final_range",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "136103032"
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 6,
+   "module": null,
+   "memory": "memory",
+   "size": 131072,
+   "fnv1a64": "9c758900f68c8b53"
+  },
+  {
+   "type": "assert_output",
+   "line": 7,
+   "module": null,
+   "hex": ""
+  }
+ ]
+}

@@ -109,7 +109,7 @@ if [ "$BUILD_REF" = 1 ]; then
   log "rustup targets"
   rustup target add wasm32v1-none wasm32-unknown-unknown x86_64-unknown-linux-gnu
   log "build w2l-ref"
-  (cd agent/tools/w2l-ref && CARGO_TARGET_DIR="$W2L/deps/build/w2l-ref" cargo build --release)
+  (cd verification/tools/w2l-ref && CARGO_TARGET_DIR="$W2L/deps/build/w2l-ref" cargo build --release)
   cp "deps/build/w2l-ref/release/w2l-ref" deps/bin/w2l-ref
 fi
 

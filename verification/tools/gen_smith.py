@@ -20,8 +20,8 @@ import sys
 import tempfile
 from pathlib import Path
 
-sys.dont_write_bytecode = True  # keep agent/harness pristine
-sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "agent" / "harness"))
+sys.dont_write_bytecode = True  # keep the harness pristine
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "verification" / "harness"))
 import w2l  # noqa: E402
 
 SMITH_FLAGS = [

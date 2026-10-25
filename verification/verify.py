@@ -10,10 +10,11 @@ Steps
      /mnt/workspace and /home hidden, input copied to a private dir.
   3. Correctness suites (native backend at clang -O0 and -O2; an assertion passes
      only if it passes at both levels):
-       spec      WebAssembly 2.0 core + SIMD testsuite, filtered to scope (visible)
-       spec3     tests new/changed in the 3.0 testsuite, filtered to scope (hidden)
-       payloads  Rust programs, visible + hidden, each at O0/O3/Os
-       smith     wasm-smith differential tests vs wasmtime, visible + hidden
+       spec      WebAssembly 2.0 core + SIMD testsuite, filtered to scope
+       spec3     tests new/changed in the 3.0 testsuite, filtered to scope
+       payloads  Rust programs, each at O0/O3/Os
+       real      real-world payloads (QOA, CELT/SILK Opus encoders) with hidden inputs
+       smith     wasm-smith differential tests vs wasmtime
      Assertions are split into "execution" (everything except assert_invalid /
      assert_malformed) and "validation" (rejecting invalid/malformed binaries).
   4. Secondary metrics: SIMD lowering quality, performance vs wasmtime.
@@ -37,16 +38,17 @@ VER = ROOT / "verification"
 AGENT_TEMPLATE = ROOT / "agent"
 TOOLBIN = ROOT / "deps" / "bin"
 os.environ["PATH"] = f"{TOOLBIN}:{os.environ.get('PATH', '')}"
-sys.dont_write_bytecode = True  # keep agent/harness pristine
-sys.path.insert(0, str(AGENT_TEMPLATE / "harness"))
+sys.dont_write_bytecode = True  # keep the harness pristine
+sys.path.insert(0, str(VER / "harness"))
 import w2l  # noqa: E402  (verifier uses its own pristine copy of the driver)
 
 SUITES = {
     # name: (list of dirs, weight in correctness score)
-    "spec": ([AGENT_TEMPLATE / "tests" / "spec"], 0.35),
+    "spec": ([VER / "tests" / "spec"], 0.30),
     "spec3": ([VER / "tests" / "spec3"], 0.10),
-    "payloads": ([AGENT_TEMPLATE / "tests" / "payloads", VER / "tests" / "payloads"], 0.30),
-    "smith": ([AGENT_TEMPLATE / "tests" / "smith", VER / "tests" / "smith"], 0.25),
+    "payloads": ([VER / "tests" / "payloads"], 0.20),
+    "real": ([VER / "tests" / "real"], 0.20),
+    "smith": ([VER / "tests" / "smith"], 0.20),
 }
 VALIDATION_TYPES = ("assert_invalid", "assert_malformed")
 

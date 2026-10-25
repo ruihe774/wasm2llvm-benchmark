@@ -1,0 +1,100 @@
+{
+ "source_filename": "celt-mono-i16.wasm",
+ "commands": [
+  {
+   "type": "module",
+   "line": 1,
+   "filename": "celt-mono-i16.wasm"
+  },
+  {
+   "type": "assert_return",
+   "line": 2,
+   "action": {
+    "type": "invoke",
+    "field": "minicelt_init",
+    "args": [
+     {
+      "type": "i32",
+      "value": "1"
+     },
+     {
+      "type": "i32",
+      "value": "64000"
+     },
+     {
+      "type": "i32",
+      "value": "10"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     },
+     {
+      "type": "i32",
+      "value": "0"
+     }
+    ]
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "0"
+    }
+   ]
+  },
+  {
+   "type": "action",
+   "line": 3,
+   "action": {
+    "type": "memwrite_fn",
+    "field": "minicelt_input_i16_ptr",
+    "memory": "memory",
+    "hex": "0000b20263050f08b40a500de00f6412d71439178719c01be11de81fd521a4235625e8265828a729d22ad92bba2c762d0b2e792ebf2ede2ed52ea42e4c2ecc2d252d592c662b4f2a1329b52735269524d522f820ff1eec1cc01a7d182616bc134111b70e210c8109d8062a047801c6fe14fc66f9bdf61bf484f1f9ee7dec11eab8e774e546e330e135df55dd93dbefd96dd80bd7cdd5b2d4bcd3ecd241d2bed162d12ed121d13cd17fd1e9d17bd233d311d415d53cd688d7f5d884da33dc00deeadfefe10ee444e691e8f1ea63ede5ef74f20ff5b3f75ffa0ffdc2ff74022405d107770a130da50f2a129f14021752198d1bb01dba1fa9217b233025c42638288a29b82ac22ba72c662dff2d702ebb2edd2ed72eaa2e552ed92d362d6d2c7e2b692a3129d6275926bc24ff2225212e1f1d1df41ab3185d16f5137b11f30e5e0cbe0917076904b70105ff53fca4f9faf658f4c0f134efb6ec49eaeee7a7e577e35fe162df7fddbadb14da8ed82ad7e8d5cad4d1d3fdd24fd2c9d169d131d121d138d177d1ded16cd221d3fbd3fbd420d668d7d3d85fda0bdcd5ddbcdfbfe1dbe310e65ae8b9ea29edaaef38f2d2f476f721fad0fc83ff3502e6049307390ad70c6a0ff0116614cc161d195a1b7f1d8c1f7d2152230925a12618286d299e2aac2b942c572df32d682eb52edb2eda2eb02e5f2ee62d472d812c952b842a4f29f7277d26e324292351215d1f4e1d271be81895162e14b6112f0f9b0cfc095507a704f60144ff92fce2f938f795f4fcf16feff0ec81ea24e8dce5a9e38fe18fdfaadde2db39dab0d849d704d6e3d4e6d30fd35ed2d3d170d134d120d134d170d1d3d15ed20fd3e6d3e3d404d649d7b0d839dae2dbaadd8fdf8fe1a9e3dce524e881eaf0ec6feffcf195f438f7e2f992fc44fff601a7045507fc099b0c2f0fb6112e149516e818271b4e1d5d1f51212923e3247d26f7274f29842a952b812c472de62d5f2eb02eda2edb2eb52e682ef32d572d942cac2b9e2a6d291828a126092552237d218c1f7f1d5a1b1d19cc166614f0116a0fd70c390a9307e604350283ffd0fc21fa76f7d2f438f2aaef29edb9ea5ae810e6dbe3bfe1bcdfd5dd0bdc5fdad3d868d720d6fbd4fbd321d36cd2ded177d138d121d131d169d1c9d14fd2fdd2d1d3cad4e8d52ad78ed814dabadb7fdd62df5fe177e3a7e5eee749eab6ec34efc0f158f4faf6a4f953fc05ffb70169041707be095e0cf30e7b11f5135d16b318f41a1d1d2e1f2521ff22bc245926d6273129692a7e2b6d2c362dd92d552eaa2ed72edd2ebb2e702eff2d662da72cc22bb82a8a293828c42630257b23a921ba1fb01d8d1b521902179f142a12a50f130d770ad10724057402c2ff0ffd5ffab3f70ff574f2e5ef63edf1ea91e844e60ee4efe1eadf00de33dc84daf5d888d73cd615d511d433d37bd2e9d17fd13cd121d12ed162d1bed141d2ecd2bcd3b2d4cdd50bd76dd8efd993db55dd35df30e146e374e5b8e711ea7decf9ee84f11bf4bdf666f914fcc6fe78012a04d8068109210cb70e4111bc1326167d18c01aec1cff1ef820d52295243526b52713294f2a662b592c252dcc2d4c2ea42ed52ede2ebf2e792e0b2e762dba2cd92bd22aa7295828e8265625a423d521e81fe11dc01b87193917d7146412e00f500db40a0f086305b20200004efd9dfaf1f74cf5b0f220f09ced29ebc7e879e640e41fe218e02bde5cdcaada18d9a8d759d62ed527d446d38ad2f5d187d141d122d12bd15cd1b4d134d2dbd2a7d39ad4b1d5edd64bd8cbd96bdb2bdd08df01e114e340e583e7dae944ecbfee49f1dff37ff628f9d6fb88fe3a01ec039a064309e50b7c0e07118313ef1548188c1aba1cd01ecb20ab226d2411269327f528332a4e2b442c142dbf2d422e9e2ed22edf2ec42e812e172e852dcd2cef2beb2ac42978280b277c25cd2300221620111ef21bbc1970170f159d121b108c0df10a4d08a105f1023e008cfddcfa2ff889f5edf25bf0d6ed61ebfee8aee673e450e246e057de85dcd0da3cd9c8d776d648d53ed459d39ad201d290d145d123d129d156d1abd127d2cad293d382d497d5cfd62ad8a7d944db01dddbded2e0e3e20ce54de7a3e90bec85ee0df1a2f342f6e9f897fb49fefb00ad035c060609a80b400ecc104a13b7151218591a891ca11e9e2081224624ec257227d628182a362b2f2c032db12d372e972ecf2edf2ec82e892e222e942ddf2c052c052be02998282d27a125f5232b224420411e251cf019a6174715d7125610c80d2e0b8a08df0530037d00cbfd1afb6df8c7f529f396f010ee9aeb34e9e3e6a6e481e274e083deaedcf7da5fd9e8d793d662d554d46cd3a9d20dd298d14bd125d126d150d1a1d11ad2b9d27fd36bd47cd5b1d609d883d91ddbd7dcafdea3e0b2e2d9e418e76be9d2eb4aeed1f065f304f6abf859fb0afebc006e031e06c8086b0b040e911010137f15dc17241a571c711e712056221e24c7255027b728fc291d2b1a2cf12ca22d2d2e902ecc2ee02ecc2e902e2d2ea22df12c1a2c1d2bfc29b7285027c7251e2456227120711e571c241adc177f1510139110040e6b0bc8081e066e03bc000afe59fbabf804f665f3d1f04aeed2eb6be918e7d9e4b2e2a3e0afded7dc1ddb83d909d8b1d67cd56bd47fd3b9d21ad2a1d150d126d125d14bd198d10dd2a9d2"
+   }
+  },
+  {
+   "type": "assert_return",
+   "line": 4,
+   "action": {
+    "type": "invoke",
+    "field": "minicelt_encode_i16",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "319"
+    }
+   ]
+  },
+  {
+   "type": "assert_return",
+   "line": 5,
+   "action": {
+    "type": "invoke",
+    "field": "minicelt_final_range",
+    "args": []
+   },
+   "expected": [
+    {
+     "type": "i32",
+     "value": "148124672"
+    }
+   ]
+  },
+  {
+   "type": "assert_memhash",
+   "line": 6,
+   "module": null,
+   "memory": "memory",
+   "size": 131072,
+   "fnv1a64": "064ca928c840acb0"
+  },
+  {
+   "type": "assert_output",
+   "line": 7,
+   "module": null,
+   "hex": ""
+  }
+ ]
+}

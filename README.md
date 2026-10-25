@@ -1,9 +1,13 @@
-# wasm2llvm benchmark (operator documentation — not visible to agents)
+# wasm2llvm benchmark 2.0 (operator documentation — not visible to agents)
 
 Benchmark task for AI coding agents running in Claude Code: implement a
-WebAssembly (wasm32; core + bulk-memory, multi-value, nontrapping-fptoint,
-sign-ext, simd128) → LLVM 23 IR translator in std-only Rust. Correctness is the
-primary metric; SIMD lowering quality, validation and run-time performance are
+WebAssembly (wasm32) → LLVM 23 IR translator in std-only Rust. The agent is
+given a set of real-world payloads and must discover from them which WebAssembly
+feature proposals the translator has to support. All test suites are hidden. A
+reference engine (`wasmtime` and the wasmtime-based `w2l-ref` runner) is
+available so the agent can run the visible payloads and obtain reference
+results; it still has to write its own tests and harness. Correctness is the primary
+metric; SIMD lowering quality, validation and run-time performance are
 secondary.
 
 ## Layout
@@ -12,14 +16,22 @@ secondary.
 |---|---|---|
 | `agent/` | yes (copied into each run) | the agent workspace template |
 | `agent/PROMPT.md` | yes | the prompt to give the agent |
-| `agent/TASK.md` | yes | full specification incl. the ABI (generated code ↔ harness) |
+| `agent/TASK.md` | yes | task description (the payloads define the feature scope) |
+| `agent/ABI.md` | yes | the generated-code ABI contract (generated code ↔ harness) |
 | `agent/ACCEPTANCE.md` | yes | acceptance criteria |
+| `agent/payloads/` | yes | the real-world payloads and their interface descriptions: QOA, CELT, SILK, multi-value example |
+| `agent/examples/abi/` | yes | hand-written ABI example (`example.wat`, `example.ll`) |
+| `agent/examples/reference/` | yes | line protocol of the `w2l-ref` reference runner |
 | `agent/docs/` | yes | WebAssembly 2.0 core spec (rst), 5 proposal overviews, OCaml reference interpreter, LLVM 23 docs |
-| `agent/harness/` | yes | native C harness, Python test driver `w2l.py`, protocol doc, hand-written ABI example |
-| `agent/tests/spec/` | yes | 120 spec scripts (WebAssembly 2.0 testsuite incl. SIMD, filtered to scope; ~45.9k exec + 2.9k validation assertions) |
-| `agent/tests/payloads/` | yes | 6 Rust programs × {O0,O3,Os} (sources in `_src/`) |
-| `agent/tests/smith/` | yes | 51 wasm-smith differential tests |
-| `agent/tools/w2l-ref/` | yes | source of the wasmtime reference runner (binary in `deps/bin`) |
+| `verification/harness/` | **no** | native C harness, Python test driver `w2l.py`, protocol doc |
+| `verification/tests/spec/` | **no** | 120 spec scripts (WebAssembly 2.0 testsuite incl. SIMD, filtered to scope; ~45.9k exec + 2.9k validation assertions) |
+| `verification/tests/spec3/` | **no** | files new/changed in the spec 3.0 testsuite, filtered to scope (~5.9k exec + 1.5k validation assertions) |
+| `verification/tests/payloads/` | **no** | 15 Rust programs × {O0,O3,Os} (sources in `verification/payloads/{visible,hidden}`) |
+| `verification/tests/real/` | **no** | 11 real-payload tests (QOA encode/decode, CELT/SILK f32/i16, release/checked builds) with inputs that are not in the workspace |
+| `verification/tests/smith/` | **no** | 471 wasm-smith differential tests |
+| `verification/tests/simd_quality/` | **no** | one module per SIMD instruction for the lowering-quality metric |
+| `verification/tools/w2l-ref/` | **no** | source of the wasmtime reference runner (binary in `deps/bin`) |
+| `verification/payloads/` | **no** | payload sources (Rust crates) and the hidden real-payload binaries, including `-checked` builds |
 | `deps/bin/` | yes (read) | symlinks: LLVM 23.1.4, wasm-tools 1.262.0, wabt 1.0.42 (minus `wasm2c`), wasmtime 50.0.0, `w2l-ref` |
 | `deps/toolchains/` | yes (read) | extracted toolchains (`wasm2c` + its runtime are denied) |
 | `deps/downloads/` | – | original archives + `SHA256SUMS` |
@@ -31,6 +43,13 @@ secondary.
 Rust toolchain: the system rustup `stable` = 1.99.1 (LLVM 23.1.1), targets
 `wasm32v1-none`, `wasm32-unknown-unknown`, `x86_64-unknown-linux-gnu`.
 
+The agent gets the payload binaries and their interface descriptions, plus a
+reference engine (`wasmtime` and the `w2l-ref` runner, protocol in
+`agent/examples/reference/PROTOCOL.md`), but no test scripts and no test
+harness. `wasm-tools` (including `smith`, `parse`, `print`, `dump`, `validate`)
+and the LLVM tools remain available, as do the Rust and C compilers and the wabt
+interpreters.
+
 ## Setup (fresh clone)
 
 ```
@@ -40,10 +59,11 @@ Fetches everything git ignores: the LLVM/wabt/wasm-tools/wasmtime archives
 (verified against `deps/downloads/SHA256SUMS`) and their extraction into
 `deps/toolchains/`, the spec repos and LLVM docs in `deps/src/`, the wabt/simde
 checkouts under `verification/reference/third_party/`, the rustup targets, and a
-build of `deps/bin/w2l-ref`. It is idempotent. It needs network access, git, curl,
-tar, zstd, xz, bubblewrap, socat and rustup/cargo, and downloads ~1.2 GB (LLVM is
-extracted with `zstd --long=31`). `deps/src/wasm-core-2.html` is fetched from
-w3.org on a best-effort basis. `sandbox/generated/` and benchmark results are not
+build of `deps/bin/w2l-ref` (from `verification/tools/w2l-ref`). It is
+idempotent. It needs network access, git, curl, tar, zstd, xz, bubblewrap, socat
+and rustup/cargo, and downloads ~1.2 GB (LLVM is extracted with
+`zstd --long=31`). `deps/src/wasm-core-2.html` is fetched from w3.org on a
+best-effort basis. `sandbox/generated/` and benchmark results are not
 recreated.
 
 ## Running an agent
@@ -78,20 +98,24 @@ What the sandbox settings enforce (`sandbox/settings.template.json`):
   `TMPDIR` and `CARGO_HOME` point into the run dir); Edit/Write tools are only
   allowed inside the run dir (`dontAsk` mode denies everything not allowed).
 * **Reads:** Bash reads are denied for `/mnt/workspace` and `~` except the run
-  dir, `deps/bin`, `deps/toolchains` (minus wasm2c), `~/.rustup`, `~/.cargo/bin`;
-  file tools are blocked outside the working directory
-  (`blockReadsOutsideWorkingDirectories`) and explicitly denied for
-  `verification/`, `deps/src/`, `sandbox/`, this README, `~/.claude*` and `~/.ssh`.
+  dir, `deps/bin`, `deps/toolchains`, `~/.rustup`, `~/.cargo/bin`; file tools are
+  blocked outside the working directory (`blockReadsOutsideWorkingDirectories`)
+  and explicitly denied for `verification/`, `deps/src/`, `sandbox/`, this
+  README, `~/.claude*` and `~/.ssh`.
+* **Reference engines:** `wasmtime`, `w2l-ref` and the wabt interpreters remain
+  available so the agent can run the visible payloads and its own modules. The
+  hidden test data, harness and verifier are denied.
 
 The sandbox needs bubblewrap and socat (both installed). Before the first real
 run, it is worth doing a 1-minute sanity run with a prompt like:
 "Run these and report each output verbatim: `curl -sS -m5 https://example.com`;
 `ls /mnt/workspace/wasm2llvm/verification`; `cat ~/.claude.json | head -1`;
 `touch /mnt/workspace/x`; `clang --version | head -1`; `cargo --version`;
-`wasm-tools --version`; also try to Read /mnt/workspace/wasm2llvm/README.md and
-to Write /mnt/workspace/escape.txt" — all but the last three version commands
-must fail. (Settings keys follow the current Claude Code docs; if your version
-reports an unknown key, adjust the template.)
+`wasm-tools --version`; `wasmtime --version`; also try to Read
+/mnt/workspace/wasm2llvm/README.md and to Write /mnt/workspace/escape.txt" —
+`clang`, `cargo`, `wasm-tools` and `wasmtime` must succeed; the rest must fail. (Settings keys follow the
+current Claude Code docs; if your version reports an unknown key, adjust the
+template.)
 
 ## Grading
 
@@ -107,14 +131,16 @@ python3 verification/verify.py /mnt/workspace/w2l-runs/run01 --out /mnt/workspac
    input is copied into a private dir. (So shelling out to clang/wasm2c/rustc is
    impossible.)
 3. Correctness suites; every module is compiled with LLVM 23 `clang -O0` and
-   `-O2` and an assertion passes only if it passes in both:
+   `-O2` and an assertion passes only if it passes in both. All suites are
+   hidden:
 
    | suite | weight | content |
    |---|---|---|
-   | spec | 0.35 | visible spec 2.0 scripts (pristine copy) |
-   | spec3 | 0.10 | hidden: files new/changed in the spec `wg-3.0` testsuite, filtered to scope (~5.9k exec + 1.5k validation assertions) |
-   | payloads | 0.30 | 6 visible + 9 hidden Rust programs × 3 opt levels (hidden: compress, crypto, nbody, numerics, raytrace, simd_image, text, traps, vm) |
-   | smith | 0.25 | 51 visible + 420 hidden wasm-smith differential tests vs wasmtime |
+   | spec | 0.30 | spec 2.0 scripts (pristine copy; ~45.9k exec + 2.9k validation assertions) |
+   | spec3 | 0.10 | files new/changed in the spec `wg-3.0` testsuite, filtered to scope |
+   | payloads | 0.20 | 15 Rust programs × 3 opt levels (6 previously visible + 9 hidden: compress, crypto, nbody, numerics, raytrace, simd_image, text, traps, vm) |
+   | real | 0.20 | 11 real-payload tests: QOA mono/stereo roundtrips, CELT mono/stereo/f32/i16/checked, SILK f32/i16/checked |
+   | smith | 0.20 | 471 wasm-smith differential tests vs wasmtime |
 
    Suite score = mean over scripts of the pass fraction of execution assertions
    (`assert_return/trap/exhaustion/uninstantiable/output/memhash`). The
@@ -131,22 +157,30 @@ python3 verification/verify.py /mnt/workspace/w2l-runs/run01 --out /mnt/workspac
      may instead have no vector types if the wasm code does ≤ 3 non-global
      loads/stores, since `opt` legitimately narrows the ABI slot accesses there;
      `i8x16.swizzle` is informational only;
-   * **performance** = geomean over 8 hidden benchmarks of wasmtime time /
+   * **performance** = geomean over hidden benchmarks of wasmtime time /
      native (-O2) time for one invocation (result must be correct).
 5. Writes `report.json` (everything, incl. per-script results) and `report.md`.
+
+The real-payload tests use the same visible binaries plus hidden `-checked`
+builds and inputs that are not in the agent workspace. They drive the codecs
+through the ABI (memory writes, init, encode/decode) and hash the whole linear
+memory after the calls; see `verification/tools/gen_real_payloads.py` and
+`verification/harness/PROTOCOL.md`.
 
 ### Calibration: reference baseline
 
 `verification/reference/wasm2llvm` is a *baseline* "translator" built from
 wasm2c + clang (exactly what agents are forbidden to do), used to validate the
 whole pipeline. Run with `--translator verification/reference/wasm2llvm --no-jail`.
-Its result: correctness 0.980, validation 0.997, SIMD quality 231/234
-(`trunc_sat_f64x2_*_zero` scalarized, `i64x2.all_true` wrong in simde),
-performance ≈ 1.02× wasmtime. All its failures are known wasm2c deviations
-(table OOB reported as memory OOB, null vs. signature-mismatch `call_indirect`
-merged, a NaN-quieting difference, lax validation), which
-confirms that the expectations are sound and the ABI is sufficient. A stub
-submission that emits nothing scores 0 on every metric.
+Its result on the revised (hidden) suites, run with `--skip-perf`, is
+correctness 0.9813, validation 0.9966, SIMD quality 231/234
+(`trunc_sat_f64x2_*_zero` scalarized, `i64x2.all_true` wrong in simde), with
+spec 0.9823, spec3 0.8781, payloads 0.9975, real 1.0000 and smith 0.9967. Its
+remaining failures are explainable by known wasm2c deviations (table OOB
+reported as memory OOB, null vs. signature-mismatch `call_indirect` merged, lax
+validation of some malformed binaries, a NaN-quieting difference). Performance
+was ≈1.02× wasmtime in the previous revision and was not re-measured for this
+revision. A stub submission that emits nothing scores 0 on every metric.
 
 ## Regenerating test data
 
@@ -154,12 +188,13 @@ All generators are deterministic; they need `deps/bin` on `PATH`.
 
 ```
 export PATH=/mnt/workspace/wasm2llvm/deps/bin:$PATH
-python3 verification/tools/prepare_spec.py agent/tests/spec deps/src/spec-wg-2.0/test/core
+python3 verification/tools/prepare_spec.py verification/tests/spec deps/src/spec-wg-2.0/test/core
 python3 verification/tools/prepare_spec.py verification/tests/spec3 <dir with wg-3.0 .wast files new/changed vs 2.0>
-python3 verification/tools/build_payloads.py            # all Rust payloads (visible + hidden)
-python3 verification/tools/gen_smith.py agent/tests/smith 1000000 60
+python3 verification/tools/build_payloads.py            # all Rust payloads, visible and hidden sources
+python3 verification/tools/gen_smith.py verification/tests/smith 1000000 60
 python3 verification/tools/gen_smith.py verification/tests/smith 2000000 500
 python3 verification/tools/gen_simd_quality.py verification/tests/simd_quality
+python3 verification/tools/gen_real_payloads.py         # QOA/CELT/SILK hidden tests
 ```
 
 Notes:
@@ -178,15 +213,24 @@ Notes:
   "memory OOB vs. stack exhausted" implementation-defined, so such invocations
   are restricted to O3/Os; smith scripts are truncated at the first
   stack-exhaustion trap for the same reason.
+* The real-payload binaries live in `verification/payloads/real/`; the visible
+  copies in `agent/payloads/` are what the agent sees. `gen_real_payloads.py`
+  reads the hidden copies and records expectations with `w2l-ref`.
 * `w2l-ref` is rebuilt with
   `CARGO_TARGET_DIR=deps/build/w2l-ref cargo build --release` in
-  `agent/tools/w2l-ref` and copied to `deps/bin/`.
+  `verification/tools/w2l-ref` and copied to `deps/bin/`.
 
-## Scope decisions (also stated in TASK.md)
+## Scope decisions (operator only; not stated to the agent)
 
 * In scope = validates under `wasm-tools validate --features=-all,mutable-global,bulk-memory,multi-value,saturating-float-to-int,sign-extension,simd,floats`.
-  In wasmparser's model, expression-encoded element segments (flags 4–7) belong
-  to reference-types, so they are out of scope.
+  The visible payloads exercise every proposal in this set:
+  `qoa-simd` (SIMD, bulk memory, sign-ext, saturating conversions, mutable
+  globals), `minicelt`/`minisilk` (SIMD, bulk memory, sign-ext, saturating
+  conversions), and the `multi-value` example (multiple results and block
+  parameters). Relaxed SIMD, reference types, GC, function references, tail
+  calls, exceptions, threads, memory64 and multi-memory are out of scope and are
+  not used by any visible payload. Do not add these proposals to the visible set
+  without also adding a payload that justifies them.
 * Only function imports (host functions `spectest.*`, `env.*`); imported
   memories/tables/globals and cross-module linking (`register`) are not tested.
 * Trap codes are checked exactly (9 categories).

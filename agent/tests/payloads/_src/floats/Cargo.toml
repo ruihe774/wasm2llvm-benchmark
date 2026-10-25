@@ -1,8 +1,0 @@
-[package]
-name = "floats"
-edition.workspace = true
-version.workspace = true
-
-[lib]
-crate-type = ["cdylib"]
-path = "lib.rs"
