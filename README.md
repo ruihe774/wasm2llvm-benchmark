@@ -10,6 +10,11 @@ results; it still has to write its own tests and harness. Correctness is the pri
 metric; SIMD lowering quality, validation and run-time performance are
 secondary.
 
+> You don't need a "Pro"-level model, actually.
+> The [report](reports/runv2_dsf_1017/report.md) of DeepSeek-V4.1-Flash-1017 on this task suggests that:
+> a "Flash"-tier model can well accomplish complex software projects
+> if the task is well-defined and the workflow is well-established.
+
 ## Layout
 
 | path | visible to agent | content |
