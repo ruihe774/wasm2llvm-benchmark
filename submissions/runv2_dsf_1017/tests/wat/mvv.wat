@@ -1,0 +1,22 @@
+(module
+  (func $mv (result v128 i32 i64 f64)
+    (v128.const i32x4 1 2 3 4)
+    (i32.const 5)
+    (i64.const -6)
+    (f64.const 1.5))
+  (func (export "use") (result i32)
+    (local $v v128)
+    (local.set $v
+      (block (result v128)
+        (call $mv)
+        (drop) (drop) (drop)))
+    (i32x4.extract_lane 3 (local.get $v)))
+  (func (export "pass") (param v128 i32) (result i32)
+    (i32.add
+      (i32x4.extract_lane 0 (local.get 0))
+      (local.get 1)))
+  (func (export "ret2") (result v128 i32)
+    (call $mv)
+    (drop) (drop)
+    (return))
+)
