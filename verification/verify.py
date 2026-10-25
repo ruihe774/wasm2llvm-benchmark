@@ -190,6 +190,24 @@ def run_correctness(translator, work, jobs, quick):
 # ---------------------------------------------------------------------------
 # SIMD lowering quality
 
+MAX_SCALAR_MEM_OPS = 3
+
+
+def _scalar_mem_ops(lines):
+    """Loads/stores in wasm code (not w2l_init or the memory/global accessors) whose address
+    is not a global (module state)."""
+    n, fn = 0, None
+    for ln in lines:
+        if ln.startswith("define "):
+            fn = ln
+        elif ln.startswith("}"):
+            fn = None
+        elif fn and not any(a in fn for a in ("@w2l_init(", "@w2l_memory_", "@w2l_global_")):
+            if " = load " in ln or ln.lstrip().startswith("store "):
+                n += ", ptr @" not in ln
+    return n
+
+
 def run_simd_quality(translator, work, jobs):
     """An op is well-lowered iff its random-input script passes at -O2, the
     optimized IR contains vector types, and the number of extractelement +
@@ -223,8 +241,15 @@ def run_simd_quality(translator, work, jobs):
             row["status"] = "incorrect"
         elif m["allow"] is None:
             row["status"] = "info"
-        elif vec == 0 or lane > m["allow"]:
+        elif lane > m["allow"]:
             row["status"] = "scalarized"
+        elif vec == 0:
+            # Ops with a scalar operand or result (extract/store lane, load*_zero, reductions)
+            # may legitimately lose all vector types once opt narrows the ABI slot accesses;
+            # a per-lane lowering still needs one scalar access per lane.
+            mem = _scalar_mem_ops(lines)
+            row["mem_ops"] = mem
+            row["status"] = "pass" if m.get("scalar_ok") and mem <= MAX_SCALAR_MEM_OPS else "scalarized"
         else:
             row["status"] = "pass"
         rows.append(row)

@@ -126,6 +126,10 @@ python3 verification/verify.py /mnt/workspace/w2l-runs/run01 --out /mnt/workspac
      each, `verification/tests/simd_quality`) whose random-input test passes and
      whose `opt -O2` IR contains vector types and at most 2–3
      `extractelement`/`insertelement` (a scalarized lowering needs ≥ 6);
+     ops with a scalar operand or result (`extract_lane`, `store*_lane`,
+     `load*_zero`, `any_true`/`all_true`/`bitmask`; `scalar_ok` in the manifest)
+     may instead have no vector types if the wasm code does ≤ 3 non-global
+     loads/stores, since `opt` legitimately narrows the ABI slot accesses there;
      `i8x16.swizzle` is informational only;
    * **performance** = geomean over 8 hidden benchmarks of wasmtime time /
      native (-O2) time for one invocation (result must be correct).

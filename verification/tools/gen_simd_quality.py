@@ -6,7 +6,8 @@
 Writes OUT_DIR/<name>/<name>.{wasm,json} and OUT_DIR/_manifest.json:
 [{"op", "file", "script", "allow"}]. `allow` is the maximum number of
 extractelement+insertelement instructions tolerated in the module after
-`opt -O2` (a scalarized lowering needs >= 6). The script holds random
+`opt -O2` (a scalarized lowering needs >= 6); `scalar_ok` marks ops that
+may lose all vector types (see scalar_ok()). The script holds random
 invocations of the op with expectations recorded from wasmtime; an op only
 counts as well-lowered if its script also passes.
 """
@@ -153,6 +154,12 @@ def rand_arg(rng, t):
     return {"type": t, "value": str(rng.getrandbits(32 if t in ("i32", "f32") else 64))}
 
 
+def scalar_ok(op, kind):
+    """Ops whose best lowering may contain no vector type after `opt -O2` (scalar operand
+    or result next to the memory-based ABI); verify.py then bounds scalar memory accesses."""
+    return kind == "v_i" or kind.split(":")[0] in ("extract", "storelane") or (kind == "load" and op.endswith("_zero"))
+
+
 def float_result_shape(op):
     """Lane type of float-valued v128 results (NaN lanes then accept any NaN)."""
     if op.startswith("f32x4.") and not any(c in op for c in (".eq", ".ne", ".lt", ".gt", ".le", ".ge", "extract")):
@@ -207,7 +214,8 @@ def main():
             for c in data["commands"]:
                 relax_nans(c, lane)
             (d / f"{name}.json").write_text(json.dumps(data, indent=1))
-        manifest.append({"op": op, "file": f"{name}/{name}.wasm", "script": f"{name}/{name}.json", "allow": allow})
+        manifest.append({"op": op, "file": f"{name}/{name}.wasm", "script": f"{name}/{name}.json", "allow": allow,
+                         "scalar_ok": scalar_ok(op, kind)})
     (out / "_manifest.json").write_text(json.dumps(manifest, indent=1))
     shutil.rmtree(work, ignore_errors=True)
     print(len(manifest), "ops")
