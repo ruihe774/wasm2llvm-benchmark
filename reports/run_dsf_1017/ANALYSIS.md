@@ -25,3 +25,17 @@ the agent did not try to bypass them.
    makes a NaN sign observable, contradicting the README's claim that payloads never depend on
    NaN bits. Suggested harness fix: remove NaN-sign dependence from `numerics/lib.rs`
    (e.g. mask `g` to non-NaN before copysign) and rebuild the hidden payload.
+
+## Why the agent canonicalises NaN in promote/demote (transcript, ~03:41-03:43)
+* Trigger: visible spec test `float_exprs.wast` (lines 638 and 2415): `f32.demote_f64(f64.promote_f32(sNaN))`
+  must yield an *arithmetic* NaN (quiet bit set; line 2415 masks the result with 0x7fc00000).
+  At -O2 LLVM folds `fptrunc(fpext x)` -> `x`, so the sNaN came back unquieted (0x7fa00000).
+  This is a legitimate spec requirement, not a benchmark bug. (The agent briefly misread line 2415 as
+  requiring the exact canonical NaN; it didn't notice the mask.) The same test class drove the
+  volatile-constant trick for `x-0.0` / `x*1.0`, which preserves hardware NaN behavior.
+* Decision (event ~612): barrier tricks seemed too costly, so it chose "if the input is NaN, return the
+  positive canonical NaN" for promote/demote. It never weighed that this drops the sign and payload that
+  wasmtime/x86 preserve. It is spec-legal but a blunt over-fix; a faithful fix would only set the quiet bit
+  (e.g. `select isnan, or(bits, quiet), fpext`) or use an opaque barrier.
+* Benchmark share of the blame: only that the hidden `numerics` payload observes a NaN's sign through
+  `copysign`, which the README says payloads avoid. Agent share: the unnecessary sign/payload loss.
