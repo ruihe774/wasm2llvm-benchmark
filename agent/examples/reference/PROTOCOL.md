@@ -5,6 +5,20 @@
 exactly one line on stdout. It is useful for running the payloads in
 `payloads/`, and any `.wasm` modules you write, to obtain reference results.
 
+## Feature scope
+
+`w2l-ref` is built with exactly the benchmark's WebAssembly feature set. It
+therefore rejects at `load` time modules that use proposals outside the scope
+defined by the payloads — typically with an error ending in
+`... support is not enabled`, or with an encoding error for a construct that is
+only defined under a broader feature set. Such a failure means the module is
+outside the benchmark's scope, not that the runner is broken.
+
+The defaults of the other tools are broader: `wasm-tools validate -f wasm2`,
+`wasm-tools validate --features all`, and `wasm-tools smith` without explicit
+`--*-enabled false` flags accept or generate constructs beyond the benchmark's
+scope. Their verdicts are not the benchmark's scope oracle.
+
 ```
 printf 'load a ./payloads/multi-value/multi-value.wasm\ninit a\ninvoke a 73776170 2 01000000000000000000000000000000 02000000000000000000000000000000\n' \
   | w2l-ref
