@@ -1,7 +1,7 @@
 // w2l_harness: native test harness for modules produced by wasm2llvm.
 //
 // Loads translated modules (compiled to shared objects) and executes
-// line-based commands read from stdin. See PROTOCOL.md and ../TASK.md (ABI).
+// line-based commands read from stdin. See PROTOCOL.md and ../../agent/ABI.md.
 //
 // Build:  clang -O2 -g -o w2l_harness w2l_harness.c -ldl -lpthread -rdynamic
 //
@@ -301,22 +301,6 @@ static void handle(char **tok, int ntok) {
     printf("ok ");
     for (uint64_t i = 0; i < len; i++) printf("%02x", base[off + i]);
     printf("\n");
-  } else if (strcmp(cmd, "memwrite_fn") == 0 && ntok == 5) {
-    void *f = find_sym(tok[1], "w2l_export_", tok[2]);
-    if (!f) { printf("error no such export\n"); return; }
-    memset(arg_slots, 0, sizeof arg_slots);
-    memset(res_slots, 0, sizeof res_slots);
-    int t = protected_call(call_tramp, f, NULL);
-    if (t >= 0) { printf("trap %d\n", t); return; }
-    uint32_t off; memcpy(&off, res_slots, 4);
-    uint64_t size = 0;
-    uint8_t *base = memory_base(tok[1], tok[3], &size);
-    uint8_t *b = NULL; size_t n = 0;
-    if (!base) { printf("error no such memory\n"); return; }
-    if (parse_hex(tok[4], &b, &n)) { printf("error bad argument\n"); return; }
-    int rc = write_at(base, size, off, b, n);
-    free(b);
-    printf(rc ? "error out of bounds\n" : "ok\n");
   } else if (strcmp(cmd, "memwrite_global") == 0 && ntok == 5) {
     void *f = find_sym(tok[1], "w2l_global_", tok[2]);
     if (!f) { printf("error no such export\n"); return; }

@@ -257,36 +257,6 @@ fn handle(
             }
             Ok(format!("ok {}", hex_encode(&d[off..off + len])))
         }
-        ["memwrite_fn", id, fname, mname, hex] => {
-            let i = insts.get_mut(*id).ok_or_else(|| format_err!("no such module"))?;
-            let inst = i.instance.ok_or_else(|| format_err!("not initialized"))?;
-            let f = inst
-                .get_func(&mut i.store, &decode_name(fname)?)
-                .ok_or_else(|| format_err!("no such export"))?;
-            let ty = f.ty(&i.store);
-            let mut res: Vec<Val> = ty.results().map(|_| Val::I32(0)).collect();
-            if let Err(e) = f.call(&mut i.store, &[], &mut res) {
-                return match trap_code(&e) {
-                    Some(c) => Ok(format!("trap {}", c)),
-                    None => Err(e),
-                };
-            }
-            let off = match res.first() {
-                Some(Val::I32(x)) => *x as u32,
-                Some(Val::I64(x)) => *x as u32,
-                _ => bail!("pointer export returned no integer"),
-            };
-            let m = inst.get_memory(&mut i.store, &decode_name(mname)?)
-                .ok_or_else(|| format_err!("no such export"))?;
-            let d = m.data_mut(&mut i.store);
-            let b = hex_decode(hex)?;
-            let off = off as usize;
-            if off > d.len() || b.len() > d.len() - off {
-                bail!("out of bounds");
-            }
-            d[off..off + b.len()].copy_from_slice(&b);
-            Ok("ok".into())
-        }
         ["memwrite_global", id, gname, mname, hex] => {
             let i = insts.get_mut(*id).ok_or_else(|| format_err!("no such module"))?;
             let inst = i.instance.ok_or_else(|| format_err!("not initialized"))?;

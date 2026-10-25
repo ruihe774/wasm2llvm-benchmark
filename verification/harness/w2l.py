@@ -9,8 +9,8 @@ Runs test scripts against either
 Test scripts use the JSON format produced by `wasm-tools json-from-wast`
 (a.k.a. wast2json), plus two extension commands:
   {"type": "assert_output", "line": N, "module": <optional name>, "hex": "<hex bytes>"}
-      Host output (see TASK.md, host imports) produced since the previous
-      assert_output of that module must equal the given bytes.
+      Host output (see ../../agent/ABI.md, host imports) produced since the
+      previous assert_output of that module must equal the given bytes.
   {"type": "assert_memhash", "line": N, "module": <optional name>, "memory": "<export name>",
    "size": <bytes>, "fnv1a64": "<16 hex digits>"}
       Exported memory must have the given byte size and FNV-1a-64 hash.
@@ -18,7 +18,10 @@ Test scripts use the JSON format produced by `wasm-tools json-from-wast`
 Bare actions may also be {"type": "memwrite", "memory", "offset", "hex"},
 {"type": "memwrite_fn", "field" (pointer function), "memory", "hex"} or
 {"type": "memwrite_global", "field" (i32 global), "memory", "hex"} to fill
-input buffers; see verification/harness/PROTOCOL.md.
+input buffers. `memwrite_fn` checks the named export's signature (no
+parameters, one i32/i64 result), calls it, and writes at the returned offset;
+it is implemented by the driver as invoke + memwrite. See
+verification/harness/PROTOCOL.md.
 
 Usage:
   w2l.py run [--translator PATH] [--opt 0,2] [-j N] [--backend native|ref]
@@ -424,6 +427,8 @@ def run_script(script_path, backend, verbose=False):
     cur = None          # id of current module (None if current module unavailable)
     cur_err = None      # why the current module is unavailable
     named = {}          # $name -> id or None
+    named_paths = {}    # $name -> wasm path
+    types = ResultTypes(base)
     nmod = 0
     out_seen = {}
 
@@ -453,8 +458,22 @@ def run_script(script_path, backend, verbose=False):
         elif action["type"] == "memwrite":
             r = sess.cmd(f"memwrite {mid} {hexname(action['memory'])} {int(action['offset'])} {action['hex']}")
         elif action["type"] == "memwrite_fn":
-            r = sess.cmd(f"memwrite_fn {mid} {hexname(action['field'])} "
-                         f"{hexname(action['memory'])} {action['hex']}")
+            wasm = named_paths.get(action["module"]) if action.get("module") else types.current
+            if wasm is None:
+                raise Crash("no module")
+            try:
+                params, results = types.func_sig(wasm, action["field"])
+            except Exception as e:
+                raise Crash(f"memwrite_fn: {e}")
+            if params or len(results) != 1 or results[0] not in ("i32", "i64"):
+                raise Crash(f"memwrite_fn {action['field']}: expected a function with no "
+                            f"parameters and one i32/i64 result")
+            r = sess.cmd(f"invoke {mid} {hexname(action['field'])} 1")
+            if not r.startswith("ok "):
+                return r
+            b = bytes.fromhex(r.split()[1])
+            off = int.from_bytes(b[:4], "little") if results[0] == "i32" else int.from_bytes(b[:8], "little")
+            r = sess.cmd(f"memwrite {mid} {hexname(action['memory'])} {off} {action['hex']}")
         elif action["type"] == "memwrite_global":
             r = sess.cmd(f"memwrite_global {mid} {hexname(action['field'])} "
                          f"{hexname(action['memory'])} {action['hex']}")
@@ -483,6 +502,7 @@ def run_script(script_path, backend, verbose=False):
             try:
                 if t == "module":
                     mid, r = load_module(cmd["filename"])
+                    types.current = base / cmd["filename"]
                     if mid is not None and r == "ok":
                         cur, cur_err = mid, None
                         record(cmd, True)
@@ -491,6 +511,7 @@ def run_script(script_path, backend, verbose=False):
                         record(cmd, False, cur_err)
                     if cmd.get("name"):
                         named[cmd["name"]] = cur
+                        named_paths[cmd["name"]] = types.current
                 elif t in ("assert_return", "action"):
                     exp = cmd.get("expected", [])
                     cmd["action"]["_nres"] = len(exp)
@@ -652,12 +673,27 @@ def record_script(script_path, out_path, work):
             elif t == "action":
                 act = cmd["action"]
                 mid, wasm = (named[act["module"]] if act.get("module") else (cur, types.current))
-                if act["type"] in ("memwrite", "memwrite_fn", "memwrite_global"):
+                if act["type"] == "memwrite_fn":
+                    try:
+                        params, results = types.func_sig(wasm, act["field"])
+                    except Exception as e:
+                        raise SystemExit(f"{script_path}: memwrite_fn: {e}")
+                    if params or len(results) != 1 or results[0] not in ("i32", "i64"):
+                        raise SystemExit(f"{script_path}: memwrite_fn {act['field']}: expected a function "
+                                         f"with no parameters and one i32/i64 result")
+                    r = sess.cmd(f"invoke {mid} {hexname(act['field'])} 1")
+                    if not r.startswith("ok "):
+                        raise SystemExit(f"{script_path}: memwrite_fn pointer call failed: {r}")
+                    b = bytes.fromhex(r.split()[1])
+                    off = int.from_bytes(b[:4], "little") if results[0] == "i32" else int.from_bytes(b[:8], "little")
+                    r = sess.cmd(f"memwrite {mid} {hexname(act['memory'])} {off} {act['hex']}")
+                    if not r.startswith("ok"):
+                        raise SystemExit(f"{script_path}: memwrite_fn write failed: {r}")
+                    out_cmds.append(cmd)
+                    continue
+                if act["type"] in ("memwrite", "memwrite_global"):
                     if act["type"] == "memwrite":
                         line = f"memwrite {mid} {hexname(act['memory'])} {int(act['offset'])} {act['hex']}"
-                    elif act["type"] == "memwrite_fn":
-                        line = (f"memwrite_fn {mid} {hexname(act['field'])} "
-                                f"{hexname(act['memory'])} {act['hex']}")
                     else:
                         line = (f"memwrite_global {mid} {hexname(act['field'])} "
                                 f"{hexname(act['memory'])} {act['hex']}")
@@ -753,9 +789,11 @@ class ResultTypes:
                 n, p = leb(p)
                 for _ in range(n):
                     p += 1  # 0x60
-                    np_, p = leb(p); p += np_
+                    np_, p = leb(p)
+                    params = [self.VT.get(x, "?") for x in b[p:p + np_]]; p += np_
                     nr, p = leb(p)
-                    types.append([self.VT.get(x, "?") for x in b[p:p + nr]]); p += nr
+                    results = [self.VT.get(x, "?") for x in b[p:p + nr]]; p += nr
+                    types.append((params, results))
             elif sid == 2:
                 n, p = leb(p)
                 for _ in range(n):
@@ -802,10 +840,15 @@ class ResultTypes:
         self.cache[path] = (types, funcs, globs, exports)
         return self.cache[path]
 
-    def results(self, path, field):
+    def func_sig(self, path, field):
         types, funcs, _, exports = self._parse(path)
         k, idx = exports[field]
+        if k != 0:
+            raise ValueError(f"{field} is not a function export")
         return types[funcs[idx]]
+
+    def results(self, path, field):
+        return self.func_sig(path, field)[1]
 
     def global_type(self, path, field):
         _, _, globs, exports = self._parse(path)

@@ -35,7 +35,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 VER = ROOT / "verification"
-AGENT_TEMPLATE = ROOT / "agent"
 TOOLBIN = ROOT / "deps" / "bin"
 os.environ["PATH"] = f"{TOOLBIN}:{os.environ.get('PATH', '')}"
 sys.dont_write_bytecode = True  # keep the harness pristine
@@ -51,6 +50,9 @@ SUITES = {
     "smith": ([VER / "tests" / "smith"], 0.20),
 }
 VALIDATION_TYPES = ("assert_invalid", "assert_malformed")
+# Small scripts whose setup assertions are mostly trivial; a codec that computes
+# wrong output must not collect partial credit for "init returned 0".
+STRICT_SUITES = {"real"}
 
 
 def log(*a):
@@ -160,6 +162,15 @@ def agg(per_script):
             "scripts_fully_passing": sum(1 for p, t in per_script.values() if p == t)}
 
 
+def strict_agg(per_script):
+    """All-or-nothing per script: one failed assertion scores the script 0."""
+    if not per_script:
+        return {"score": None, "scripts": 0, "passed": 0, "total": 0, "scripts_fully_passing": 0}
+    ok = [p == t for p, t in per_script.values()]
+    return {"score": sum(ok) / len(ok), "scripts": len(ok),
+            "passed": sum(ok), "total": len(ok), "scripts_fully_passing": sum(ok)}
+
+
 def run_correctness(translator, work, jobs, quick):
     backends = [w2l.NativeBackend(str(translator), opt, work / "native") for opt in (0, 2)]
     labels = [b.label() for b in backends]
@@ -174,18 +185,26 @@ def run_correctness(translator, work, jobs, quick):
             p = Path(s)
             for d in dirs:
                 try:
-                    return ("hidden/" if VER in d.parents or d == VER else "visible/") + str(p.relative_to(d))
+                    return str(p.relative_to(d))
                 except ValueError:
                     pass
-            return s
+            return str(p)
         sc = suite_scores(res, labels, rel)
-        results[name] = {"weight": weight, "execution": agg(sc["execution"]), "validation": agg(sc["validation"]),
+        raw = agg(sc["execution"])
+        strict = name in STRICT_SUITES
+        results[name] = {"weight": weight, "strict": strict,
+                         "execution": strict_agg(sc["execution"]) if strict else raw,
+                         "raw_execution": raw, "validation": agg(sc["validation"]),
                          "per_script": {k: v for k, v in sc["execution"].items()},
                          "per_script_validation": sc["validation"], "failures": sc["failures"],
                          "modules_ok": sc["modules"],
                          "seconds": round(time.time() - t0)}
         e = results[name]["execution"]
-        log(f"{name}: execution score {e['score']} ({e['passed']}/{e['total']}) in {results[name]['seconds']}s")
+        if strict:
+            log(f"{name}: execution score {e['score']} (scripts {e['scripts_fully_passing']}/{e['scripts']}; "
+                f"raw assertions {raw['passed']}/{raw['total']}) in {results[name]['seconds']}s")
+        else:
+            log(f"{name}: execution score {e['score']} ({e['passed']}/{e['total']}) in {results[name]['seconds']}s")
     return results
 
 
@@ -336,9 +355,13 @@ def write_report(rep, out):
     L += ["", "| suite | weight | exec score | scripts fully passing | assertions | validation |", "|---|---|---|---|---|---|"]
     for name, s in c["suites"].items():
         e, v = s["execution"], s["validation"]
+        raw = s.get("raw_execution", e)
         vs = f"{v['passed']}/{v['total']}" if v["total"] else "-"
         sc = f"{e['score']:.4f}" if e["score"] is not None else "-"
-        L.append(f"| {name} | {s['weight']} | {sc} | {e['scripts_fully_passing']}/{e['scripts']} | {e['passed']}/{e['total']} | {vs} |")
+        L.append(f"| {name} | {s['weight']} | {sc} | {e['scripts_fully_passing']}/{e['scripts']} | "
+                 f"{raw['passed']}/{raw['total']} | {vs} |")
+    if any(s.get("strict") for s in c["suites"].values()):
+        L += ["", "The `real` suite is scored all-or-nothing per script; its assertion totals are diagnostic."]
     L += ["", "## Failures (first per script)", ""]
     for name, s in c["suites"].items():
         for scr, f in sorted(s["failures"].items())[:200]:

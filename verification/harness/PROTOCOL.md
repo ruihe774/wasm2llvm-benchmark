@@ -21,7 +21,6 @@ printf 'load a ./m.so\ninit a\ninvoke a 616464 1 0100000000000000000000000000000
 | `memhash <id> <hexname>` | `ok <size-in-bytes> <fnv1a64-hex>` of the exported memory |
 | `memwrite <id> <hexname> <offset> <hexbytes>` | `ok` / `error <msg>` |
 | `memread <id> <hexname> <offset> <len>` | `ok <hexbytes>` / `error <msg>` |
-| `memwrite_fn <id> <ptrfn-hexname> <mem-hexname> <hexbytes>` | `ok` / `trap <code>` / `error <msg>` |
 | `memwrite_global <id> <global-hexname> <mem-hexname> <hexbytes>` | `ok` / `error <msg>` |
 | `output <id>` | `ok <hex>` host output since the last `output` (`-` if none) |
 | `ping` | `ok` |
@@ -31,10 +30,11 @@ printf 'load a ./m.so\ninit a\ninvoke a 616464 1 0100000000000000000000000000000
 * `<slot>`: 32 hex digits = the 16 slot bytes in memory order (little-endian
   values, see ABI.md).
 * Trap codes: ABI.md.
-* `memwrite_fn` calls a no-argument exported function and uses its i32 result as
-  the byte offset to write to; `memwrite_global` uses an exported i32 global.
-  Both operate on the named exported memory and are used to drive buffer-based
-  payloads. Out-of-bounds host writes are driver errors (`error`), not wasm traps.
+* `memwrite_global` uses an exported i32 global as the byte offset. To write at a
+  pointer returned by an export, call it with `invoke`, then use `memwrite` at
+  the returned offset (the `w2l.py` test action `memwrite_fn` does exactly this
+  after checking the export's signature). Out-of-bounds host writes are driver
+  errors (`error`), not wasm traps.
 * Host output formats: `i32:<signed decimal>\n`, `i64:<signed decimal>\n`,
   `f32:0x<8 hex digits of bits>\n`, `f64:0x<16 hex digits>\n`,
   `v128:<32 hex digits, byte order>\n`, `print\n`; `putchar` writes one raw byte.

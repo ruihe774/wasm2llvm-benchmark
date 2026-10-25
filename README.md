@@ -143,8 +143,11 @@ python3 verification/verify.py /mnt/workspace/w2l-runs/run01 --out /mnt/workspac
    | smith | 0.20 | 471 wasm-smith differential tests vs wasmtime |
 
    Suite score = mean over scripts of the pass fraction of execution assertions
-   (`assert_return/trap/exhaustion/uninstantiable/output/memhash`). The
-   **primary correctness score** is the weighted mean of the suite scores.
+   (`assert_return/trap/exhaustion/uninstantiable/output/memhash`). The `real`
+   suite is different: it is scored **all-or-nothing per script**, so one wrong
+   assertion (for example a wrong memory hash) scores that script 0; its
+   assertion totals in the report are diagnostic. The **primary correctness
+   score** is the weighted mean of the suite scores.
 4. Secondary metrics:
    * **validation** = (binary `assert_invalid`/`assert_malformed` rejected) ×
      (fraction of valid modules that translated and instantiated);

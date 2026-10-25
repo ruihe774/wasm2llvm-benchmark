@@ -19,7 +19,6 @@ printf 'load a ./payloads/multi-value/multi-value.wasm\ninit a\ninvoke a 7377617
 | `memhash <id> <hexname>` | `ok <size-in-bytes> <fnv1a64-hex>` of the exported memory |
 | `memwrite <id> <hexname> <offset> <hexbytes>` | `ok` / `error <msg>` |
 | `memread <id> <hexname> <offset> <len>` | `ok <hexbytes>` / `error <msg>` |
-| `memwrite_fn <id> <ptrfn-hexname> <mem-hexname> <hexbytes>` | `ok` / `trap <code>` / `error <msg>` |
 | `memwrite_global <id> <global-hexname> <mem-hexname> <hexbytes>` | `ok` / `error <msg>` |
 | `output <id>` | `ok <hex>` host output since the last `output` (`-` if none) |
 | `ping` | `ok` |
@@ -29,10 +28,10 @@ printf 'load a ./payloads/multi-value/multi-value.wasm\ninit a\ninvoke a 7377617
 * `<slot>`: 32 hex digits = the 16 slot bytes in memory order (little-endian
   values, see `../../ABI.md`).
 * Trap codes: `../../ABI.md`.
-* `memwrite_fn` calls a no-argument exported function and uses its i32 result as
-  the byte offset to write to; `memwrite_global` uses an exported i32 global.
-  Both operate on the named exported memory. Out-of-bounds host writes are
-  driver errors (`error`), not wasm traps.
+* `memwrite_global` uses an exported i32 global as the byte offset. To write at a
+  pointer returned by an export, call the export with `invoke`, then write at
+  the returned offset with `memwrite`. Out-of-bounds host writes are driver
+  errors (`error`), not wasm traps.
 * Host output formats: `i32:<signed decimal>\n`, `i64:<signed decimal>\n`,
   `f32:0x<8 hex digits of bits>\n`, `f64:0x<16 hex digits>\n`,
   `v128:<32 hex digits, byte order>\n`, `print\n`; `putchar` writes one raw byte.
@@ -41,6 +40,7 @@ printf 'load a ./payloads/multi-value/multi-value.wasm\ninit a\ninvoke a 7377617
 
 The payload `README.md` files describe their interfaces. For example, to run
 the `minicelt` encoder you would `load` its `.wasm`, `init` it, call
-`minicelt_init` with `invoke`, write samples with `memwrite_fn` to the pointer
-returned by `minicelt_input_ptr`, call `minicelt_encode`, and inspect the result
-with `invoke`/`memread`/`memhash`.
+`minicelt_init` with `invoke`, obtain the input address with
+`invoke a <hexname(minicelt_input_ptr)> 1`, write samples at that offset with
+`memwrite`, call `minicelt_encode`, and inspect the result with
+`invoke`/`memread`/`memhash`.
