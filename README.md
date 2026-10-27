@@ -33,7 +33,7 @@ ascending correctness):
 For GPT, cc-switch was used to convert official OpenAI Responses endpoint.
 The auto compact window of DeepSeek was set to 786432, while that of GPT models was set to 300000,
 which was a similar setting to 272k used in Codex.
-DeepSeek runs used no subagents, while GPT runs used at most one concurrent subagent.
+In DeepSeek runs the main agent spawned no subagents despite that it could, while GPT runs used at most one concurrent subagent.
 Wall time is the session span from its first to its last transcript entry, rounded to minutes.
 This comparison is illustrative.)
 
