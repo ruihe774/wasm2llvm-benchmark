@@ -11,7 +11,7 @@ metric; SIMD lowering quality, validation and run-time performance are
 secondary.
 
 > You don't need a "Pro"-level model, actually.
-> The [report](reports/runv2_dsf_1017/report.md) of DeepSeek-V4.1-Flash-1017 on this task suggests that:
+> The [report](reports/runv2_dsf_1017_max/report.md) of DeepSeek-V4.1-Flash-1017 on this task suggests that:
 > a "Flash"-tier model can well accomplish complex software projects
 > if the task is well-defined and the workflow is well-established.
 
