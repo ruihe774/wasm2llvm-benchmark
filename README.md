@@ -32,6 +32,7 @@ ascending correctness):
 | $ per 1M input (cached)   | $0.01            | $0.05                 | $0.003 / $0.006                 | $0.10              | $0.003 / $0.006                |
 | $ per 1M cache writes     | $0.125           | $1.25                 | $0.00                           | $2.50              | $0.00                          |
 | $ per 1M output           | $0.50            | $5.00                 | $0.60 / $1.20                   | $10.00             | $0.60 / $1.20                  |
+| est. cost                 | ≈$0.64           | ≈$2.70                | ≈$0.69 / ≈$1.38                 | ≈$2.79             | ≈$0.95 / ≈$1.89                |
 
 (All runs were done in Claude Code. For DeepSeek, the official Anthropic-compatible endpoint was used.
 For GPT, cc-switch was used to convert official OpenAI Responses endpoint.
