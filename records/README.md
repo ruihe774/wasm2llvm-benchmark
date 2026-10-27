@@ -9,6 +9,7 @@ Raw Claude Code artifacts for the wasm2llvm v2 benchmark runs, kept alongside
 | `runv2_dsf_1017_high` | DeepSeek-V4.1-Flash-1017 | high | 786432 | `reports/runv2_dsf_1017_high/` |
 | `runv2_gpt6_luna_max` | GPT-6 Luna | max | 300000 | `reports/runv2_gpt6_luna_max/` |
 | `runv2_gpt6_1_terra_xhigh` | GPT-6.1 Terra | xhigh | 300000 | `reports/runv2_gpt6_1_terra_xhigh/` |
+| `runv2_gpt6_1_sol_high` | GPT-6.1 Sol | high | 300000 | `reports/runv2_gpt6_1_sol_high/` |
 
 Each directory contains:
 
