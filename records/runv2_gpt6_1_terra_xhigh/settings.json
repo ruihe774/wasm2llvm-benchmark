@@ -1,0 +1,97 @@
+{
+ "permissions": {
+  "defaultMode": "dontAsk",
+  "allow": [
+   "Bash",
+   "Read",
+   "Glob",
+   "Grep",
+   "Edit(///mnt/workspace/w2l-runs/runv2_gpt6_1_terra/**)",
+   "Write(///mnt/workspace/w2l-runs/runv2_gpt6_1_terra/**)",
+   "NotebookEdit(///mnt/workspace/w2l-runs/runv2_gpt6_1_terra/**)"
+  ],
+  "deny": [
+   "WebFetch",
+   "WebSearch",
+   "Read(///mnt/workspace/wasm2llvm/verification/**)",
+   "Read(///mnt/workspace/wasm2llvm/deps/src/**)",
+   "Read(///mnt/workspace/wasm2llvm/sandbox/**)",
+   "Read(///mnt/workspace/wasm2llvm/README.md)",
+   "Read(///mnt/workspace/wasm2llvm/deps/toolchains/wabt-1.0.42/bin/wasm2c)",
+   "Read(///mnt/workspace/wasm2llvm/deps/toolchains/wabt-1.0.42/include/**)",
+   "Read(///mnt/workspace/wasm2llvm/deps/toolchains/wabt-1.0.42/lib/**)",
+   "Read(~/.claude/**)",
+   "Read(~/.claude.json)",
+   "Read(~/.ssh/**)",
+   "Edit(///mnt/workspace/wasm2llvm/**)",
+   "Write(///mnt/workspace/wasm2llvm/**)"
+  ],
+  "blockReadsOutsideWorkingDirectories": true,
+  "disableBypassPermissionsMode": "disable"
+ },
+ "sandbox": {
+  "enabled": true,
+  "failIfUnavailable": true,
+  "allowUnsandboxedCommands": false,
+  "autoAllowBashIfSandboxed": true,
+  "excludedCommands": [],
+  "filesystem": {
+   "allowWrite": [
+    "/mnt/workspace/w2l-runs/runv2_gpt6_1_terra"
+   ],
+   "denyRead": [
+    "/mnt/workspace",
+    "~/",
+    "/mnt/workspace/wasm2llvm/deps/toolchains/wabt-1.0.42/bin/wasm2c",
+    "/mnt/workspace/wasm2llvm/deps/toolchains/wabt-1.0.42/include",
+    "/mnt/workspace/wasm2llvm/deps/toolchains/wabt-1.0.42/lib"
+   ],
+   "allowRead": [
+    "/mnt/workspace/w2l-runs/runv2_gpt6_1_terra",
+    "/mnt/workspace/wasm2llvm/deps/bin",
+    "/mnt/workspace/wasm2llvm/deps/toolchains",
+    "~/.rustup",
+    "~/.cargo/bin"
+   ]
+  },
+  "network": {
+   "allowedDomains": [],
+   "allowUnixSockets": []
+  }
+ },
+ "env": {
+  "PATH": "/mnt/workspace/wasm2llvm/deps/bin:/usr/local/bin:/usr/bin:/bin",
+  "TMPDIR": "/mnt/workspace/w2l-runs/runv2_gpt6_1_terra/.tmp",
+  "CARGO_HOME": "/mnt/workspace/w2l-runs/runv2_gpt6_1_terra/.cargo-home",
+  "CARGO_NET_OFFLINE": "true",
+  "RUSTUP_HOME": "/home/msk/.rustup",
+  "RUSTUP_TOOLCHAIN": "stable-x86_64-unknown-linux-gnu",
+  "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
+  "ANTHROPIC_MODEL": "gpt-6.1-terra",
+  "ANTHROPIC_AUTH_TOKEN": "REDACTED",
+  "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-6.1-terra",
+  "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-6.1-terra",
+  "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-6.1-terra",
+  "ANTHROPIC_DEFAULT_FABLE_MODEL": "gpt-6.1-terra",
+  "CLAUDE_CODE_SUBAGENT_MODEL": "inherit",
+  "CLAUDE_CODE_EFFORT_LEVEL": "xhigh",
+  "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "300000",
+  "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+  "CLAUDE_CODE_ENABLE_TODO_TOOLS": "1",
+  "CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT": "1",
+  "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "1000000",
+  "CLAUDE_CODE_DISABLE_OFFICIAL_MARKETPLACE_AUTOINSTALL": "1",
+  "CLAUDE_CODE_ENABLE_AWAY_SUMMARY": "0",
+  "CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION": "0",
+  "CLAUDE_CODE_DISABLE_CFC_PROMPT": "1",
+  "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+  "CLAUDE_CODE_DISABLE_CRON": "1",
+  "CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT": "1",
+  "CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS": "1",
+  "CLAUDE_CODE_DISABLE_EXPLORE_PLAN_AGENTS": "1"
+ },
+ "verbose": true,
+ "disableAllHooks": true,
+ "disableAutoMode": "disable",
+ "outputStyle": "Proactive"
+}
