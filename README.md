@@ -28,6 +28,13 @@ ascending correctness):
 | real                      | 1.0000           | 1.0000                | 1.0000                          | 1.0000                         |
 | smith                     | 0.3503           | 1.0000                | 1.0000                          | 1.0000                         |
 
+(All runs were done in Claude Code. For DeepSeek, the official Anthropic-compatible endpoint was used.
+For GPT, cc-switch was used to convert official OpenAI Responses endpoint.
+The auto compact window of DeepSeek was set to 786432, while that of GPT models was set to 300000,
+which was a similar setting to 272k used in Codex.
+DeepSeek runs used no subagents, while GPT runs used at most one concurrent subagent.
+This comparison is illustrative.)
+
 ## Layout
 
 | path | visible to agent | content |
