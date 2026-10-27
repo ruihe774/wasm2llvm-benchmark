@@ -13,19 +13,20 @@ secondary.
 **TLDR: You may *not* need a "Pro"-level model, actually.**
 A *good* "Flash"-tier model can well accomplish complex software projects
 if the task is well-defined and the workflow is well-established.
-See the comparison of the three runs I've performed:
+See the comparison of the four runs I've performed (columns sorted by
+ascending correctness):
 
-| metric                    | GPT-6.1 Terra (xhigh) | GPT-6 Luna (max) | DeepSeek-V4.1-Flash-1017 (max) |
-|---------------------------|-----------------------|------------------|--------------------------------|
-| **correctness (primary)** | 0.9923                | 0.8101           | 0.9999                         |
-| validation                | 0.9983                | 0.8620           | 0.9998                         |
-| SIMD quality              | 226/234               | 221/234          | 234/234                        |
-| performance               | 0.896×                | 1.116×           | 1.096×                         |
-| spec                      | 0.9887                | 0.9044           | 0.9997                         |
-| spec3                     | 0.9565                | 0.9544           | 1.0000                         |
-| payloads                  | 1.0000                | 0.8667           | 1.0000                         |
-| real                      | 1.0000                | 1.0000           | 1.0000                         |
-| smith                     | 1.0000                | 0.3503           | 1.0000                         |
+| metric                    | GPT-6 Luna (max) | GPT-6.1 Terra (xhigh) | DeepSeek-V4.1-Flash-1017 (high) | DeepSeek-V4.1-Flash-1017 (max) |
+|---------------------------|------------------|-----------------------|---------------------------------|--------------------------------|
+| **correctness (primary)** | 0.8101           | 0.9923                | 0.9931                          | 0.9999                         |
+| validation                | 0.8620           | 0.9983                | 0.9969                          | 0.9998                         |
+| SIMD quality              | 221/234          | 226/234               | 234/234                         | 234/234                        |
+| performance               | 1.116×           | 0.896×                | 1.089×                          | 1.096×                         |
+| spec                      | 0.9044           | 0.9887                | 0.9914                          | 0.9997                         |
+| spec3                     | 0.9544           | 0.9565                | 0.9565                          | 1.0000                         |
+| payloads                  | 0.8667           | 1.0000                | 1.0000                          | 1.0000                         |
+| real                      | 1.0000           | 1.0000                | 1.0000                          | 1.0000                         |
+| smith                     | 0.3503           | 1.0000                | 1.0000                          | 1.0000                         |
 
 ## Layout
 
