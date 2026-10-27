@@ -1,0 +1,11 @@
+(module
+  (memory (export "memory") 0 65536)
+  (global (export "") f32 (f32.const nan:0x12345))
+  (global (export "double") f64 (f64.const -nan:0x123456789abcd))
+  (global (export "vector") v128 (v128.const i32x4 0x7f812345 0xff812345 0x80000000 0xffffffff))
+  (func (export "grow") (param i32) (result i32) local.get 0 memory.grow)
+  (func (export "read") (param i32) (result i32) local.get 0 i32.load8_u)
+  (func (export "write") (param i32 i32) local.get 0 local.get 1 i32.store8)
+  (func (export "offset") (param i32) (result i32) local.get 0 i32.load8_u offset=4294967295)
+  (func (export "fill") (param i32 i32 i32) local.get 0 local.get 1 local.get 2 memory.fill)
+)
