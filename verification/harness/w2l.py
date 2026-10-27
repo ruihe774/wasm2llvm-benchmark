@@ -294,7 +294,14 @@ class NativeBackend:
 
     def translate(self, wasm):
         """Returns (ok, ll_path_or_error_message)."""
-        key = hashlib.sha256(Path(wasm).read_bytes()).hexdigest()[:24]
+        # The cached .so path is passed directly to dlopen() by the harness.
+        # Keying only on content would alias byte-identical modules that a
+        # script loads as separate instances: dlopen() returns the same
+        # mapping, so the second init would call w2l_init() on an
+        # already-initialized instance. ABI.md says it is called exactly once.
+        key = hashlib.sha256(
+            str(Path(wasm).resolve()).encode() + b"\0" + Path(wasm).read_bytes()
+        ).hexdigest()[:24]
         ll = self.cache / f"{key}.ll"
         err = self.cache / f"{key}.translate-error"
         with self._lock(key + "t"):
