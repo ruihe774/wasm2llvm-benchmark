@@ -36,7 +36,7 @@ stack). `ACCEPTANCE.md` lists the acceptance criteria. Read both.
 
 ## Environment
 
-Everything is offline. The tools in `deps/bin` are on `PATH`:
+Everything is offline. Some tools on `PATH`:
 
 * LLVM 23.1.4: `clang`, `opt`, `llc`, `llvm-as`, `llvm-dis`, `llvm-link`, `lli`, `wasm-ld`, ...
 * `wasm-tools` 1.262 (`parse` wat→wasm, `print`, `dump`, `validate`, `smith`,

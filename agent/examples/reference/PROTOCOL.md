@@ -1,7 +1,7 @@
 # Reference runner protocol
 
 `w2l-ref` is a wasmtime-based reference runner for WebAssembly modules. It is on
-`PATH` (in `deps/bin`) and reads one command per line on stdin, answering with
+`PATH` and reads one command per line on stdin, answering with
 exactly one line on stdout. It is useful for running the payloads in
 `payloads/`, and any `.wasm` modules you write, to obtain reference results.
 

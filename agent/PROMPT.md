@@ -10,7 +10,7 @@ Read `TASK.md` for the task, `ABI.md` for the generated-code contract, and
 `ACCEPTANCE.md` for the acceptance criteria. The specifications and LLVM
 documentation are in `docs/`.
 
-There are no test suites. Use the tools in `deps/bin` (LLVM, wasm-tools including `smith`, wabt, and the
+There are no test suites. Use the tools on `PATH` (LLVM, wasm-tools including `smith`, wabt, and the
 `wasmtime`/`w2l-ref` reference engine; the runner protocol is in
 `examples/reference/PROTOCOL.md`) to inspect and run the payloads, generate your
 own modules, and write your own tests and test harness. Work autonomously until the translator is
