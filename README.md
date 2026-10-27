@@ -13,21 +13,21 @@ secondary.
 **TLDR: You may *not* need a "Pro"-level model, actually.**
 A *good* "Flash"-tier model can well accomplish complex software projects
 if the task is well-defined and the workflow is well-established.
-See the comparison of the four runs I've performed (columns sorted by
+See the comparison of the five runs I've performed (columns sorted by
 ascending correctness):
 
-| metric                    | GPT-6 Luna (max) | GPT-6.1 Terra (xhigh) | DeepSeek-V4.1-Flash-1017 (high) | DeepSeek-V4.1-Flash-1017 (max) |
-|---------------------------|------------------|-----------------------|---------------------------------|--------------------------------|
-| **correctness (primary)** | 0.8101           | 0.9923                | 0.9931                          | 0.9999                         |
-| validation                | 0.8620           | 0.9983                | 0.9969                          | 0.9998                         |
-| SIMD quality              | 221/234          | 226/234               | 234/234                         | 234/234                        |
-| performance               | (full run failed)| 0.896×                | 1.089×                          | 1.096×                         |
-| spec                      | 0.9044           | 0.9887                | 0.9914                          | 0.9997                         |
-| spec3                     | 0.9544           | 0.9565                | 0.9565                          | 1.0000                         |
-| payloads                  | 0.8667           | 1.0000                | 1.0000                          | 1.0000                         |
-| real                      | 1.0000           | 1.0000                | 1.0000                          | 1.0000                         |
-| smith                     | 0.3503           | 1.0000                | 1.0000                          | 1.0000                         |
-| wall time                 | 69 min           | 39 min                | 53 min                          | 57 min                         |
+| metric                    | GPT-6 Luna (max) | GPT-6.1 Terra (xhigh) | DeepSeek-V4.1-Flash-1017 (high) | GPT-6.1 Sol (high) | DeepSeek-V4.1-Flash-1017 (max) |
+|---------------------------|------------------|-----------------------|---------------------------------|--------------------|--------------------------------|
+| **correctness (primary)** | 0.8101           | 0.9923                | 0.9931                          | 0.9991             | 0.9999                         |
+| validation                | 0.8620           | 0.9983                | 0.9969                          | 1.0000             | 0.9998                         |
+| SIMD quality              | 221/234          | 226/234               | 234/234                         | 234/234            | 234/234                        |
+| performance               | (full run failed)| 0.896×                | 1.089×                          | 1.144×             | 1.096×                         |
+| spec                      | 0.9044           | 0.9887                | 0.9914                          | 0.9971             | 0.9997                         |
+| spec3                     | 0.9544           | 0.9565                | 0.9565                          | 1.0000             | 1.0000                         |
+| payloads                  | 0.8667           | 1.0000                | 1.0000                          | 1.0000             | 1.0000                         |
+| real                      | 1.0000           | 1.0000                | 1.0000                          | 1.0000             | 1.0000                         |
+| smith                     | 0.3503           | 1.0000                | 1.0000                          | 1.0000             | 1.0000                         |
+| wall time                 | 69 min           | 39 min                | 53 min                          | 18 min             | 57 min                         |
 
 (All runs were done in Claude Code. For DeepSeek, the official Anthropic-compatible endpoint was used.
 For GPT, cc-switch was used to convert official OpenAI Responses endpoint.
