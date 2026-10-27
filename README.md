@@ -28,13 +28,18 @@ ascending correctness):
 | real                      | 1.0000           | 1.0000                | 1.0000                          | 1.0000             | 1.0000                         |
 | smith                     | 0.3503           | 1.0000                | 1.0000                          | 1.0000             | 1.0000                         |
 | wall time                 | 69 min           | 39 min                | 53 min                          | 18 min             | 57 min                         |
+| $ per 1M input (uncached) | $0.10            | $1.00                 | $0.15 / $0.30                   | $2.00              | $0.15 / $0.30                  |
+| $ per 1M input (cached)   | $0.01            | $0.05                 | $0.003 / $0.006                 | $0.10              | $0.003 / $0.006                |
+| $ per 1M cache writes     | $0.125           | $1.25                 | $0.00                           | $2.50              | $0.00                          |
+| $ per 1M output           | $0.50            | $5.00                 | $0.60 / $1.20                   | $10.00             | $0.60 / $1.20                  |
 
 (All runs were done in Claude Code. For DeepSeek, the official Anthropic-compatible endpoint was used.
 For GPT, cc-switch was used to convert official OpenAI Responses endpoint.
 The auto compact window of DeepSeek was set to 786432, while that of GPT models was set to 300000,
-which was a similar setting to 272k used in Codex.
+which was a similar setting to 272k used in Codex. Only Luna triggered auto compact.
 In DeepSeek runs the main agent spawned no subagents despite that it could, while GPT runs used at most one concurrent subagent.
 Wall time is the session span from its first to its last transcript entry, rounded to minutes.
+Pricing is fetched from official model cards. DeepSeek has separate "off-peak" and "peak" pricing.
 This comparison is illustrative.)
 
 ## Layout
